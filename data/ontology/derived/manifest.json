@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "indexes": {
+    "icd": {
+      "release": "2026",
+      "snapshot": "data/ontology/icd/concepts.jsonl",
+      "snapshot_sha256": "62804b5346b6700730c873204f679543f06cd3da010e29ce43a507c73a298923",
+      "concepts": 22868,
+      "kind": "icd",
+      "index": "data/ontology/derived/icd.index.jsonl"
+    },
+    "rxnorm": {
+      "release": "2026-07-06",
+      "snapshot": "data/ontology/rxnorm/concepts.jsonl",
+      "snapshot_sha256": "d400b47f0f985325390ced82576e94483c172e703133a9fc97e1b68483f1d5ae",
+      "concepts": 57392,
+      "kind": "rxnorm",
+      "index": "data/ontology/derived/rxnorm.index.jsonl"
+    }
+  }
+}

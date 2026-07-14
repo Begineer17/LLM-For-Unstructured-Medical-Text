@@ -9,6 +9,7 @@ from clinical_nlp_pipeline import (  # noqa: E402
     Ontology,
     detect,
     find_all,
+    link_entities,
     resolve,
     validate_pair,
 )
@@ -38,6 +39,12 @@ class PipelineRegressionTests(unittest.TestCase):
 
     def test_current_history_heading_does_not_leak_historical(self):
         raw = "1. Tiền sử bệnh\n- metoprolol\n2. Tiền sử bệnh hiện tại\n- đánh trống ngực"
+        start = raw.rindex("đánh trống ngực")
+        result = resolve(raw, [Entity(raw[start:start + 15], "TRIỆU_CHỨNG", start, start + 15)])
+        self.assertEqual(result[0].assertions, [])
+
+    def test_generic_numbered_heading_resets_history_scope(self):
+        raw = "Tiền sử bệnh\n- metoprolol\n3. Đánh giá tại bệnh viện\nKhám lâm sàng:\n- đánh trống ngực"
         start = raw.rindex("đánh trống ngực")
         result = resolve(raw, [Entity(raw[start:start + 15], "TRIỆU_CHỨNG", start, start + 15)])
         self.assertEqual(result[0].assertions, [])
@@ -98,6 +105,43 @@ class PipelineRegressionTests(unittest.TestCase):
         values = {(item.text, item.typ) for item in result}
         self.assertIn(("14,43", "KẾT_QUẢ_XÉT_NGHIỆM"), values)
         self.assertIn(("bình thường", "KẾT_QUẢ_XÉT_NGHIỆM"), values)
+
+    def test_final_linker_links_entity_after_resolve(self):
+        raw = "đã dùng coumadin"
+        start = raw.index("đã dùng coumadin")
+        resolved = resolve(raw, [Entity(raw[start:], "THUỐC", start, len(raw), candidates=["bad"])])
+        icd = Ontology("data/ontology/icd/concepts.jsonl", kind="icd")
+        rx = Ontology("data/ontology/rxnorm/concepts.jsonl", kind="rxnorm")
+        link_entities(resolved, icd, rx)
+        self.assertEqual([(item.text, item.candidates) for item in resolved], [("coumadin", ["11289"])])
+
+    def test_rxnorm_brand_and_combination_aliases(self):
+        rx = Ontology("data/ontology/rxnorm/concepts.jsonl", kind="rxnorm")
+        self.assertEqual(rx.lookup("Coumadin"), ["11289"])
+        self.assertEqual(rx.lookup("albuterolipratropium nebs x2"), ["214199"])
+        self.assertEqual(rx.lookup("aspirin 325mg"), ["1191"])
+        self.assertEqual(rx.lookup("not a medicine"), [])
+
+    def test_icd_vietnamese_curated_aliases(self):
+        icd = Ontology("data/ontology/icd/concepts.jsonl", kind="icd")
+        self.assertEqual(icd.lookup("rung nhĩ kịch phát"), ["I48.0"])
+        self.assertEqual(icd.lookup("béo phì"), ["E66.9"])
+        self.assertEqual(icd.lookup("viêm túi mật cấp"), ["K81.0"])
+
+    def test_procedure_and_heading_wrappers_are_removed(self):
+        raw = "3. Đánh giá tại bệnh viện\ndùng vancomycin\ncắt bỏ tuyến vú trái"
+        start = raw.index("3.")
+        result = resolve(raw, [
+            Entity("3. Đánh giá tại bệnh viện", "CHẨN_ĐOÁN", start, start + len("3. Đánh giá tại bệnh viện")),
+            Entity("dùng vancomycin", "THUỐC", raw.index("dùng"), raw.index("dùng") + len("dùng vancomycin")),
+            Entity("cắt bỏ tuyến vú trái", "THUỐC", raw.index("cắt"), raw.index("cắt") + len("cắt bỏ tuyến vú trái")),
+        ])
+        self.assertEqual([(item.text, item.typ) for item in result], [("vancomycin", "THUỐC")])
+
+    def test_linker_clears_candidates_for_non_linkable_types(self):
+        entities = [Entity("aspirin", "TRIỆU_CHỨNG", 0, 7, candidates=["1191"])]
+        link_entities(entities, Ontology(None, "icd"), Ontology(None, "rxnorm"))
+        self.assertEqual(entities[0].candidates, [])
 
 
 if __name__ == "__main__":

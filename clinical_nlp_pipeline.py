@@ -14,6 +14,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
 
+from ontology_linking import DerivedOntologyIndex, ScoredCandidate
+
 try:
     from rapidfuzz import fuzz, process  # optional
 except Exception:  # pragma: no cover
@@ -93,9 +95,33 @@ SECTION_PREFIXES = tuple(dict.fromkeys(CURRENT_SECTION_PATTERNS + HISTORY_SECTIO
     "các kết quả chẩn đoán khác",
 )))
 
+METADATA_LABEL_RE = re.compile(
+    r"^\s*(?:vị trí|vùng|thời gian|mức độ|đặc điểm|yếu tố làm nặng thêm|yếu tố giảm nhẹ|"
+    r"yếu tố liên quan|tần suất|khởi phát|đường dùng)\s*:", re.IGNORECASE,
+)
+DRUG_ACTION_PREFIX_RE = re.compile(
+    r"^\s*(?:bắt đầu\s+)?(?:đang\s+|đã\s+)?(?:dùng|uống|tiêm|truyền)\s+",
+    re.IGNORECASE,
+)
+PROCEDURE_CUES = (
+    "cắt bỏ", "phẫu thuật", "thủ thuật", "chọc hút", "nạo hạch", "đặt stent",
+    "stent graft", "reduced from", "đã khám tổn thương", "mổ ", "nội soi",
+)
+
 
 def _strip_heading_prefix(text: str) -> str:
     return re.sub(r"^\s*(?:[-*•]\s*)?(?:\d+(?:\.\d+)*[.)]?\s*)?", "", text)
+
+
+def _generic_heading_end(text: str) -> int | None:
+    stripped = text.strip()
+    if not stripped:
+        return None
+    if re.match(r"^\s*(?:[-*•]\s*)?\d+(?:\.\d+)*[.)]?\s+", text):
+        return len(text.rstrip())
+    if stripped.endswith(":") and len(stripped) <= 100:
+        return len(text.rstrip())
+    return None
 
 
 def _classify_section(text: str) -> tuple[str, bool, bool, int | None]:
@@ -114,7 +140,7 @@ def _classify_section(text: str) -> tuple[str, bool, bool, int | None]:
         if folded.startswith(phrase):
             end = len(text) - len(body) + len(phrase)
             return "neutral", False, False, end
-    return "neutral", False, False, None
+    return "neutral", False, False, _generic_heading_end(text)
 
 
 @dataclass
@@ -143,7 +169,7 @@ class DocumentView:
 
         starts: list[tuple[int, str, bool, bool]] = [
             (line.start, line.section_kind, line.section_kind == "current", line.section_kind == "historical")
-            for line in lines if line.section_kind != "neutral"
+            for line in lines if line.section_kind != "neutral" or line.heading_end is not None
         ]
         sections: list[SectionView] = []
         for index, (start, kind, current, historical) in enumerate(starts):
@@ -168,12 +194,29 @@ class DocumentView:
         line = self.line_for(start)
         return line.heading_end is not None and end <= line.heading_end
 
+    def is_metadata_entity(self, start: int, end: int) -> bool:
+        return bool(METADATA_LABEL_RE.match(self.raw[start:end]))
+
 class Ontology:
     def __init__(self, path: str | None, kind: str = "ontology"):
-        self.kind, self.rows = kind, []
+        self.kind, self.rows, self.index = kind.casefold(), [], None
         if path:
-            if not Path(path).exists(): raise FileNotFoundError(path)
-            self._load(Path(path))
+            p = Path(path)
+            if not p.exists(): raise FileNotFoundError(path)
+            alias_path = p.parent.parent / "derived" / "aliases.jsonl"
+            manifest_path = p.parent.parent / "derived" / "manifest.json"
+            alias_table = alias_path if alias_path.exists() else None
+            manifest = manifest_path if manifest_path.exists() and p.parent.name == self.kind else None
+            if p.suffix.lower() in {".json", ".jsonl"}:
+                self.index = DerivedOntologyIndex(p, alias_table=alias_table, manifest=manifest, kind=self.kind)
+                for concept in self.index.concepts:
+                    for name in concept.aliases:
+                        self.rows.append((name, [concept.code]))
+                for record in self.index.aliases:
+                    if record.confidence >= 0.80 and record.allow_public:
+                        self.rows.append((record.alias, [record.code]))
+            else:
+                self._load(Path(path))
         self.alias_to_codes: dict[str, list[str]] = {}
         for n, codes in self.rows:
             bucket = self.alias_to_codes.setdefault(norm(n), [])
@@ -203,9 +246,16 @@ class Ontology:
                     for r in csv.DictReader(f):
                         code = r.get("code") or r.get("rxcui") or r.get("RXCUI") or r.get("id"); label = r.get("label") or r.get("name") or r.get("STR")
                         if code and label: self.rows.append((label, [str(code)]))
-        except Exception as e: logging.warning("ontology load failed %s: %s", p, e)
+        except Exception as e: raise ValueError(f"ontology load failed {p}: {e}") from e
+
+    def lookup_scored(self, mention: str, k: int | None = None) -> list[ScoredCandidate]:
+        if self.index:
+            return self.index.lookup_scored(mention, kind=self.kind, max_k=k)
+        return []
 
     def lookup(self, mention: str, k: int | None = None) -> list[str]:
+        if self.index:
+            return self.index.lookup(mention, kind=self.kind, max_k=k)
         cap = k or 3
         q = norm(mention); exact = self.alias_to_codes.get(q)
         if exact: return exact[:cap]
@@ -428,6 +478,39 @@ def _looks_like_result(text: str) -> bool:
     return any(word in value for word in RESULT_WORDS) or bool(re.search(r"\b(?:nhịp|ngoại tâm thu|tăng|giảm)\b", value))
 
 
+def _looks_like_procedure(text: str) -> bool:
+    folded = norm(text)
+    return any(cue in folded for cue in PROCEDURE_CUES)
+
+
+def _trim_entity_context(raw: str, item: Entity) -> Entity | None:
+    """Remove action/metadata wrappers while preserving raw offsets."""
+    text = raw[item.start:item.end]
+    if item.typ == "THUỐC":
+        if norm(text) == "reduced from" or _looks_like_procedure(text):
+            return None
+        match = DRUG_ACTION_PREFIX_RE.match(text)
+        if match:
+            item.start += match.end()
+            item.text = raw[item.start:item.end].strip()
+            item.start = item.end - len(item.text)
+            item.end = item.start + len(item.text)
+        if not item.text or _looks_like_procedure(item.text):
+            return None
+    elif item.typ == "TRIỆU_CHỨNG":
+        match = METADATA_LABEL_RE.match(text)
+        if match:
+            item.start += match.end()
+            while item.start < item.end and raw[item.start].isspace():
+                item.start += 1
+            item.text = raw[item.start:item.end].strip()
+            item.start = item.end - len(item.text)
+            item.end = item.start + len(item.text)
+            if not item.text:
+                return None
+    return item
+
+
 def _choose_same_span(raw: str, group: list[Entity]) -> Entity:
     """Adjudicate detector disagreement for one raw span."""
     types = {item.typ for item in group}
@@ -461,7 +544,20 @@ def _trim_result_prefix(raw: str, result: Entity, names: list[Entity]) -> None:
 def resolve(raw: str, items: list[Entity]) -> list[Entity]:
     # First remove heading spans and merge detector candidates by exact span/type.
     view = DocumentView.build(raw)
-    items = [item for item in items if item.start >= 0 and item.end > item.start and not view.is_heading_entity(item.start, item.end)]
+    cleaned: list[Entity] = []
+    for item in items:
+        if item.start < 0 or item.end <= item.start or item.end > len(raw):
+            continue
+        if view.is_heading_entity(item.start, item.end):
+            continue
+        item = _trim_entity_context(raw, item)
+        if item is None or item.start < 0 or item.end <= item.start:
+            continue
+        if view.is_heading_entity(item.start, item.end) or view.is_metadata_entity(item.start, item.end):
+            continue
+        item.text = raw[item.start:item.end]
+        cleaned.append(item)
+    items = cleaned
     by_exact: dict[tuple[int, int, str], list[Entity]] = {}
     for e in items:
         by_exact.setdefault((e.start, e.end, e.typ), []).append(e)
@@ -591,13 +687,60 @@ def align_llm(raw: str, items: list[dict]) -> list[Entity]:
             out.append(Entity(raw[a:b], typ, a, b, confidence=.55, source="llm"))
     return out
 
+
+def _link_index(index: Ontology | DerivedOntologyIndex, mention: str) -> list[ScoredCandidate]:
+    max_k = 3 if getattr(index, "kind", "") == "icd" else 2
+    scored = index.lookup_scored(mention, k=max_k) if isinstance(index, Ontology) else index.lookup_scored(mention, max_k=max_k)
+    if scored:
+        return scored
+    # Use a curated head when the LLM span contains modifiers or a second
+    # clause. This never creates aliases; it only reuses approved rows.
+    aliases = getattr(getattr(index, "index", index), "aliases", [])
+    for record in sorted(aliases, key=lambda item: len(item.alias), reverse=True):
+        if record.confidence < 0.80 or not record.allow_public:
+            continue
+        if norm(record.alias) in norm(mention):
+            scored = index.lookup_scored(record.alias, k=max_k) if isinstance(index, Ontology) else index.lookup_scored(record.alias, max_k=max_k)
+            if scored:
+                return scored
+    return []
+
+
+def link_entities(
+    entities: list[Entity],
+    icd_index: Ontology | DerivedOntologyIndex,
+    rxnorm_index: Ontology | DerivedOntologyIndex,
+    audit: list[dict[str, Any]] | None = None,
+) -> list[Entity]:
+    """Link only final diagnosis/drug entities after span/type adjudication."""
+    for entity in entities:
+        entity.candidates = []
+        if entity.typ not in {"CHẨN_ĐOÁN", "THUỐC"}:
+            continue
+        index = icd_index if entity.typ == "CHẨN_ĐOÁN" else rxnorm_index
+        scored = _link_index(index, entity.text)
+        entity.candidates = [item.code for item in scored]
+        if audit is not None:
+            audit.append({
+                "text": entity.text,
+                "type": entity.typ,
+                "codes": entity.candidates,
+                "match_mode": scored[0].match_mode if scored else "no_hit",
+                "score": scored[0].score if scored else 0.0,
+                "margin": scored[0].margin if scored else 0.0,
+                "evidence": scored[0].evidence if scored else {},
+            })
+    return entities
+
 def process_document(raw: str, icd: Ontology, rx: Ontology, llm_endpoint: str | None = None, llm_model: str | None = None, lab_aliases: set[str] | None = None, symptom_aliases: set[str] | None = None, require_llm: bool = True, llm_timeout: int = 180) -> list[dict]:
     if require_llm and not llm_endpoint:
         raise RuntimeError("LLM endpoint is required; pass --llm-endpoint or explicitly use --allow-rule-only")
     items = detect(raw, icd, rx, lab_aliases, symptom_aliases)
     if llm_endpoint:
         items.extend(align_llm(raw, llm_extract(raw, llm_endpoint, llm_model, llm_timeout)))
-    return [e.public() for e in resolve(raw, items) if e.text == raw[e.start:e.end]]
+    resolved = resolve(raw, items)
+    link_entities(resolved, icd, rx)
+    return [e.public() for e in resolved if e.text == raw[e.start:e.end]]
 
 def validate_pair(raw: str, data: list[dict]) -> list[str]:
     errors=[]

@@ -1,12 +1,13 @@
 ﻿# Project Index
 
-Generated at: 2026-07-14T14:56:50Z
-Git commit: aa788cf
+Generated at: 2026-07-14T17:06:24Z
+Git commit: b927239
 
 ## Directory Tree
 ```text
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\index_meta.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\project_index.md
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.gitignore
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-313.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\clinical_nlp_pipeline.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\configs\inference.yaml
@@ -117,7 +118,29 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\96.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\97.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\98.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\99.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\2.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\20.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\21.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\22.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\23.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\24.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\25.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\26.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\27.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\28.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\29.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\medical_clinical_nlp_pipeline_architecture_vi_revised.md
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\2.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\20.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\21.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\22.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\23.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\24.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\25.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\26.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\27.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\28.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\29.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_one\1.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\1.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\2.json
@@ -146,10 +169,12 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\inspect_input
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\package_submission.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\run_inference.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\validate_output.py
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\__pycache__\test_pipeline_regressions.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\fixtures\icd.jsonl
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\fixtures\labs.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\fixtures\rxnorm.jsonl
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\fixtures\symptoms.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\tests\test_pipeline_regressions.py
 ```
 
 ## Important Files

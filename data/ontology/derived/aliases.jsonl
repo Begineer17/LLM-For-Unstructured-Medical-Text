@@ -1,0 +1,10 @@
+{"alias":"Coumadin","code":"11289","language":"en","alias_kind":"brand_to_generic","provenance":"curated_regression_alias","confidence":0.99,"allow_public":true}
+{"alias":"eliquis","code":"1364430","language":"en","alias_kind":"brand_to_generic","provenance":"curated_regression_alias","confidence":0.99,"allow_public":true}
+{"alias":"albuterolipratropium","code":"214199","language":"en","alias_kind":"compound_normalization","provenance":"curated_regression_alias","confidence":0.98,"allow_public":true}
+{"alias":"albuterol + ipratropium","code":"214199","language":"en","alias_kind":"compound_normalization","provenance":"curated_regression_alias","confidence":0.98,"allow_public":true}
+{"alias":"aspirin 325mg","code":"1191","language":"en","alias_kind":"ingredient_strength_fallback","provenance":"curated_regression_alias","confidence":0.90,"allow_public":true}
+{"alias":"aspirin 325 mg","code":"1191","language":"en","alias_kind":"ingredient_strength_fallback","provenance":"curated_regression_alias","confidence":0.90,"allow_public":true}
+{"alias":"nhồi máu cơ tim","code":"I21.9","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.88,"allow_public":true}
+{"alias":"rung nhĩ kịch phát","code":"I48.0","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}
+{"alias":"béo phì","code":"E66.9","language":"vi","alias_kind":"diagnosis_unspecified","provenance":"curated_vietnamese_calibration","confidence":0.90,"allow_public":true}
+{"alias":"viêm túi mật cấp","code":"K81.0","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}
