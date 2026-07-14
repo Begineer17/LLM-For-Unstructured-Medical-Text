@@ -1,0 +1,221 @@
+**1. Tạo workspace riêng**
+
+Chọn một thư mục bạn có quyền ghi, ví dụ trong home của bạn:
+
+```bash
+mkdir -p ~/clinical_nlp_runtime
+cd ~/clinical_nlp_runtime
+
+mkdir -p models hf_cache logs envs src
+```
+
+Set cache Hugging Face nằm trong folder này, không đụng global cache:
+
+```bash
+export CLINICAL_RUNTIME=$HOME/clinical_nlp_runtime
+export HF_HOME=$CLINICAL_RUNTIME/hf_cache
+export HF_HUB_CACHE=$CLINICAL_RUNTIME/hf_cache/hub
+export TRANSFORMERS_CACHE=$CLINICAL_RUNTIME/hf_cache/transformers
+```
+
+Nên lưu các dòng export này vào file local:
+
+```bash
+cat > ~/clinical_nlp_runtime/activate_runtime.sh <<'EOF'
+export CLINICAL_RUNTIME=$HOME/clinical_nlp_runtime
+export HF_HOME=$CLINICAL_RUNTIME/hf_cache
+export HF_HUB_CACHE=$CLINICAL_RUNTIME/hf_cache/hub
+export TRANSFORMERS_CACHE=$CLINICAL_RUNTIME/hf_cache/transformers
+export PATH=$CLINICAL_RUNTIME/bin:$PATH
+EOF
+
+source ~/clinical_nlp_runtime/activate_runtime.sh
+```
+
+**2. Tạo Python env riêng cho pipeline**
+
+Nếu server có Conda:
+
+```bash
+conda create -p ~/clinical_nlp_runtime/envs/clinical-nlp python=3.11 -y
+conda activate ~/clinical_nlp_runtime/envs/clinical-nlp
+
+cd /path/to/your/project
+pip install -r requirements.txt
+```
+
+Với workspace hiện tại của bạn, project là:
+
+```bash
+cd "/mnt/c/Users/THIS PC/Downloads/input"
+```
+
+Nếu chạy trực tiếp trên Linux server thì thay bằng path nơi bạn copy source lên.
+
+**3. Download model GGUF vào folder riêng**
+
+Cài Hugging Face CLI trong env riêng:
+
+```bash
+pip install -U huggingface_hub
+```
+
+Download Qwen3-8B GGUF quantized. Với GPU này, bắt đầu bằng `Q4_K_M`:
+
+```bash
+mkdir -p ~/clinical_nlp_runtime/models/qwen3-8b-gguf
+
+hf download Qwen/Qwen3-8B-GGUF \
+  --include "*Q4_K_M*.gguf" \
+  --local-dir ~/clinical_nlp_runtime/models/qwen3-8b-gguf
+```
+
+Sau đó xem tên file:
+
+```bash
+find ~/clinical_nlp_runtime/models/qwen3-8b-gguf -name "*.gguf"
+```
+
+Giả sử file là:
+
+```bash
+~/clinical_nlp_runtime/models/qwen3-8b-gguf/Qwen3-8B-Q4_K_M.gguf
+```
+
+**4. Cài llama.cpp local, không global**
+
+Cách sạch nhất là build trong runtime folder:
+
+```bash
+cd ~/clinical_nlp_runtime/src
+git clone https://github.com/ggml-org/llama.cpp.git
+cd llama.cpp
+```
+
+Build CPU-only trước, ít rủi ro nhất:
+
+```bash
+cmake -B build -DLLAMA_BUILD_SERVER=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release -j 4
+```
+
+Binary sẽ nằm ở:
+
+```bash
+~/clinical_nlp_runtime/src/llama.cpp/build/bin/llama-server
+```
+
+Nếu server có CUDA toolkit và bạn muốn thử dùng GPU M6000, build CUDA riêng:
+
+```bash
+cmake -B build-cuda \
+  -DGGML_CUDA=ON \
+  -DCMAKE_CUDA_ARCHITECTURES=52 \
+  -DLLAMA_BUILD_SERVER=ON \
+  -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build-cuda --config Release -j 4
+```
+
+Nếu CUDA build fail vì Maxwell quá cũ/toolkit không hỗ trợ, quay lại CPU-only. Không ảnh hưởng global.
+
+**5. Chạy model local trên port riêng**
+
+Chọn port không đụng người khác, ví dụ `18080`:
+
+```bash
+source ~/clinical_nlp_runtime/activate_runtime.sh
+
+~/clinical_nlp_runtime/src/llama.cpp/build/bin/llama-server \
+  -m ~/clinical_nlp_runtime/models/qwen3-8b-gguf/Qwen3-8B-Q4_K_M.gguf \
+  --host 127.0.0.1 \
+  --port 18080 \
+  -c 8192 \
+  -ngl 0 \
+  > ~/clinical_nlp_runtime/logs/llama-server.log 2>&1
+```
+
+Nếu CUDA build chạy được, dùng binary CUDA và thử offload một phần layer:
+
+```bash
+~/clinical_nlp_runtime/src/llama.cpp/build-cuda/bin/llama-server \
+  -m ~/clinical_nlp_runtime/models/qwen3-8b-gguf/Qwen3-8B-Q4_K_M.gguf \
+  --host 127.0.0.1 \
+  --port 18080 \
+  -c 8192 \
+  -ngl 20 \
+  > ~/clinical_nlp_runtime/logs/llama-server.log 2>&1
+```
+
+Không dùng `-ngl` quá cao ngay từ đầu vì GPU đang bận và còn ít VRAM trống. Bạn không cần tắt process nào.
+
+Mở terminal khác, test:
+
+```bash
+curl http://127.0.0.1:18080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "model": "qwen3-8b-q4",
+  "messages": [
+    {"role":"system","content":"Return JSON only. /no_think"},
+    {"role":"user","content":"Return exactly [{\"text\":\"ho\",\"type\":\"TRIỆU_CHỨNG\",\"assertions\":[]}]. /no_think"}
+  ],
+  "temperature": 0,
+  "max_tokens": 512
+}
+JSON
+```
+
+**6. Chạy inference pipeline**
+
+Trong env pipeline:
+
+```bash
+conda activate ~/clinical_nlp_runtime/envs/clinical-nlp
+source ~/clinical_nlp_runtime/activate_runtime.sh
+
+cd "/mnt/c/Users/THIS PC/Downloads/input"
+```
+
+Nếu ontology đã có sẵn:
+
+```bash
+python scripts/run_inference.py \
+  --input input \
+  --output output \
+  --icd data/ontology/icd/concepts.jsonl \
+  --rxnorm data/ontology/rxnorm/concepts.jsonl \
+  --llm-endpoint http://127.0.0.1:18080/v1 \
+  --llm-model qwen3-8b-q4 \
+  --llm-timeout 300 \
+  --zip \
+  --validate
+```
+
+Nếu chưa có ontology, download trước:
+
+```bash
+python scripts/download_ontologies.py \
+  --output data/ontology \
+  --keep-archives
+```
+
+Sau inference sẽ có:
+
+```text
+output/
+output.zip
+```
+
+**7. Dọn sạch sau khi xong**
+
+Dừng server bằng `Ctrl+C` ở terminal đang chạy `llama-server`. Sau đó xóa toàn bộ runtime local:
+
+```bash
+rm -rf ~/clinical_nlp_runtime
+```
+
+Project/output thì nằm riêng ở folder source của bạn, không bị xóa theo runtime.
+
+Tóm lại: với server dùng chung, mình sẽ dùng `llama.cpp + GGUF Q4_K_M + port 18080 + HF cache riêng`. Không dùng vLLM, không cài global, không đụng process hiện có.
