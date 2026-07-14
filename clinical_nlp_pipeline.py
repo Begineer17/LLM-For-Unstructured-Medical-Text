@@ -213,6 +213,41 @@ def resolve(raw: str, items: list[Entity]) -> list[Entity]:
         if e.typ in {"CHẨN_ĐOÁN", "THUỐC"}: e.candidates = list(dict.fromkeys(e.candidates))
     return sorted(keep, key=lambda x: (x.start, x.end, x.typ))
 
+def _json_array_from_response(data: dict[str, Any]) -> list[dict]:
+    """Extract the first valid JSON array from an OpenAI-compatible response.
+
+    Qwen3/llama.cpp may expose the visible answer in ``content`` or, when
+    thinking is enabled, in ``reasoning_content``.  Some server builds also
+    return markdown fences around the JSON.  Do not assume either one field
+    or that the first/last square bracket delimit the whole answer.
+    """
+    choices = data.get("choices") or []
+    if not choices or not isinstance(choices[0], dict):
+        raise RuntimeError("LLM response does not contain choices")
+    message = choices[0].get("message") or {}
+    candidates: list[str] = []
+    for key in ("content", "reasoning_content"):
+        value = message.get(key)
+        if isinstance(value, str) and value.strip():
+            candidates.append(value)
+    # A few OpenAI-compatible servers use a top-level text field.
+    value = choices[0].get("text")
+    if isinstance(value, str) and value.strip():
+        candidates.append(value)
+    decoder = json.JSONDecoder()
+    for text in candidates:
+        # Try every '[' because prose or a markdown fence may precede JSON.
+        for match in re.finditer(r"\[", text):
+            try:
+                value, _ = decoder.raw_decode(text[match.start():])
+            except json.JSONDecodeError:
+                continue
+            if isinstance(value, list):
+                return value
+    preview = " | ".join(x[-240:] for x in candidates)[:600]
+    raise RuntimeError(f"LLM response does not contain a JSON array; response tail={preview!r}")
+
+
 def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int = 180) -> list[dict]:
     if not endpoint: return []
     logging.info("LLM extraction request: endpoint=%s model=%s chars=%d", endpoint, model or "local", len(raw))
@@ -227,11 +262,7 @@ def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int 
         body = json.dumps(payload).encode()
         req = urllib.request.Request(url, body, {"Content-Type":"application/json"})
         with urllib.request.urlopen(req, timeout=timeout) as r: data = json.loads(r.read().decode())
-        text = data["choices"][0]["message"]["content"]
-        start, end = text.find("["), text.rfind("]")
-        if start < 0 or end < start: raise RuntimeError("LLM response does not contain a JSON array")
-        value = json.loads(text[start:end+1])
-        if not isinstance(value, list): raise RuntimeError("LLM response JSON must be an array")
+        value = _json_array_from_response(data)
         logging.info("LLM extraction response: %d items", len(value))
         return value
     except Exception as e:
