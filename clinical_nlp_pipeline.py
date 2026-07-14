@@ -213,32 +213,20 @@ def resolve(raw: str, items: list[Entity]) -> list[Entity]:
         if e.typ in {"CHẨN_ĐOÁN", "THUỐC"}: e.candidates = list(dict.fromkeys(e.candidates))
     return sorted(keep, key=lambda x: (x.start, x.end, x.typ))
 
-def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int = 45) -> list[dict]:
+def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int = 180) -> list[dict]:
     if not endpoint: return []
     logging.info("LLM extraction request: endpoint=%s model=%s chars=%d", endpoint, model or "local", len(raw))
     prompt = ("Extract Vietnamese clinical entities. Return JSON array only, each item "
               "{text,type,assertions}. Copy text exactly. Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,"
               "KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. Do not return positions. INPUT:\n" + raw)
-    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only."},{"role":"user","content":prompt}], "temperature":0, "max_tokens":1800}
-    qwen_payload = dict(payload)
-    qwen_payload["chat_template_kwargs"] = {"enable_thinking": False}
+    prompt = prompt.replace("Do not return positions. INPUT:", "Do not return positions. /no_think\nINPUT:")
+    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":1200}
     try:
         base = endpoint.rstrip("/")
         url = base + ("/chat/completions" if base.endswith("/v1") else "/v1/chat/completions")
-        data = None
-        last_error = None
-        for body_obj in (qwen_payload, payload):
-            body = json.dumps(body_obj).encode()
-            req = urllib.request.Request(url, body, {"Content-Type":"application/json"})
-            try:
-                with urllib.request.urlopen(req, timeout=timeout) as r: data = json.loads(r.read().decode())
-                break
-            except Exception as e:
-                last_error = e
-                if body_obj is payload:
-                    raise
-                logging.warning("LLM rejected Qwen-specific payload; retrying OpenAI-minimal payload: %s", e)
-        if data is None: raise RuntimeError(last_error or "empty LLM response")
+        body = json.dumps(payload).encode()
+        req = urllib.request.Request(url, body, {"Content-Type":"application/json"})
+        with urllib.request.urlopen(req, timeout=timeout) as r: data = json.loads(r.read().decode())
         text = data["choices"][0]["message"]["content"]
         start, end = text.find("["), text.rfind("]")
         if start < 0 or end < start: raise RuntimeError("LLM response does not contain a JSON array")
@@ -258,12 +246,12 @@ def align_llm(raw: str, items: list[dict]) -> list[Entity]:
             e=Entity(raw[a:b], typ, a,b, assertions=[z for z in x.get("assertions",[]) if z in ALLOWED_ASSERTIONS], confidence=.55, source="llm"); out.append(e); break
     return out
 
-def process_document(raw: str, icd: Ontology, rx: Ontology, llm_endpoint: str | None = None, llm_model: str | None = None, lab_aliases: set[str] | None = None, symptom_aliases: set[str] | None = None, require_llm: bool = True) -> list[dict]:
+def process_document(raw: str, icd: Ontology, rx: Ontology, llm_endpoint: str | None = None, llm_model: str | None = None, lab_aliases: set[str] | None = None, symptom_aliases: set[str] | None = None, require_llm: bool = True, llm_timeout: int = 180) -> list[dict]:
     if require_llm and not llm_endpoint:
         raise RuntimeError("LLM endpoint is required; pass --llm-endpoint or explicitly use --allow-rule-only")
     items = detect(raw, icd, rx, lab_aliases, symptom_aliases)
     if llm_endpoint:
-        items.extend(align_llm(raw, llm_extract(raw, llm_endpoint, llm_model)))
+        items.extend(align_llm(raw, llm_extract(raw, llm_endpoint, llm_model, llm_timeout)))
     return [e.public() for e in resolve(raw, items) if e.text == raw[e.start:e.end]]
 
 def validate_pair(raw: str, data: list[dict]) -> list[str]:
@@ -286,14 +274,15 @@ def main(argv=None):
     ap.add_argument("--lab-dictionary", help="optional one-term-per-line lab/test aliases")
     ap.add_argument("--symptom-dictionary", help="optional one-term-per-line symptom aliases")
     ap.add_argument("--llm-endpoint", help="localhost OpenAI-compatible base URL (required unless --allow-rule-only)")
-    ap.add_argument("--llm-model"); ap.add_argument("--zip", action="store_true"); ap.add_argument("--validate", action="store_true")
+    ap.add_argument("--llm-model"); ap.add_argument("--llm-timeout", type=int, default=180, help="per-document localhost LLM timeout in seconds")
+    ap.add_argument("--zip", action="store_true"); ap.add_argument("--validate", action="store_true")
     ap.add_argument("--allow-rule-only", action="store_true", help="explicitly disable LLM (debug/calibration only; not contest mode)")
     args=ap.parse_args(argv); logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     icd=Ontology(args.icd, kind="icd"); rx=Ontology(args.rxnorm, kind="rxnorm")
     labs=load_terms(args.lab_dictionary); symptoms=load_terms(args.symptom_dictionary); outdir=Path(args.output); outdir.mkdir(parents=True,exist_ok=True)
     files=sorted(Path(args.input).glob("*.txt"), key=lambda p: int(p.stem) if p.stem.isdigit() else p.stem)
     for p in files:
-        raw=p.read_text(encoding="utf-8"); data=process_document(raw,icd,rx,args.llm_endpoint,args.llm_model,labs,symptoms,not args.allow_rule_only)
+        raw=p.read_text(encoding="utf-8"); data=process_document(raw,icd,rx,args.llm_endpoint,args.llm_model,labs,symptoms,not args.allow_rule_only,args.llm_timeout)
         (outdir/(p.stem+".json")).write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding="utf-8")
         if args.validate:
             err=validate_pair(raw,data)
