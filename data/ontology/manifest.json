@@ -1,0 +1,14 @@
+{
+  "icd": {
+    "source": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2026/icd10cm-Code%20Descriptions-2026.zip",
+    "archive_sha256": "a852eb91b3344ae38476e63816976ee1eeb94dcced7158324f060e8499f88",
+    "concepts": 22868,
+    "format": "CDC ICD-10-CM fixed-width code descriptions, dot inserted after 3 characters"
+  },
+  "rxnorm": {
+    "source": "https://download.nlm.nih.gov/rxnorm/RxNorm_full_prescribe_07062026.zip",
+    "archive_sha256": "e81e29a27575718dc1f0cf80b1371b283bcba53f446f27fc85f74c71def99829",
+    "concepts": 57392,
+    "format": "RxNorm RXNCONSO.RRF English prescribable concepts"
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "text": "Đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      551,
+      559
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      871,
+      879
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      979,
+      987
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1138,
+      1146
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1302,
+      1310
+    ],
+    "assertions": []
+  }
+]

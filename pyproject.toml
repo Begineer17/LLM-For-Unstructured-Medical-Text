@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-nlp-contest-pipeline"
+version = "0.1.0"
+description = "Offline-first clinical concept extraction and ICD/RxNorm linking"
+requires-python = ">=3.10"
+dependencies = ["rapidfuzz>=3.0"]
+
+[project.scripts]
+clinical-nlp-infer = "clinical_nlp_pipeline:main"

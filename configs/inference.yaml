@@ -1,0 +1,12 @@
+labels:
+  entity_types: [TRIỆU_CHỨNG, TÊN_XÉT_NGHIỆM, KẾT_QUẢ_XÉT_NGHIỆM, CHẨN_ĐOÁN, THUỐC]
+  assertions: [isNegated, isFamily, isHistorical]
+runtime:
+  max_new_tokens: 1800
+  llm_timeout_seconds: 45
+models:
+  extractor: Qwen/Qwen3-8B
+  thinking: false
+candidate_policy:
+  icd_max_k: 3
+  rxnorm_max_k: 2

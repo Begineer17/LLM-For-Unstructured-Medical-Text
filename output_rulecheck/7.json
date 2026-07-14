@@ -1,0 +1,14 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      50
+    ],
+    "assertions": [
+      "isNegated",
+      "isHistorical"
+    ]
+  }
+]
