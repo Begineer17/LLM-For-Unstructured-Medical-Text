@@ -1,0 +1,38 @@
+[
+  {
+    "text": "aspirin 325mg hằng ngày",
+    "type": "THUỐC",
+    "position": [
+      75,
+      98
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chụp ct sọ não không thuốc cản quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      224,
+      260
+    ]
+  },
+  {
+    "text": "Hình ảnh  khối máu tụ dưới màng cứng bán cấp hai bên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      261,
+      313
+    ]
+  },
+  {
+    "text": "chụp ct sọ não không thuốc cản quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      342,
+      378
+    ]
+  }
+]

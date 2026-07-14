@@ -1,0 +1,232 @@
+[
+  {
+    "text": "hội chứng turner",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      64
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      87,
+      100
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Ung thư đại tràng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      146,
+      163
+    ]
+  },
+  {
+    "text": "Thuyên tắc phổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      178,
+      193
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thuyên tắc phổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      222,
+      237
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "position": [
+      355,
+      363
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      462
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác có đờm ở cổ họng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      470,
+      495
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cần phải ho nó ra",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      502,
+      519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      535
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      542,
+      555
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      562,
+      576
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không  khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      583,
+      597
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không  thay đổi tính chất cơn đau khi thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      603,
+      656
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      663,
+      689
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      696,
+      717
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở tăng lên khi xuất hiện  Cơn nhịp nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      730,
+      776
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó nuốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      945,
+      953
+    ],
+    "assertions": []
+  },
+  {
+    "text": "albuterolipratropium nebs x2",
+    "type": "THUỐC",
+    "position": [
+      1018,
+      1046
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "metoprolol 5mg iv x2",
+    "type": "THUỐC",
+    "position": [
+      1053,
+      1073
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tc 37 độ c hr 88 bp 13482 rr 14 spo2 100ra",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1138,
+      1180
+    ]
+  },
+  {
+    "text": "hr 140",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1203,
+      1209
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "position": [
+      1298,
+      1308
+    ],
+    "assertions": [],
+    "candidates": [
+      "6918"
+    ]
+  },
+  {
+    "text": "cảm thấy khỏe",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1335,
+      1348
+    ]
+  }
+]

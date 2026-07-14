@@ -1,0 +1,40 @@
+[
+  {
+    "text": "béo phì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      52,
+      59
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "sau cân sau phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      119,
+      141
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhiều lần cố gắng giảm cân và tăng cân trở lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      184,
+      230
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhiều lần thực hiện chế độ ăn kiêng có giám sát với mức giảm cân tối đa 60 pound nhưng sau đó có  tăng cân trở lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      237,
+      351
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "text": "ung thư vú trái giai IIIB ung thư vú trái",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      58,
+      99
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cắt bỏ tuyến vú trái đơn giản",
+    "type": "THUỐC",
+    "position": [
+      141,
+      170
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "thủ thuật nạo hạch gác rồng bên trái",
+    "type": "THUỐC",
+    "position": [
+      177,
+      213
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "xuất hiện nhiều  ban đỏ và đau khi sờ nắn ở vết mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      261,
+      311
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sau khi xuất viện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      342,
+      359
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ống dẫn lưu JP được rút vào ngày DD MM",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      366,
+      404
+    ]
+  },
+  {
+    "text": "bắt đầu có hiện tượng sưng nề đau khi sờ nắn trên vùng da kèm theo ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      411,
+      484
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng diện tích đau khi sờ nắn trên vùng da kèm theo ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      510,
+      568
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cephalexin",
+    "type": "THUỐC",
+    "position": [
+      714,
+      724
+    ],
+    "assertions": [],
+    "candidates": [
+      "2231"
+    ]
+  },
+  {
+    "text": "triệu chứng xuất hiện  ban đỏ lan rộng kèm theo chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      744,
+      801
+    ],
+    "assertions": []
+  },
+  {
+    "text": "các triệu chứng tương tự",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      881,
+      905
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ xuất hiện nhiểu ở vị trí phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      938,
+      980
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau khi sờ nắn vùng mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      987,
+      1009
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1016,
+      1025
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chưa phát hiện các triệu chứng toàn thân khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1057,
+      1102
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ ở vị trí phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1154,
+      1180
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ấn vùng mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1187,
+      1201
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1208,
+      1217
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chưa phát hiện các triệu chứng toàn thân khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1224,
+      1269
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đã khám tổn thương da, chọc hút dịch",
+    "type": "THUỐC",
+    "position": [
+      1303,
+      1339
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dùng vancomycin",
+    "type": "THUỐC",
+    "position": [
+      1346,
+      1361
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]
