@@ -219,12 +219,26 @@ def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int 
     prompt = ("Extract Vietnamese clinical entities. Return JSON array only, each item "
               "{text,type,assertions}. Copy text exactly. Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,"
               "KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. Do not return positions. INPUT:\n" + raw)
-    body = json.dumps({"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only."},{"role":"user","content":prompt}], "temperature":0, "max_tokens":1800, "chat_template_kwargs":{"enable_thinking":False}}).encode()
+    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only."},{"role":"user","content":prompt}], "temperature":0, "max_tokens":1800}
+    qwen_payload = dict(payload)
+    qwen_payload["chat_template_kwargs"] = {"enable_thinking": False}
     try:
         base = endpoint.rstrip("/")
         url = base + ("/chat/completions" if base.endswith("/v1") else "/v1/chat/completions")
-        req = urllib.request.Request(url, body, {"Content-Type":"application/json"})
-        with urllib.request.urlopen(req, timeout=timeout) as r: data = json.loads(r.read().decode())
+        data = None
+        last_error = None
+        for body_obj in (qwen_payload, payload):
+            body = json.dumps(body_obj).encode()
+            req = urllib.request.Request(url, body, {"Content-Type":"application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as r: data = json.loads(r.read().decode())
+                break
+            except Exception as e:
+                last_error = e
+                if body_obj is payload:
+                    raise
+                logging.warning("LLM rejected Qwen-specific payload; retrying OpenAI-minimal payload: %s", e)
+        if data is None: raise RuntimeError(last_error or "empty LLM response")
         text = data["choices"][0]["message"]["content"]
         start, end = text.find("["), text.rfind("]")
         if start < 0 or end < start: raise RuntimeError("LLM response does not contain a JSON array")
