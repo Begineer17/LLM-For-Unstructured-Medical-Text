@@ -45,6 +45,129 @@ class Entity:
         if self.typ in {"CHẨN_ĐOÁN", "THUỐC"}: d["candidates"] = [str(x) for x in self.candidates]
         return d
 
+
+@dataclass(frozen=True)
+class LineView:
+    """A raw line with offsets into the original document."""
+
+    line_id: str
+    start: int
+    end: int
+    text: str
+    heading_end: int | None = None
+    section_kind: str = "neutral"
+
+
+@dataclass(frozen=True)
+class SectionView:
+    start: int
+    end: int
+    kind: str
+    current: bool = False
+    historical: bool = False
+
+
+CURRENT_SECTION_PATTERNS = (
+    "bệnh sử hiện tại",
+    "tiền sử bệnh hiện tại",
+    "triệu chứng hiện tại",
+    "các triệu chứng hiện tại",
+    "lý do nhập viện",
+    "tình trạng lúc vào viện",
+    "tình trạng ngay trước khi nhập viện",
+)
+HISTORY_SECTION_PATTERNS = (
+    "tiền sử bệnh",
+    "thuốc trước khi nhập viện",
+    "các yếu tố nguy cơ liên quan",
+    "tiền sử phẫu thuật",
+    "bệnh đã điều trị trước đây",
+    "lịch sử bệnh",
+)
+SECTION_PREFIXES = tuple(dict.fromkeys(CURRENT_SECTION_PATTERNS + HISTORY_SECTION_PATTERNS + (
+    "kết quả khám lâm sàng",
+    "kết quả thăm khám lâm sàng",
+    "kết quả xét nghiệm",
+    "kết quả chẩn đoán hình ảnh",
+    "kết quả chụp ảnh/kỹ thuật chẩn đoán hình ảnh",
+    "các kết quả chẩn đoán khác",
+)))
+
+
+def _strip_heading_prefix(text: str) -> str:
+    return re.sub(r"^\s*(?:[-*•]\s*)?(?:\d+(?:\.\d+)*[.)]?\s*)?", "", text)
+
+
+def _classify_section(text: str) -> tuple[str, bool, bool, int | None]:
+    """Classify a heading prefix; current is deliberately checked first."""
+    body = _strip_heading_prefix(text)
+    folded = norm(body).rstrip(":")
+    for phrase in CURRENT_SECTION_PATTERNS:
+        if folded.startswith(phrase):
+            end = len(text) - len(body) + len(phrase)
+            return "current", True, False, end
+    for phrase in HISTORY_SECTION_PATTERNS:
+        if folded.startswith(phrase):
+            end = len(text) - len(body) + len(phrase)
+            return "historical", False, True, end
+    for phrase in SECTION_PREFIXES:
+        if folded.startswith(phrase):
+            end = len(text) - len(body) + len(phrase)
+            return "neutral", False, False, end
+    return "neutral", False, False, None
+
+
+@dataclass
+class DocumentView:
+    raw: str
+    lines: list[LineView]
+    sections: list[SectionView]
+
+    @classmethod
+    def build(cls, raw: str) -> "DocumentView":
+        lines: list[LineView] = []
+        cursor = 0
+        chunks = raw.splitlines(keepends=True) or [""]
+        for index, chunk in enumerate(chunks, 1):
+            text = chunk.rstrip("\r\n")
+            kind, current, historical, heading_len = _classify_section(text)
+            lines.append(LineView(
+                line_id=f"L{index:03d}",
+                start=cursor,
+                end=cursor + len(text),
+                text=text,
+                heading_end=(cursor + heading_len if heading_len is not None else None),
+                section_kind=kind,
+            ))
+            cursor += len(chunk)
+
+        starts: list[tuple[int, str, bool, bool]] = [
+            (line.start, line.section_kind, line.section_kind == "current", line.section_kind == "historical")
+            for line in lines if line.section_kind != "neutral"
+        ]
+        sections: list[SectionView] = []
+        for index, (start, kind, current, historical) in enumerate(starts):
+            end = starts[index + 1][0] if index + 1 < len(starts) else len(raw)
+            sections.append(SectionView(start, end, kind, current, historical))
+        return cls(raw, lines, sections)
+
+    def line_for(self, pos: int) -> LineView:
+        for line in self.lines:
+            if line.start <= pos <= line.end:
+                return line
+        return self.lines[-1]
+
+    def section_for(self, pos: int) -> SectionView:
+        selected = SectionView(0, len(self.raw), "neutral")
+        for section in self.sections:
+            if section.start <= pos < section.end:
+                selected = section
+        return selected
+
+    def is_heading_entity(self, start: int, end: int) -> bool:
+        line = self.line_for(start)
+        return line.heading_end is not None and end <= line.heading_end
+
 class Ontology:
     def __init__(self, path: str | None, kind: str = "ontology"):
         self.kind, self.rows = kind, []
@@ -82,19 +205,42 @@ class Ontology:
                         if code and label: self.rows.append((label, [str(code)]))
         except Exception as e: logging.warning("ontology load failed %s: %s", p, e)
 
-    def lookup(self, mention: str, k: int = 3) -> list[str]:
+    def lookup(self, mention: str, k: int | None = None) -> list[str]:
+        cap = k or 3
         q = norm(mention); exact = self.alias_to_codes.get(q)
-        if exact: return exact[:k]
-        q2 = re.sub(r"\b\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|ml|%|meq)\b", "", q)
-        q2 = re.sub(r"\b(?:po|oral|iv|im|sc|sl|daily|bid|tid|qid|qam|qhs|prn|q\d+h)\b", "", q2).strip()
-        scored = []
+        if exact: return exact[:cap]
+        q2 = re.sub(r"\b\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|ml|%|meq)\b", "", q)
+        q2 = re.sub(r"\b(?:po|oral|iv|im|sc|sl|daily|bid|tid|qid|qam|qhs|prn|q\d+h|xl|extended release)\b", "", q2).strip()
+        core_exact = self.alias_to_codes.get(q2)
+        if core_exact:
+            return core_exact[:cap]
+        scored: list[tuple[float, str]] = []
         tokens = set(re.findall(r"[\wÀ-ỹ]+", q2))
         pool = []
         for token in tokens: pool.extend(self.rows_by_first.get(token, []))
         for n, codes in pool or self.rows:
-            a = fuzz.ratio(q2, norm(n)) / 100 if fuzz else (1.0 if q2 in norm(n) or norm(n) in q2 else 0.0)
+            name = norm(n)
+            if fuzz:
+                a = max(fuzz.ratio(q2, name), fuzz.token_set_ratio(q2, name)) / 100
+            else:
+                a = 1.0 if q2 in name or name in q2 else 0.0
             if a >= .52: scored.append((a, codes[0]))
-        return [c for _, c in sorted(scored, reverse=True)[:k]]
+        ranked = sorted(scored, key=lambda item: (-item[0], item[1]))
+        ordered: list[str] = []
+        for _, code in ranked:
+            if code not in ordered:
+                ordered.append(code)
+        if not ranked:
+            return []
+        best = ranked[0][0]
+        second = ranked[1][0] if len(ranked) > 1 else 0.0
+        if best >= .92 and best - second >= .08:
+            dynamic_k = 1
+        elif best >= .75 and best - second >= .04:
+            dynamic_k = 2
+        else:
+            dynamic_k = 3
+        return ordered[:min(cap, dynamic_k)]
 
 def load_terms(path: str | None) -> set[str]:
     """Load one term per line or JSON/JSONL records with a text/label field."""
@@ -108,28 +254,86 @@ def load_terms(path: str | None) -> set[str]:
         return {str((json.loads(x).get("text") or json.loads(x).get("label") or json.loads(x).get("name"))) for x in p.read_text(encoding="utf-8").splitlines() if x.strip()}
     return {x.strip() for x in p.read_text(encoding="utf-8").splitlines() if x.strip() and not x.lstrip().startswith("#")}
 def sentence_window(raw: str, start: int, end: int) -> tuple[int, int, str]:
-    a = max(raw.rfind(".", 0, start), raw.rfind("\n", 0, start), raw.rfind(";", 0, start)) + 1
-    b0 = [x for x in (raw.find(".", end), raw.find("\n", end), raw.find(";", end)) if x >= 0]
+    boundaries = ".!?;\n"
+    before = [raw.rfind(char, 0, start) for char in boundaries]
+    a = max(before, default=-1) + 1
+    after = [raw.find(char, end) for char in boundaries]
+    b0 = [x for x in after if x >= 0]
     b = min(b0) if b0 else len(raw)
     return a, b, raw[a:b]
 
 def section_historical(raw: str, pos: int) -> bool:
-    before = raw[max(0, raw.rfind("\n", 0, pos) - 500):pos].casefold()
-    current = any(x in before for x in ("bệnh sử hiện tại", "triệu chứng hiện tại", "lý do nhập viện", "tình trạng lúc vào viện"))
-    if current: return False
-    return any(x in before for x in ("tiền sử", "thuốc trước khi nhập viện", "bệnh đã điều trị trước đây", "lịch sử bệnh"))
+    section = DocumentView.build(raw).section_for(pos)
+    return section.historical and not section.current
 
-def assertions(raw: str, e: Entity) -> list[str]:
-    if e.typ not in ASSERTION_TYPES: return []
-    a, b, sent = sentence_window(raw, e.start, e.end); s = norm(sent)
-    out = []
-    neg = ("không", "chưa", "âm tính", "không có", "không ghi nhận", "không phát hiện", "không thấy", "phủ nhận", "không bằng chứng")
-    fam = ("bố bệnh nhân", "mẹ bệnh nhân", "cha bệnh nhân", "anh chị em", "người nhà", "gia đình", "họ hàng", "mẹ ", "bố ")
-    hist = ("tiền sử", "đã từng", "trước đây", "đã điều trị", "ngừng", "ngừng uống", "trước khi nhập viện", "đã dùng")
-    if any(x in s for x in neg): out.append("isNegated")
-    if any(x in s for x in fam): out.append("isFamily")
-    if section_historical(raw, e.start) or any(x in s for x in hist): out.append("isHistorical")
-    return [x for x in ALLOWED_ASSERTIONS if x in out]
+
+NEGATION_CUES = (
+    "không có", "không ghi nhận", "không phát hiện", "không thấy",
+    "không bằng chứng", "phủ nhận", "chưa", "âm tính", "không",
+)
+HISTORY_CUES = (
+    "tiền sử", "đã từng", "trước đây", "đã điều trị", "ngừng",
+    "ngừng uống", "trước khi nhập viện", "đã dùng", "đang dùng trước",
+)
+FAMILY_CUES = ("bố", "cha", "mẹ", "anh chị em", "người nhà", "gia đình", "họ hàng")
+
+
+def _cue_before_entity(text: str, cues: tuple[str, ...]) -> bool:
+    folded = norm(text)
+    return any(re.search(r"(?:^|[,:;])\s*" + re.escape(cue) + r"\s*$", folded) for cue in cues)
+
+
+def _has_negation_scope(raw: str, e: Entity, view: DocumentView) -> bool:
+    start, _, sentence = sentence_window(raw, e.start, e.end)
+    local = norm(raw[max(start, e.start - 30):min(len(raw), e.end + 10)])
+    if re.search(r"(?:cà phê|coffee)\s+không\s+caffeine", local):
+        return False
+    before = raw[start:e.start]
+    if _cue_before_entity(before, NEGATION_CUES):
+        return True
+    # A coordinated list inherits a preceding cue, but only inside this sentence.
+    cue_positions = [before.casefold().rfind(cue) for cue in NEGATION_CUES]
+    cue_position = max(cue_positions, default=-1)
+    if cue_position >= 0:
+        between = norm(before[cue_position:])
+        if len(between) <= 90 and not re.search(r"\b(?:bắt đầu|dùng|điều trị|cải thiện|đáp ứng)\b", between):
+            return True
+    # “cà phê không caffeine” is a lexical decaffeinated modifier, not a
+    # negated caffeine clinical concept.
+    return False
+
+
+def _has_family_scope(raw: str, e: Entity) -> bool:
+    start, end, sentence = sentence_window(raw, e.start, e.end)
+    before = norm(raw[start:e.start])
+    after = norm(raw[e.end:end])
+    family_before = any(cue in before for cue in FAMILY_CUES)
+    family_after = any(re.search(r"\b(?:của|ở)\s+" + re.escape(cue), after) for cue in FAMILY_CUES)
+    if not (family_before or family_after):
+        return False
+    relation_words = ("tiền sử", "bị", "mắc", "có", "đau", "triệu chứng", "bệnh", "xuất hiện", "phủ nhận", "không")
+    return any(word in before or word in after for word in relation_words)
+
+
+def _has_local_history(raw: str, e: Entity) -> bool:
+    start, _, _ = sentence_window(raw, e.start, e.end)
+    before = norm(raw[start:e.start])
+    return _cue_before_entity(before, HISTORY_CUES) or any(cue in before for cue in HISTORY_CUES)
+
+
+def assertions(raw: str, e: Entity, view: DocumentView | None = None) -> list[str]:
+    if e.typ not in ASSERTION_TYPES:
+        return []
+    view = view or DocumentView.build(raw)
+    out: list[str] = []
+    if _has_negation_scope(raw, e, view):
+        out.append("isNegated")
+    if _has_family_scope(raw, e):
+        out.append("isFamily")
+    section = view.section_for(e.start)
+    if not section.current and (section.historical or _has_local_history(raw, e)):
+        out.append("isHistorical")
+    return [name for name in ALLOWED_ASSERTIONS if name in out]
 
 def add_match(out: list[Entity], raw: str, start: int, end: int, typ: str, conf=.7, cand=None, source="rule"):
     if start < 0 or end <= start: return
@@ -143,6 +347,31 @@ def find_all(raw: str, phrase: str) -> Iterable[tuple[int, int]]:
     if not parts: return []
     pat = r"(?i)(?<!\w)" + r"[\s-]+".join(parts) + r"(?!\w)"
     return ((m.start(), m.end()) for m in re.finditer(pat, raw))
+
+
+RESULT_WORDS = (
+    "âm tính", "dương tính", "bình thường", "bất thường", "thấp", "cao",
+    "không ghi nhận", "không phát hiện", "không thấy", "ghi nhận", "cho thấy",
+)
+
+
+def _result_after(raw: str, end: int) -> tuple[int, int] | None:
+    tail = raw[end:min(len(raw), end + 120)]
+    patterns = (
+        r"\s*(?::|=|là|cho thấy|ghi nhận|tăng(?:\s+nhẹ)?\s+lên|giảm(?:\s+nhẹ)?\s+xuống)\s*([^\n.;]{1,90})",
+        r"\s*((?:không\s+)?(?:ghi nhận|phát hiện|thấy)[^\n.;]{0,70})",
+        r"\s*((?:âm tính|dương tính|bình thường|bất thường|thấp|cao))",
+        r"\s*([+-]?\d+(?:[.,]\d+)?(?:\s*(?:mg/dl|g/dl|%|mmol/l|umol/l|ng/ml))?)",
+    )
+    for pattern in patterns:
+        match = re.match(pattern, tail, flags=re.IGNORECASE)
+        if not match:
+            continue
+        value = match.group(1).rstrip(" ,:;-")
+        if value:
+            start = end + match.start(1)
+            return start, start + len(value)
+    return None
 
 def detect(raw: str, icd: Ontology, rx: Ontology, lab_aliases: set[str] | None = None, symptom_aliases: set[str] | None = None) -> list[Entity]:
     out: list[Entity] = []
@@ -165,23 +394,26 @@ def detect(raw: str, icd: Ontology, rx: Ontology, lab_aliases: set[str] | None =
         if len(first) > 2 and first not in raw_search: continue
         for m in re.finditer(r"(?i)(?<!\w)" + r"[\s-]+".join(re.escape(x) for x in re.split(r"\s+", name)) + r"(?!\w)" + attrs, raw):
             a, b = m.start(), m.end()
+            local = norm(raw[max(0, a - 30):min(len(raw), b + 20)])
+            if re.search(r"(?:cà phê|coffee)\s+không\s+caffeine", local):
+                continue
             trimmed = re.sub(r"[\s,;:.-]+$", "", raw[a:b])
             b = a + len(trimmed)
-            add_match(out, raw, a, b, "THUỐC", .9, rx.lookup(raw[a:b], 2))
+            add_match(out, raw, a, b, "THUỐC", .9, rx.lookup(raw[a:b]))
     # Generic medication line fallback: a likely name plus route/dose or known med cue.
     for m in re.finditer(r"(?im)(?<!\w)([A-Za-z][A-Za-z0-9+/'-]{2,}(?:\s+[A-Za-z][A-Za-z0-9+/'-]{1,}){0,3})(?=\s+(?:\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|ml|meq)|po|oral|iv|daily|bid|qid|prn)\b)", raw):
         if norm(m.group(1)) not in {norm(x.text) for x in out if x.typ == "THUỐC"}:
-            add_match(out, raw, m.start(), m.end(), "THUỐC", .62, rx.lookup(m.group(1), 2))
+            add_match(out, raw, m.start(), m.end(), "THUỐC", .62, rx.lookup(m.group(1)))
     # Tests and result values: only numbers/words in lab context.
     lab_names = sorted(lab_aliases, key=len, reverse=True)
     for name in lab_names:
         for a, b in find_all(raw, name):
             add_match(out, raw, a, b, "TÊN_XÉT_NGHIỆM", .8)
-            tail = raw[b:min(len(raw), b + 90)]
-            vm = re.match(r"\s*(?::|=|là|tăng(?:\s+nhẹ)?\s+lên|giảm(?:\s+nhẹ)?\s+xuống)?\s*([+-]?\d+(?:[.,]\d+)?(?:\s*(?:mg/dl|g/dl|%|mmol/l|umol/l|ng/ml))?|âm tính|dương tính|thấp|cao)", tail, re.I)
-            if vm: add_match(out, raw, b + vm.start(1), b + vm.end(1), "KẾT_QUẢ_XÉT_NGHIỆM", .82)
+            value_span = _result_after(raw, b)
+            if value_span:
+                add_match(out, raw, value_span[0], value_span[1], "KẾT_QUẢ_XÉT_NGHIỆM", .82)
     # Generic lab marker:value (avoid drug dose because nearby medication wins).
-    for m in re.finditer(r"(?i)\b([A-Za-zÀ-ỹ][A-Za-zÀ-ỹ0-9%_ /-]{1,35})\s*[:=]\s*([+-]?\d+(?:[.,]\d+)?(?:\s*[A-Za-z%/µ]+)?|âm tính|dương tính)", raw):
+    for m in re.finditer(r"(?i)\b([A-Za-zÀ-ỹ][A-Za-zÀ-ỹ0-9%_ /-]{1,35})\s*[:=]\s*([+-]?\d+(?:[.,]\d+)?(?:\s*[A-Za-z%/µ]+)?|âm tính|dương tính|bình thường|bất thường)", raw):
         key = norm(m.group(1));
         if key in {norm(x) for x in lab_aliases}:
             add_match(out, raw, m.start(1), m.end(1), "TÊN_XÉT_NGHIỆM", .75)
@@ -191,16 +423,57 @@ def detect(raw: str, icd: Ontology, rx: Ontology, lab_aliases: set[str] | None =
         for a, b in find_all(raw, phrase): add_match(out, raw, a, b, "TRIỆU_CHỨNG", .7)
     return out
 
+def _looks_like_result(text: str) -> bool:
+    value = norm(text)
+    return any(word in value for word in RESULT_WORDS) or bool(re.search(r"\b(?:nhịp|ngoại tâm thu|tăng|giảm)\b", value))
+
+
+def _choose_same_span(raw: str, group: list[Entity]) -> Entity:
+    """Adjudicate detector disagreement for one raw span."""
+    types = {item.typ for item in group}
+    if {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"} <= types:
+        wanted = "KẾT_QUẢ_XÉT_NGHIỆM" if _looks_like_result(raw[group[0].start:group[0].end]) else "TÊN_XÉT_NGHIỆM"
+        candidates = [item for item in group if item.typ == wanted]
+    else:
+        rule_candidates = [item for item in group if item.source != "llm"]
+        candidates = rule_candidates or group
+    selected = max(candidates, key=lambda item: (item.confidence, item.end - item.start))
+    selected.candidates = list(dict.fromkeys(code for item in group for code in item.candidates))
+    return selected
+
+
+def _trim_result_prefix(raw: str, result: Entity, names: list[Entity]) -> None:
+    """If an LLM returns ``test name + result`` as one result, keep result text only."""
+    for name in names:
+        if name.start != result.start or name.end >= result.end:
+            continue
+        if norm(raw[result.start:name.end]) != norm(name.text):
+            continue
+        start = name.end
+        while start < result.end and raw[start].isspace():
+            start += 1
+        if start < result.end:
+            result.start = start
+            result.text = raw[result.start:result.end]
+            return
+
+
 def resolve(raw: str, items: list[Entity]) -> list[Entity]:
-    # Merge exact span/type, then remove nested weaker duplicates. Keep repeated occurrences.
-    merged: dict[tuple[int,int,str], Entity] = {}
+    # First remove heading spans and merge detector candidates by exact span/type.
+    view = DocumentView.build(raw)
+    items = [item for item in items if item.start >= 0 and item.end > item.start and not view.is_heading_entity(item.start, item.end)]
+    by_exact: dict[tuple[int, int, str], list[Entity]] = {}
     for e in items:
-        k = (e.start, e.end, e.typ)
-        if k not in merged or e.confidence > merged[k].confidence:
-            merged[k] = e
-        else:
-            merged[k].candidates = list(dict.fromkeys(merged[k].candidates + e.candidates))
-    vals = list(merged.values())
+        by_exact.setdefault((e.start, e.end, e.typ), []).append(e)
+    merged = [_choose_same_span(raw, group) for group in by_exact.values()]
+    by_span: dict[tuple[int, int], list[Entity]] = {}
+    for e in merged:
+        by_span.setdefault((e.start, e.end), []).append(e)
+    vals = [_choose_same_span(raw, group) for group in by_span.values()]
+    names = [e for e in vals if e.typ == "TÊN_XÉT_NGHIỆM"]
+    for e in vals:
+        if e.typ == "KẾT_QUẢ_XÉT_NGHIỆM":
+            _trim_result_prefix(raw, e, names)
     keep = []
     for e in sorted(vals, key=lambda x: (x.start, -(x.end-x.start), -x.confidence)):
         blocked = False
@@ -209,7 +482,7 @@ def resolve(raw: str, items: list[Entity]) -> list[Entity]:
                 blocked = True; break
         if not blocked: keep.append(e)
     for e in keep:
-        e.assertions = list(dict.fromkeys(assertions(raw, e) + e.assertions))
+        e.assertions = assertions(raw, e, view)
         if e.typ in {"CHẨN_ĐOÁN", "THUỐC"}: e.candidates = list(dict.fromkeys(e.candidates))
     return sorted(keep, key=lambda x: (x.start, x.end, x.typ))
 
@@ -267,12 +540,17 @@ def _json_array_from_response(data: dict[str, Any]) -> list[dict]:
 def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int = 180) -> list[dict]:
     if not endpoint: return []
     logging.info("LLM extraction request: endpoint=%s model=%s chars=%d", endpoint, model or "local", len(raw))
-    prompt = ("Extract Vietnamese clinical entities. Return JSON array only, each item "
-              "{text,type,assertions}. Copy text exactly. Deduplicate identical spans. "
-              "Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,"
-              "KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. Do not return positions. INPUT:\n" + raw)
-    prompt = prompt.replace("Do not return positions. INPUT:", "Do not return positions. /no_think\nINPUT:")
-    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. Deduplicate entities and emit each span once. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":2400}
+    view = DocumentView.build(raw)
+    numbered = "\n".join(f"{line.line_id}: {line.text}" for line in view.lines)
+    prompt = ("Extract Vietnamese clinical entities from the numbered INPUT. Return JSON array only. "
+              "Each item must be {line_id,text,type}; copy text exactly and never invent text. "
+              "Do not merge different occurrences. Do not return assertions or positions. "
+              "Do not return section headings such as khám lâm sàng, chẩn đoán hình ảnh, or kết quả xét nghiệm. "
+              "A test name and its result are different entities: the name is TÊN_XÉT_NGHIỆM; "
+              "the measured/textual finding is KẾT_QUẢ_XÉT_NGHIỆM. "
+              "Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. "
+              "INPUT:\n" + numbered + "\n/no_think")
+    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. Use one line_id per occurrence. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":2800}
     try:
         base = endpoint.rstrip("/")
         url = base + ("/chat/completions" if base.endswith("/v1") else "/v1/chat/completions")
@@ -286,12 +564,31 @@ def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int 
         raise RuntimeError(f"localhost LLM request/parse failed: {e}") from e
 
 def align_llm(raw: str, items: list[dict]) -> list[Entity]:
-    out=[]
+    view = DocumentView.build(raw)
+    out: list[Entity] = []
     for x in items:
         text, typ = str(x.get("text", "")), x.get("type")
         if typ not in ENTITY_TYPES or not text: continue
-        for a,b in find_all(raw, text):
-            e=Entity(raw[a:b], typ, a,b, assertions=[z for z in x.get("assertions",[]) if z in ALLOWED_ASSERTIONS], confidence=.55, source="llm"); out.append(e); break
+        line_id = x.get("line_id")
+        search_raw = raw
+        offset = 0
+        if isinstance(line_id, str):
+            line = next((line for line in view.lines if line.line_id == line_id), None)
+            if line is None:
+                continue
+            search_raw = raw[line.start:line.end]
+            offset = line.start
+        occurrences = list(find_all(search_raw, text))
+        # line_id makes repeated occurrences explicit. For legacy responses
+        # without line_id, use only the first occurrence to avoid multiplying
+        # one ambiguous response across the document.
+        if not line_id:
+            occurrences = occurrences[:1]
+        for a, b in occurrences:
+            a += offset; b += offset
+            if view.is_heading_entity(a, b):
+                continue
+            out.append(Entity(raw[a:b], typ, a, b, confidence=.55, source="llm"))
     return out
 
 def process_document(raw: str, icd: Ontology, rx: Ontology, llm_endpoint: str | None = None, llm_model: str | None = None, lab_aliases: set[str] | None = None, symptom_aliases: set[str] | None = None, require_llm: bool = True, llm_timeout: int = 180) -> list[dict]:
