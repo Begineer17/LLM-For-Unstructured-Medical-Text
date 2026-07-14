@@ -244,6 +244,22 @@ def _json_array_from_response(data: dict[str, Any]) -> list[dict]:
                 continue
             if isinstance(value, list):
                 return value
+    # llama.cpp can hit the output-token limit after emitting several complete
+    # objects but before writing the closing ']' (common when a model repeats
+    # entities). Recover those complete objects instead of discarding the
+    # entire document. The incomplete final object is intentionally ignored.
+    recovered: list[dict] = []
+    for text in candidates:
+        for match in re.finditer(r"\{", text):
+            try:
+                value, _ = decoder.raw_decode(text[match.start():])
+            except json.JSONDecodeError:
+                continue
+            if isinstance(value, dict) and ("text" in value or "type" in value):
+                recovered.append(value)
+    if recovered:
+        logging.warning("LLM JSON was truncated; recovered %d complete items", len(recovered))
+        return recovered
     preview = " | ".join(x[-240:] for x in candidates)[:600]
     raise RuntimeError(f"LLM response does not contain a JSON array; response tail={preview!r}")
 
@@ -252,10 +268,11 @@ def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int 
     if not endpoint: return []
     logging.info("LLM extraction request: endpoint=%s model=%s chars=%d", endpoint, model or "local", len(raw))
     prompt = ("Extract Vietnamese clinical entities. Return JSON array only, each item "
-              "{text,type,assertions}. Copy text exactly. Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,"
+              "{text,type,assertions}. Copy text exactly. Deduplicate identical spans. "
+              "Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,"
               "KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. Do not return positions. INPUT:\n" + raw)
     prompt = prompt.replace("Do not return positions. INPUT:", "Do not return positions. /no_think\nINPUT:")
-    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":1200}
+    payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. Deduplicate entities and emit each span once. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":2400}
     try:
         base = endpoint.rstrip("/")
         url = base + ("/chat/completions" if base.endswith("/v1") else "/v1/chat/completions")
