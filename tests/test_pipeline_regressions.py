@@ -122,6 +122,12 @@ class PipelineRegressionTests(unittest.TestCase):
         self.assertEqual(rx.lookup("aspirin 325mg"), ["1191"])
         self.assertEqual(rx.lookup("not a medicine"), [])
 
+    def test_rxnorm_semantic_base_ingredient_and_sig_variants(self):
+        rx = Ontology("data/ontology/rxnorm/concepts.jsonl", kind="rxnorm")
+        self.assertEqual(rx.lookup("senna 8.6 mg po bid:prn"), ["312935"])
+        self.assertEqual(rx.lookup("pravastatin 40 mg po daily"), ["904475"])
+        self.assertEqual(rx.lookup("metoprolol 25mg po bid"), ["1370489"])
+
     def test_icd_vietnamese_curated_aliases(self):
         icd = Ontology("data/ontology/icd/concepts.jsonl", kind="icd")
         self.assertEqual(icd.lookup("rung nhĩ kịch phát"), ["I48.0"])

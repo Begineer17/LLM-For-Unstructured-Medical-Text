@@ -1,2 +1,4 @@
 .agents/
 .codex-index/
+.codex/
+.__pycache__/

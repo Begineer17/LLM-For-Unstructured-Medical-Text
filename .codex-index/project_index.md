@@ -1,17 +1,23 @@
 ﻿# Project Index
 
-Generated at: 2026-07-14T17:06:24Z
-Git commit: b927239
+Generated at: 2026-07-15T07:38:59Z
+Git commit: b4bef03
 
 ## Directory Tree
 ```text
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\index_meta.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\project_index.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.gitignore
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-313.pyc
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\ontology_linking.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\clinical_nlp_pipeline.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\configs\inference.yaml
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\icd.zip
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\derived\aliases.jsonl
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\derived\icd.index.jsonl
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\derived\manifest.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\derived\rxnorm.index.jsonl
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\icd\concepts.jsonl
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\manifest.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\ontology\README.md
@@ -130,6 +136,7 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\27.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\28.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\29.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\medical_clinical_nlp_pipeline_architecture_vi_revised.md
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\ontology_linking.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\2.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\20.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\21.json
@@ -141,18 +148,11 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\26.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\27.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\28.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\29.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_one\1.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\1.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\2.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\3.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\4.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\5.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\6.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\7.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_rulecheck\8.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\pyproject.toml
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\README.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\requirements.txt
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\build_derived_ontology.cpython-312.pyc
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\build_ontology_index.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\build_ontology_index.cpython-313.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\doctor.cpython-313.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\download_ontologies.cpython-313.pyc
@@ -161,10 +161,11 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\i
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\package_submission.cpython-313.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\run_inference.cpython-313.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\__pycache__\validate_output.cpython-313.pyc
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\build_derived_ontology.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\build_ontology_index.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\doctor.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\download_ontologies.py
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\generate_synthetic.py
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\evaluate_outputs.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\inspect_input.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\package_submission.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\scripts\run_inference.py

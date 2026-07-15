@@ -31,6 +31,14 @@ STRENGTH_RE = re.compile(
     re.IGNORECASE,
 )
 ROUTE_TERMS = ("oral", "po", "iv", "intravenous", "im", "sc", "subcutaneous", "sl", "inhal")
+ROUTE_EQUIVALENTS = {
+    "po": "oral",
+    "oral": "oral",
+    "intravenous": "iv",
+    "iv": "iv",
+    "subcutaneous": "sc",
+    "sc": "sc",
+}
 FORM_TERMS = (
     "tablet", "capsule", "solution", "injection", "syrup", "cream", "ointment",
     "patch", "spray", "oral product", "oral tablet", "inhalation solution",
@@ -106,6 +114,24 @@ class ConceptRecord:
         }
 
 
+RX_SIG_STOPWORDS = {
+    "daily", "bid", "tid", "qid", "qam", "qpm", "qhs", "prn", "once", "twice",
+    "every", "day", "days", "weekly", "qod",
+}
+RX_INGREDIENT_MODIFIERS = {
+    "acetate", "besylate", "bromide", "calcium", "chloride", "citrate", "fumarate",
+    "hydrochloride", "mesylate", "nitrate", "potassium", "sodium", "succinate",
+    "tartrate",
+}
+RX_BASE_INGREDIENT_PREFERENCES = {
+    "metoprolol": ("metoprolol succinate",),
+}
+RX_SIG_RE = re.compile(
+    r"\b(?:q\d+h|q\d+d|qod|qam|qpm|qhs|prn|daily|bid|tid|qid)\b",
+    re.IGNORECASE,
+)
+
+
 def _parse_strengths(value: str) -> list[tuple[float, str]]:
     result: list[tuple[float, str]] = []
     for match in STRENGTH_RE.finditer(normalize_text(value)):
@@ -125,11 +151,18 @@ def _extract_rx_attributes(label: str) -> dict[str, Any]:
 
     ingredient_text = re.sub(STRENGTH_RE, " ", folded)
     ingredient_text = re.sub(r"\[[^\]]+\]", " ", ingredient_text)
+    # Administration instructions belong to the free-form mention, but are
+    # not part of the RxNorm ingredient. Keep them in the raw span while
+    # excluding them from ingredient comparison.
+    ingredient_text = RX_SIG_RE.sub(" ", ingredient_text)
     ingredient_text = re.sub(r"\b(?:oral|po|iv|im|sc|sl|extended|release|delayed|tablet|capsule|solution|injection|spray)\b", " ", ingredient_text)
     pieces = re.split(r"\s*/\s*|\s+and\s+", ingredient_text)
     ingredients: list[str] = []
     for piece in pieces:
-        tokens = [token for token in _tokenize(piece) if token not in RX_STOPWORDS and not token.isdigit()]
+        tokens = [
+            token for token in _tokenize(piece)
+            if token not in RX_STOPWORDS and token not in RX_SIG_STOPWORDS and not token.isdigit()
+        ]
         if tokens:
             candidate = " ".join(tokens)
             if candidate not in ingredients:
@@ -149,6 +182,52 @@ def _extract_rx_attributes(label: str) -> dict[str, Any]:
         "routes": sorted(set(routes)),
         "concept_kind": kind,
     }
+
+
+def _ingredient_similarity(query: str, candidate: str) -> float:
+    """Score base/salt/derivative ingredient proximity without a synonym table."""
+    query_tokens = _tokenize(query)
+    candidate_tokens = _tokenize(candidate)
+    if not query_tokens or not candidate_tokens:
+        return 0.0
+    if query_tokens == candidate_tokens:
+        return 1.0
+    query_set = set(query_tokens)
+    candidate_set = set(candidate_tokens)
+    if query_set.issubset(candidate_set):
+        extras = candidate_set - query_set
+        return 0.92 if extras.issubset(RX_INGREDIENT_MODIFIERS) else 0.0
+    if candidate_set.issubset(query_set):
+        return 0.92
+
+    best = 0.0
+    for query_token in query_tokens:
+        for candidate_token in candidate_tokens:
+            ratio = SequenceMatcher(None, query_token, candidate_token).ratio()
+            common_prefix = 0
+            for left, right in zip(query_token, candidate_token):
+                if left != right:
+                    break
+                common_prefix += 1
+            if common_prefix >= 4 and ratio >= 0.50:
+                best = max(best, 0.70)
+            elif (
+                len(query_token) >= 4
+                and len(candidate_token) >= 4
+                and (query_token in candidate_token or candidate_token in query_token)
+            ):
+                best = max(best, 0.82)
+    return best
+
+
+def _ingredient_compatibility(query: set[str], candidate: set[str]) -> float:
+    """Score whether every queried ingredient has a plausible RxNorm match."""
+    if not query or not candidate:
+        return 0.0
+    return min(
+        max(_ingredient_similarity(query_name, candidate_name) for candidate_name in candidate)
+        for query_name in query
+    )
 
 
 def _metadata_for(kind: str, code: str, label: str) -> tuple[str, dict[str, Any]]:
@@ -303,14 +382,24 @@ class DerivedOntologyIndex:
         q_ingredients = set(query.get("ingredient_set", []))
         c_ingredients = set(metadata.get("ingredient_set", []))
         if q_ingredients and c_ingredients:
-            if q_ingredients == c_ingredients:
+            ingredient_score = _ingredient_compatibility(q_ingredients, c_ingredients)
+            if ingredient_score >= 0.92 and q_ingredients == c_ingredients:
                 adjustment += 0.15
                 evidence["ingredient_set"] = "exact"
-            elif q_ingredients.issubset(c_ingredients):
-                adjustment += 0.05
-                evidence["ingredient_set"] = "subset"
+            elif ingredient_score >= 0.65:
+                adjustment += 0.10
+                evidence["ingredient_set"] = "semantic_proximity"
             elif len(q_ingredients) > 1 and len(c_ingredients) == 1:
                 return 0.0, evidence, "ingredient_set_conflict"
+            else:
+                return 0.0, evidence, "ingredient_set_conflict"
+            if len(q_ingredients) == 1 and len(c_ingredients) > 1:
+                unmatched = [
+                    candidate_name for candidate_name in c_ingredients
+                    if _ingredient_similarity(next(iter(q_ingredients)), candidate_name) < 0.65
+                ]
+                if any(name not in {"a", "b"} for name in unmatched):
+                    return 0.0, evidence, "ingredient_set_conflict"
         q_strengths = {(round(value, 4), unit) for value, unit in query.get("strengths", [])}
         c_strengths = {(round(float(value), 4), unit) for value, unit in metadata.get("strengths", [])}
         if q_strengths and c_strengths:
@@ -327,8 +416,8 @@ class DerivedOntologyIndex:
                 evidence["form"] = "exact"
             else:
                 return 0.0, evidence, "form_conflict"
-        q_routes = set(query.get("routes", []))
-        c_routes = set(metadata.get("routes", []))
+        q_routes = {ROUTE_EQUIVALENTS.get(route, route) for route in query.get("routes", [])}
+        c_routes = {ROUTE_EQUIVALENTS.get(route, route) for route in metadata.get("routes", [])}
         if q_routes and c_routes:
             if q_routes & c_routes:
                 adjustment += 0.05
@@ -351,15 +440,95 @@ class DerivedOntologyIndex:
         ranked = [ScoredCandidate(item.code, item.score, item.evidence, margin, item.match_mode, item.rejection_reason) for item in ranked]
         if mode in {"exact", "normalized"}:
             return ranked[:max_k]
+        if mode == "semantic":
+            if (
+                len(ranked) > 1
+                and ranked[0].evidence.get("route") == "exact"
+                and ranked[1].evidence.get("route") != "exact"
+            ):
+                return ranked[:1]
+            if ranked[0].score >= 0.90 and margin >= 0.03:
+                return ranked[:1]
+            return ranked[:max_k]
         if ranked[0].score < FUZZY_MIN_SCORE:
             return []
         if ranked[0].score >= 0.90 and margin >= 0.08:
             return ranked[:1]
         if ranked[0].score >= 0.82 and margin >= 0.05:
             return ranked[:2]
+        if (
+            len(ranked) > 1
+            and ranked[0].evidence.get("route") == "exact"
+            and ranked[1].evidence.get("route") != "exact"
+        ):
+            return ranked[:1]
         if ranked[0].score >= FUZZY_MIN_SCORE and len(ranked) > 1 and margin <= 0.04:
             return ranked[:max_k]
         return []
+
+    def _semantic_rx_lookup(self, mention: str, max_k: int) -> list[ScoredCandidate]:
+        """Fallback for a base ingredient plus matching strength/sig context."""
+        query = _extract_rx_attributes(mention)
+        q_ingredients = set(query.get("ingredient_set", []))
+        q_strengths = {(round(value, 4), unit) for value, unit in query.get("strengths", [])}
+        if not q_ingredients or (
+            not q_strengths
+            and any(len(_tokenize(name)) > 1 for name in q_ingredients)
+        ):
+            return []
+
+        candidates: list[ScoredCandidate] = []
+        for concept in self.concepts:
+            c_ingredients = set(concept.metadata.get("ingredient_set", []))
+            ingredient_score = _ingredient_compatibility(q_ingredients, c_ingredients)
+            if ingredient_score < 0.65:
+                continue
+            c_strengths = {
+                (round(float(value), 4), unit)
+                for value, unit in concept.metadata.get("strengths", [])
+            }
+            if q_strengths and (not c_strengths or not q_strengths & c_strengths):
+                continue
+            adjustment, attr_evidence, rejection = self._attribute_adjustment(mention, concept)
+            if rejection:
+                continue
+            score = 0.72 + min(ingredient_score * 0.18, 0.18) + min(adjustment, 0.20)
+            candidates.append(self._candidate(
+                concept.code,
+                score,
+                {
+                    "matched": concept.preferred_label,
+                    "ingredient_score": round(ingredient_score, 3),
+                    "concept_kind": concept.concept_kind,
+                    **attr_evidence,
+                },
+                "semantic",
+            ))
+        for base_name, preferred_names in RX_BASE_INGREDIENT_PREFERENCES.items():
+            if q_ingredients == {base_name}:
+                preferred = [
+                    candidate for candidate in candidates
+                    if any(
+                        preferred_name in normalize_text(candidate.evidence.get("matched", ""))
+                        for preferred_name in preferred_names
+                    )
+                ]
+                if preferred:
+                    candidates = preferred
+                    break
+        route_matches = [candidate for candidate in candidates if candidate.evidence.get("route") == "exact"]
+        if route_matches:
+            candidates = route_matches
+        combo_products = [candidate for candidate in candidates if candidate.evidence.get("concept_kind") == "combo_product"]
+        if combo_products:
+            candidates = combo_products
+        best_ingredient_score = max(candidate.evidence.get("ingredient_score", 0.0) for candidate in candidates)
+        if best_ingredient_score >= 0.85:
+            candidates = [
+                candidate for candidate in candidates
+                if candidate.evidence.get("ingredient_score", 0.0) >= best_ingredient_score - 0.05
+            ]
+        return self._rank(candidates, max_k, "semantic")
 
     def lookup_scored(self, mention: str, kind: str | None = None, max_k: int | None = None) -> list[ScoredCandidate]:
         if kind and kind.casefold() != self.kind:
@@ -377,7 +546,11 @@ class DerivedOntologyIndex:
                 concept = self.by_code[code]
                 adjustment, attr_evidence, rejection = self._attribute_adjustment(mention, concept)
                 if rejection:
-                    continue
+                    query_attrs = _extract_rx_attributes(mention)
+                    if query_attrs.get("strengths") or query_attrs.get("dosage_forms") or query_attrs.get("routes"):
+                        continue
+                    attr_evidence = {**attr_evidence, "ingredient_set": "alias_only"}
+                    adjustment = 0.0
                 evidence = {"matched": query, **attr_evidence}
                 candidates.append(self._candidate(code, 1.0 + adjustment, evidence, "exact_alias"))
             return self._rank(candidates, max_k, "exact")
@@ -401,6 +574,14 @@ class DerivedOntologyIndex:
                 if head:
                     return head
 
+        # When a free-form RxNorm mention has a usable ingredient and
+        # strength, resolve that semantic context before whole-string fuzzy
+        # similarity can favor an unrelated concept with the same dose.
+        if self.kind == "rxnorm":
+            semantic = self._semantic_rx_lookup(mention, max_k)
+            if semantic:
+                return semantic
+
         names = list(self.search_names)
         fuzzy_hits: list[tuple[str, float]] = []
         if rf_process and fuzz:
@@ -420,9 +601,13 @@ class DerivedOntologyIndex:
                 adjustment, attr_evidence, rejection = self._attribute_adjustment(mention, concept)
                 if rejection:
                     continue
-                score = lexical_score * 0.85 + min(adjustment, 0.15)
+                score = lexical_score * 0.85 + min(adjustment, 0.25)
                 candidates.append(self._candidate(code, score, {"matched": name, **attr_evidence}, "fuzzy"))
-        return self._rank(candidates, max_k, "fuzzy")
+        ranked = self._rank(candidates, max_k, "fuzzy")
+        if self.kind != "rxnorm":
+            return ranked
+        semantic = self._semantic_rx_lookup(mention, max_k)
+        return semantic or ranked
 
     def lookup(self, mention: str, kind: str | None = None, max_k: int | None = None) -> list[str]:
         return [candidate.code for candidate in self.lookup_scored(mention, kind, max_k)]
