@@ -8,3 +8,5 @@
 {"alias":"rung nhĩ kịch phát","code":"I48.0","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}
 {"alias":"béo phì","code":"E66.9","language":"vi","alias_kind":"diagnosis_unspecified","provenance":"curated_vietnamese_calibration","confidence":0.90,"allow_public":true}
 {"alias":"viêm túi mật cấp","code":"K81.0","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}
+{"alias":"u cơ trơn tử cung, không đặc hiệu","code":"D25.9","language":"vi","alias_kind":"diagnosis_unspecified","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}
+{"alias":"u cơ trơn tử cung","code":"D25.9","language":"vi","alias_kind":"diagnosis_head","provenance":"curated_vietnamese_calibration","confidence":0.99,"allow_public":true}

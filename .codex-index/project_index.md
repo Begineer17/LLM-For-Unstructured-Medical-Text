@@ -1,16 +1,13 @@
 ﻿# Project Index
 
-Generated at: 2026-07-17T01:49:47Z
-Git commit: c623d40
+Generated at: 2026-07-17T02:27:39Z
+Git commit: 7f07bb8
 
 ## Directory Tree
 ```text
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\index_meta.json
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.codex-index\project_index.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\.gitignore
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-312.pyc
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\clinical_nlp_pipeline.cpython-313.pyc
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\__pycache__\ontology_linking.cpython-312.pyc
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\clinical_nlp_pipeline.py
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\configs\inference.yaml
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\data\icd.zip

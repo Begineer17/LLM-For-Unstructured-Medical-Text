@@ -7,6 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from clinical_nlp_pipeline import (  # noqa: E402
     Entity,
     Ontology,
+    align_llm,
     detect,
     find_all,
     link_entities,
@@ -89,6 +90,21 @@ class PipelineRegressionTests(unittest.TestCase):
             ("không ghi nhận gì bất thường", "KẾT_QUẢ_XÉT_NGHIỆM"),
         ])
 
+    def test_merged_test_result_is_split_without_name_entity(self):
+        raw = "chụp x-quang ngực không ghi nhận gì bất thường; phân tích nước tiểu không có gì đáng chú ý"
+        first_end = raw.index(";")
+        second_start = first_end + 2
+        result = resolve(raw, [
+            Entity(raw[:first_end], "KẾT_QUẢ_XÉT_NGHIỆM", 0, first_end, confidence=.55, source="llm"),
+            Entity(raw[second_start:], "KẾT_QUẢ_XÉT_NGHIỆM", second_start, len(raw), confidence=.55, source="llm"),
+        ])
+        self.assertEqual([(item.text, item.typ) for item in result], [
+            ("chụp x-quang ngực", "TÊN_XÉT_NGHIỆM"),
+            ("không ghi nhận gì bất thường", "KẾT_QUẢ_XÉT_NGHIỆM"),
+            ("phân tích nước tiểu", "TÊN_XÉT_NGHIỆM"),
+            ("không có gì đáng chú ý", "KẾT_QUẢ_XÉT_NGHIỆM"),
+        ])
+
     def test_crlf_offsets_and_schema(self):
         raw = "WBC: 14,43\r\n"
         data = [{"text": "WBC", "type": "TÊN_XÉT_NGHIỆM", "position": [0, 3]}]
@@ -115,6 +131,35 @@ class PipelineRegressionTests(unittest.TestCase):
         link_entities(resolved, icd, rx)
         self.assertEqual([(item.text, item.candidates) for item in resolved], [("coumadin", ["11289"])])
 
+    def test_internal_link_hint_preserves_raw_span_and_uses_offline_icd_lookup(self):
+        raw = "Nhiễm virus Herpes simplex"
+        entity = Entity(
+            raw,
+            "CHẨN_ĐOÁN",
+            0,
+            len(raw),
+            source="llm",
+            link_text="Herpesviral infection, unspecified",
+        )
+        link_entities(
+            [entity],
+            Ontology("data/ontology/icd/concepts.jsonl", kind="icd"),
+            Ontology("data/ontology/rxnorm/concepts.jsonl", kind="rxnorm"),
+        )
+        self.assertEqual(entity.text, raw)
+        self.assertEqual(entity.candidates, ["B00.9"])
+
+    def test_align_llm_keeps_internal_link_hint_out_of_public_schema(self):
+        raw = "Nhiễm virus Herpes simplex"
+        entities = align_llm(raw, [{
+            "line_id": "L001",
+            "text": raw,
+            "type": "CHẨN_ĐOÁN",
+            "link_text": "Herpesviral infection, unspecified",
+        }])
+        self.assertEqual(entities[0].link_text, "Herpesviral infection, unspecified")
+        self.assertNotIn("link_text", entities[0].public())
+
     def test_rxnorm_brand_and_combination_aliases(self):
         rx = Ontology("data/ontology/rxnorm/concepts.jsonl", kind="rxnorm")
         self.assertEqual(rx.lookup("Coumadin"), ["11289"])
@@ -133,6 +178,78 @@ class PipelineRegressionTests(unittest.TestCase):
         self.assertEqual(icd.lookup("rung nhĩ kịch phát"), ["I48.0"])
         self.assertEqual(icd.lookup("béo phì"), ["E66.9"])
         self.assertEqual(icd.lookup("viêm túi mật cấp"), ["K81.0"])
+
+    def test_icd_semantic_base_diagnosis_and_context_wrappers(self):
+        icd = Ontology("data/ontology/icd/concepts.jsonl", kind="icd")
+        self.assertEqual(icd.lookup("rung nhĩ"), ["I48.0"])
+        self.assertEqual(icd.lookup("bệnh nhân bị béo phì"), ["E66.9"])
+        self.assertEqual(icd.lookup("u cơ trơn tử cung, không đặc hiệu"), ["D25.9"])
+
+    def test_measurement_result_is_split_from_imaging_finding(self):
+        raw = (
+            "Tử cung đo 14,2 x 8,8 x 7,5 cm; "
+            "U cơ trơn lớn nhất ở đoạn dưới của tử cung đo 4,1 x 4,8 x 4,1 cm"
+        )
+        second_start = raw.index("U cơ trơn")
+        items = resolve(raw, [
+            Entity(raw[:raw.index(";")], "KẾT_QUẢ_XÉT_NGHIỆM", 0, raw.index(";")),
+            Entity(raw[second_start:], "KẾT_QUẢ_XÉT_NGHIỆM", second_start, len(raw)),
+        ])
+        values = [(item.text, item.typ) for item in items]
+        self.assertIn(("Tử cung đo", "TÊN_XÉT_NGHIỆM"), values)
+        self.assertIn(("14,2 x 8,8 x 7,5 cm", "KẾT_QUẢ_XÉT_NGHIỆM"), values)
+        self.assertIn(
+            ("U cơ trơn lớn nhất ở đoạn dưới của tử cung đo", "TÊN_XÉT_NGHIỆM"),
+            values,
+        )
+        self.assertIn(("4,1 x 4,8 x 4,1 cm", "KẾT_QUẢ_XÉT_NGHIỆM"), values)
+
+    def test_medication_context_is_trimmed_and_non_drug_support_is_removed(self):
+        raw = (
+            "Tăng liều bactrim (do bác sĩ kê đơn)\n"
+            "doxycycline (prescribed by primary care)\n"
+            "Thở oxy tại nhà"
+        )
+        result = resolve(raw, [
+            Entity("Tăng liều bactrim (do bác sĩ kê đơn)", "THUỐC", 0, raw.index("\n")),
+            Entity(
+                "doxycycline (prescribed by primary care)",
+                "THUỐC",
+                raw.index("doxycycline"),
+                raw.rindex("\n"),
+            ),
+            Entity("Thở oxy tại nhà", "THUỐC", raw.rindex("Thở"), len(raw)),
+        ])
+        self.assertEqual([(item.text, item.typ) for item in result], [
+            ("bactrim", "THUỐC"),
+            ("doxycycline", "THUỐC"),
+        ])
+
+    def test_administrative_symptoms_are_removed_and_labelled_lists_are_atomic(self):
+        raw = (
+            "Khám tại phòng khám vào ngày nhập viện\n"
+            "Được giới thiệu đến khoa cấp cứu để đánh giá thêm\n"
+            "Các triệu chứng liên quan: ban đỏ, chảy mủ"
+        )
+        result = resolve(raw, [
+            Entity("Khám tại phòng khám vào ngày nhập viện", "TRIỆU_CHỨNG", 0, raw.index("\n")),
+            Entity(
+                "Được giới thiệu đến khoa cấp cứu để đánh giá thêm",
+                "TRIỆU_CHỨNG",
+                raw.index("Được giới thiệu"),
+                raw.rindex("\n"),
+            ),
+            Entity(
+                "Các triệu chứng liên quan: ban đỏ, chảy mủ",
+                "TRIỆU_CHỨNG",
+                raw.rindex("Các triệu chứng"),
+                len(raw),
+            ),
+        ])
+        self.assertEqual([(item.text, item.typ) for item in result], [
+            ("ban đỏ", "TRIỆU_CHỨNG"),
+            ("chảy mủ", "TRIỆU_CHỨNG"),
+        ])
 
     def test_procedure_and_heading_wrappers_are_removed(self):
         raw = "3. Đánh giá tại bệnh viện\ndùng vancomycin\ncắt bỏ tuyến vú trái"

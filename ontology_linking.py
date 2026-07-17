@@ -26,6 +26,11 @@ except Exception:  # pragma: no cover - optional dependency
 FUZZY_MIN_SCORE = 0.78
 ALIAS_MIN_PUBLIC_CONFIDENCE = 0.80
 DEFAULT_MAX_K = {"icd": 3, "rxnorm": 2}
+ICD_CONTEXT_NOISE_RE = re.compile(
+    r"\b(?:bệnh nhân|người bệnh|chẩn đoán|được chẩn đoán|mắc|bị|tiền sử|có tiền sử|"
+    r"history of|diagnosis of|diagnosed with|suspected|nghi ngờ|theo dõi|do|vì)\b",
+    re.IGNORECASE,
+)
 STRENGTH_RE = re.compile(
     r"(?P<value>\d+(?:[.,]\d+)?)\s*(?P<unit>mg|g|mcg|µg|ug|ml|meq|%|iu|unit)\b",
     re.IGNORECASE,
@@ -67,6 +72,32 @@ def lexical_key(value: str) -> str:
 
 def _tokenize(value: str) -> list[str]:
     return re.findall(r"[\wÀ-ỹ]+", normalize_text(value), flags=re.UNICODE)
+
+
+def _icd_core_text(value: str) -> str:
+    """Remove narrative diagnosis wrappers while preserving disease terms."""
+    core = ICD_CONTEXT_NOISE_RE.sub(" ", normalize_text(value))
+    core = re.sub(r"[,:;()\[\]{}]+", " ", core)
+    return re.sub(r"\s+", " ", core).strip()
+
+
+def _icd_semantic_similarity(query: str, candidate: str) -> float:
+    """Compare diagnosis aliases by token containment and lexical proximity."""
+    query_tokens = _tokenize(_icd_core_text(query))
+    candidate_tokens = _tokenize(_icd_core_text(candidate))
+    if not query_tokens or not candidate_tokens:
+        return 0.0
+    query_set = set(query_tokens)
+    candidate_set = set(candidate_tokens)
+    if query_tokens == candidate_tokens:
+        return 1.0
+    if query_set.issubset(candidate_set):
+        return 0.94
+    if candidate_set.issubset(query_set):
+        return 0.92
+    if fuzz:
+        return float(fuzz.token_set_ratio(" ".join(query_tokens), " ".join(candidate_tokens))) / 100.0
+    return SequenceMatcher(None, " ".join(query_tokens), " ".join(candidate_tokens)).ratio()
 
 
 def _sha256(path: Path) -> str:
@@ -532,6 +563,36 @@ class DerivedOntologyIndex:
             ]
         return self._rank(candidates, max_k, "semantic")
 
+    def _semantic_icd_lookup(self, mention: str, max_k: int) -> list[ScoredCandidate]:
+        """Link a free-form diagnosis to ICD aliases by its core disease terms."""
+        query_core = _icd_core_text(mention)
+        query_tokens = set(_tokenize(query_core))
+        if len(query_tokens) < 2:
+            return []
+
+        candidates: list[ScoredCandidate] = []
+        for name in self.search_names:
+            name_core = _icd_core_text(name)
+            name_tokens = set(_tokenize(name_core))
+            similarity = _icd_semantic_similarity(query_core, name_core)
+            if similarity < 0.78:
+                continue
+            specificity_bonus = 0.03 if query_tokens < name_tokens else 0.0
+            score = min(1.0, 0.70 + similarity * 0.25 + specificity_bonus)
+            for code in self.search_names.get(name, []):
+                candidates.append(self._candidate(
+                    code,
+                    score,
+                    {
+                        "matched": name,
+                        "core_query": query_core,
+                        "semantic_similarity": round(similarity, 3),
+                        "match_basis": "icd_alias_semantic_proximity",
+                    },
+                    "semantic",
+                ))
+        return self._rank(candidates, max_k, "semantic")
+
     def lookup_scored(self, mention: str, kind: str | None = None, max_k: int | None = None) -> list[ScoredCandidate]:
         if kind and kind.casefold() != self.kind:
             return []
@@ -575,6 +636,11 @@ class DerivedOntologyIndex:
                 head = self.lookup_scored(alias_key, max_k=max_k)
                 if head:
                     return head
+
+        if self.kind == "icd":
+            semantic = self._semantic_icd_lookup(mention, max_k)
+            if semantic:
+                return semantic
 
         # When a free-form RxNorm mention has a usable ingredient and
         # strength, resolve that semantic context before whole-string fuzzy

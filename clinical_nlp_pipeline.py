@@ -41,6 +41,7 @@ class Entity:
     assertions: list[str] = field(default_factory=list)
     candidates: list[str] = field(default_factory=list)
     confidence: float = 0.0; source: str = "rule"
+    link_text: str = ""
     def public(self) -> dict:
         d = {"text": self.text, "type": self.typ, "position": [self.start, self.end]}
         if self.typ in ASSERTION_TYPES: d["assertions"] = [x for x in ALLOWED_ASSERTIONS if x in self.assertions]
@@ -97,12 +98,38 @@ SECTION_PREFIXES = tuple(dict.fromkeys(CURRENT_SECTION_PATTERNS + HISTORY_SECTIO
 
 METADATA_LABEL_RE = re.compile(
     r"^\s*(?:vị trí|vùng|thời gian|mức độ|đặc điểm|yếu tố làm nặng thêm|yếu tố giảm nhẹ|"
-    r"yếu tố liên quan|tần suất|khởi phát|đường dùng)\s*:", re.IGNORECASE,
+    r"yếu tố liên quan|tần suất|khởi phát|đường dùng|lý do nhập viện|diễn biến bệnh|"
+    r"(?:các?\s+)?(?:triệu chứng|dấu hiệu|biểu hiện)(?:\s+liên quan)?|"
+    r"(?:các?\s+)?phát hiện chẩn đoán(?:\s+khác)?)\s*:", re.IGNORECASE,
 )
 DRUG_ACTION_PREFIX_RE = re.compile(
-    r"^\s*(?:bắt đầu\s+)?(?:đang\s+|đã\s+)?(?:dùng|uống|tiêm|truyền)\s+",
+    r"^\s*(?:(?:được\s+)?(?:bắt đầu|tiếp tục|ngừng|tăng|giảm|điều chỉnh|duy trì|"
+    r"chuyển|thay)\s+(?:liều\s+)?|(?:đang\s+|đã\s+)?(?:dùng|uống|tiêm|truyền|sử dụng)\s+)",
     re.IGNORECASE,
 )
+DRUG_ATTRIBUTION_SUFFIX_RE = re.compile(
+    r"\s*\(\s*(?:do|theo|by|per|prescribed\s+by|ordered\s+by)\b[^)]*\)\s*$",
+    re.IGNORECASE,
+)
+NON_DRUG_SUPPORT_RE = re.compile(
+    r"\b(?:thở|hỗ trợ hô hấp|liệu pháp hô hấp)\b[^\n]{0,60}\b(?:oxy|oxygen)\b",
+    re.IGNORECASE,
+)
+ADMINISTRATIVE_EVENT_RE = re.compile(
+    r"^\s*(?:"
+    r"(?:khám|tái khám|hội chẩn|đánh giá)\s+(?:tại|ở|thêm\b)|"
+    r"(?:được\s+)?(?:chuyển|giới thiệu|đưa)\b|"
+    r"được\s+(?:bác sĩ|nhân viên y tế)\b|"
+    r"(?:bệnh nhân\s+)?(?:muốn|mong muốn|kiên quyết|đồng ý|từ chối)\b|"
+    r"(?:báo cáo|ghi nhận)\s+(?:có\s+)?(?:cải thiện|đáp ứng)\b"
+    r")",
+    re.IGNORECASE,
+)
+STRUCTURED_SYMPTOM_LIST_RE = re.compile(
+    r"^\s*(?:các?\s+)?(?:triệu chứng|dấu hiệu|biểu hiện)(?:\s+liên quan)?\s*:\s*",
+    re.IGNORECASE,
+)
+STRUCTURED_LIST_SEPARATOR_RE = re.compile(r"\s*(?:,|;|\b(?:và|hoặc)\b)\s*", re.IGNORECASE)
 PROCEDURE_CUES = (
     "cắt bỏ", "phẫu thuật", "thủ thuật", "chọc hút", "nạo hạch", "đặt stent",
     "stent graft", "reduced from", "đã khám tổn thương", "mổ ", "nội soi",
@@ -487,17 +514,23 @@ def _trim_entity_context(raw: str, item: Entity) -> Entity | None:
     """Remove action/metadata wrappers while preserving raw offsets."""
     text = raw[item.start:item.end]
     if item.typ == "THUỐC":
-        if norm(text) == "reduced from" or _looks_like_procedure(text):
+        if norm(text) == "reduced from" or _looks_like_procedure(text) or NON_DRUG_SUPPORT_RE.search(text):
             return None
         match = DRUG_ACTION_PREFIX_RE.match(text)
         if match:
             item.start += match.end()
-            item.text = raw[item.start:item.end].strip()
-            item.start = item.end - len(item.text)
-            item.end = item.start + len(item.text)
+        text = raw[item.start:item.end]
+        suffix = DRUG_ATTRIBUTION_SUFFIX_RE.search(text)
+        if suffix:
+            item.end = item.start + suffix.start()
+        while item.start < item.end and raw[item.start].isspace():
+            item.start += 1
+        while item.end > item.start and raw[item.end - 1].isspace():
+            item.end -= 1
+        item.text = raw[item.start:item.end]
         if not item.text or _looks_like_procedure(item.text):
             return None
-    elif item.typ == "TRIỆU_CHỨNG":
+    elif item.typ in {"TRIỆU_CHỨNG", "CHẨN_ĐOÁN"}:
         match = METADATA_LABEL_RE.match(text)
         if match:
             item.start += match.end()
@@ -508,7 +541,37 @@ def _trim_entity_context(raw: str, item: Entity) -> Entity | None:
             item.end = item.start + len(item.text)
             if not item.text:
                 return None
+        if item.typ == "TRIỆU_CHỨNG" and ADMINISTRATIVE_EVENT_RE.match(item.text):
+            return None
     return item
+
+
+def _split_structured_symptom_list(raw: str, item: Entity) -> list[Entity]:
+    """Split explicitly labelled symptom lists without parsing free narrative prose."""
+    if item.typ != "TRIỆU_CHỨNG":
+        return [item]
+    text = raw[item.start:item.end]
+    label = STRUCTURED_SYMPTOM_LIST_RE.match(text)
+    if not label:
+        return [item]
+    content_start = item.start + label.end()
+    content = raw[content_start:item.end]
+    pieces: list[Entity] = []
+    cursor = 0
+    for separator in list(STRUCTURED_LIST_SEPARATOR_RE.finditer(content)) + [None]:
+        end = separator.start() if separator else len(content)
+        start = cursor
+        while start < end and content[start].isspace():
+            start += 1
+        while end > start and content[end - 1].isspace():
+            end -= 1
+        if end > start:
+            a, b = content_start + start, content_start + end
+            pieces.append(Entity(raw[a:b], item.typ, a, b, confidence=item.confidence, source=item.source))
+        if separator is None:
+            break
+        cursor = separator.end()
+    return pieces or [item]
 
 
 def _choose_same_span(raw: str, group: list[Entity]) -> Entity:
@@ -541,22 +604,82 @@ def _trim_result_prefix(raw: str, result: Entity, names: list[Entity]) -> None:
             return
 
 
+RESULT_SPLIT_CUES = (
+    "không ghi nhận", "không phát hiện", "không thấy", "không có gì", "bình thường", "bất thường",
+    "cho thấy", "ghi nhận",
+)
+MEASUREMENT_VALUE_RE = re.compile(
+    r"(?P<value>\d+(?:[.,]\d+)?(?:\s*[x×]\s*\d+(?:[.,]\d+)?){1,2}\s*(?:cm|mm|m)\b)",
+    flags=re.IGNORECASE,
+)
+MEASUREMENT_CUE_RE = re.compile(
+    r"\b(?:đo|kích\s+thước(?:\s+là)?|dài|rộng|cao)\s*$",
+    flags=re.IGNORECASE,
+)
+
+
+def _split_merged_result(raw: str, result: Entity) -> Entity | None:
+    """Infer a test-name span when an LLM merges it with the result clause."""
+    if result.typ != "KẾT_QUẢ_XÉT_NGHIỆM":
+        return None
+    text = raw[result.start:result.end]
+    matches: list[tuple[int, int]] = []
+    for cue in RESULT_SPLIT_CUES:
+        matches.extend(find_all(text, cue))
+    # Measurement clauses can arrive inside one result span. Keep the value as
+    # the result while inferring the preceding finding/test name.
+    for measurement in MEASUREMENT_VALUE_RE.finditer(text):
+        if MEASUREMENT_CUE_RE.search(text[:measurement.start()]):
+            matches.append((measurement.start(), measurement.end()))
+    if not matches:
+        return None
+    cue_start, _ = min(matches, key=lambda span: span[0])
+    if cue_start < 3:
+        return None
+
+    prefix = text[:cue_start].rstrip()
+    connector = re.search(r"\s+(?:là|la)\s*$", prefix, flags=re.IGNORECASE)
+    name_text = prefix[:connector.start()] if connector else prefix
+    name_text = name_text.rstrip()
+    if len(name_text) < 3:
+        return None
+
+    name_start = result.start
+    name_end = name_start + len(name_text)
+    result_start = name_end
+    while result_start < result.end and raw[result_start].isspace():
+        result_start += 1
+    if result_start >= result.end:
+        return None
+    result.start = result_start
+    result.text = raw[result.start:result.end]
+    return Entity(
+        raw[name_start:name_end],
+        "TÊN_XÉT_NGHIỆM",
+        name_start,
+        name_end,
+        confidence=result.confidence,
+        source="rule",
+    )
+
+
 def resolve(raw: str, items: list[Entity]) -> list[Entity]:
     # First remove heading spans and merge detector candidates by exact span/type.
     view = DocumentView.build(raw)
     cleaned: list[Entity] = []
     for item in items:
-        if item.start < 0 or item.end <= item.start or item.end > len(raw):
-            continue
-        if view.is_heading_entity(item.start, item.end):
-            continue
-        item = _trim_entity_context(raw, item)
-        if item is None or item.start < 0 or item.end <= item.start:
-            continue
-        if view.is_heading_entity(item.start, item.end) or view.is_metadata_entity(item.start, item.end):
-            continue
-        item.text = raw[item.start:item.end]
-        cleaned.append(item)
+        for piece in _split_structured_symptom_list(raw, item):
+            if piece.start < 0 or piece.end <= piece.start or piece.end > len(raw):
+                continue
+            if view.is_heading_entity(piece.start, piece.end):
+                continue
+            piece = _trim_entity_context(raw, piece)
+            if piece is None or piece.start < 0 or piece.end <= piece.start:
+                continue
+            if view.is_heading_entity(piece.start, piece.end) or view.is_metadata_entity(piece.start, piece.end):
+                continue
+            piece.text = raw[piece.start:piece.end]
+            cleaned.append(piece)
     items = cleaned
     by_exact: dict[tuple[int, int, str], list[Entity]] = {}
     for e in items:
@@ -569,6 +692,11 @@ def resolve(raw: str, items: list[Entity]) -> list[Entity]:
     names = [e for e in vals if e.typ == "TÊN_XÉT_NGHIỆM"]
     for e in vals:
         if e.typ == "KẾT_QUẢ_XÉT_NGHIỆM":
+            if not any(name.start == e.start and name.end < e.end for name in names):
+                inferred_name = _split_merged_result(raw, e)
+                if inferred_name is not None:
+                    names.append(inferred_name)
+                    vals.append(inferred_name)
             _trim_result_prefix(raw, e, names)
     keep = []
     for e in sorted(vals, key=lambda x: (x.start, -(x.end-x.start), -x.confidence)):
@@ -639,18 +767,29 @@ def llm_extract(raw: str, endpoint: str | None, model: str | None, timeout: int 
     view = DocumentView.build(raw)
     numbered = "\n".join(f"{line.line_id}: {line.text}" for line in view.lines)
     prompt = ("Extract Vietnamese clinical entities from the numbered INPUT. Return JSON array only. "
-              "Each item must be {line_id,text,type}; copy text exactly and never invent text. "
-              "Do not merge different occurrences. Do not return assertions or positions. "
-              "For medication entities, preserve the complete contiguous medication mention exactly as written, "
-              "including the core drug name, strength, route, frequency, and sig when present. "
-              "For downstream RxNorm linking, reason over the core ingredient and strength: treat "
-              "po/bid/tid/qid/daily/prn and similar administration instructions as noise, and allow "
-              "a base ingredient to match an RxNorm alias containing a salt, ester, active-moiety "
-              "variant, combination component, or derivative. Prefer aliases and semantic proximity "
-              "over exact whole-string matching; never replace the copied raw span with a canonical name. "
-              "Do not return section headings such as khám lâm sàng, chẩn đoán hình ảnh, or kết quả xét nghiệm. "
-              "A test name and its result are different entities: the name is TÊN_XÉT_NGHIỆM; "
-              "the measured/textual finding is KẾT_QUẢ_XÉT_NGHIỆM. "
+              "Each item must be {line_id,text,type}; it may additionally include link_text only for THUỐC or CHẨN_ĐOÁN. "
+              "Copy text as an exact contiguous raw substring and never invent or rewrite it. "
+              "Return one occurrence per item; do not merge separate occurrences and do not return assertions or positions. "
+              "Use atomic clinical spans: one medication, diagnosis, symptom/sign, test name, or test result per item. "
+              "Split coordinated lists and diagnostic alternatives into separate items unless they form one inseparable "
+              "combination medication or one official test name. Never emit a whole narrative sentence when its clinical "
+              "mentions can be isolated. Do not emit section headings, administrative events, referrals, consultations, "
+              "care plans, treatment response, or bare anatomical-location metadata. "
+              "THUỐC means a medication substance or product. Keep its exact name plus strength, formulation, route, and "
+              "frequency when present; omit dose-change/action wording, prescriber/reason attribution, and non-drug support "
+              "such as oxygen therapy. For RxNorm reasoning, use the core ingredient and strength; administration sig is noise. "
+              "Prioritize aliases and semantic proximity, allowing base ingredient, salt, ester, active-moiety, derivative, "
+              "or combination-component matches without replacing the raw span. "
+              "CHẨN_ĐOÁN means a documented disorder or diagnostic differential. Preserve the exact disease phrase but omit "
+              "narrative wrappers; reason over its core disease terms for ICD-10 aliases and semantic proximity. "
+              "For a medication or diagnosis that needs cross-language or abbreviation resolution, optionally provide link_text "
+              "as one concise English/Latin ontology-style core term. link_text is an internal lookup hint only: never include "
+              "an ICD/RxNorm code, do not use it for symptoms/tests, and omit it rather than guessing. "
+              "TRIỆU_CHỨNG means an individual patient-reported symptom, sign, lesion, or abnormal manifestation; output each "
+              "minimal manifestation separately rather than its history, severity label, or management narrative. "
+              "TÊN_XÉT_NGHIỆM is the test, procedure, or named measured finding; KẾT_QUẢ_XÉT_NGHIỆM is only its observed "
+              "textual/numeric value. When a statement combines a name with a predicate, observation, or measurement, split "
+              "the name from the result and never include the name inside the result span. "
               "Types: TRIỆU_CHỨNG,TÊN_XÉT_NGHIỆM,KẾT_QUẢ_XÉT_NGHIỆM,CHẨN_ĐOÁN,THUỐC. "
               "INPUT:\n" + numbered + "\n/no_think")
     payload = {"model": model or "local", "messages":[{"role":"system","content":"You are a clinical NLP extraction module. Return JSON only. Do not think step by step. Use one line_id per occurrence. /no_think"},{"role":"user","content":prompt}], "temperature":0, "max_tokens":2800}
@@ -672,6 +811,9 @@ def align_llm(raw: str, items: list[dict]) -> list[Entity]:
     for x in items:
         text, typ = str(x.get("text", "")), x.get("type")
         if typ not in ENTITY_TYPES or not text: continue
+        link_text = str(x.get("link_text", "")).strip() if typ in {"CHẨN_ĐOÁN", "THUỐC"} else ""
+        if len(link_text) > 240:
+            link_text = ""
         line_id = x.get("line_id")
         search_raw = raw
         offset = 0
@@ -691,7 +833,7 @@ def align_llm(raw: str, items: list[dict]) -> list[Entity]:
             a += offset; b += offset
             if view.is_heading_entity(a, b):
                 continue
-            out.append(Entity(raw[a:b], typ, a, b, confidence=.55, source="llm"))
+            out.append(Entity(raw[a:b], typ, a, b, confidence=.55, source="llm", link_text=link_text))
     return out
 
 
@@ -726,6 +868,14 @@ def link_entities(
             continue
         index = icd_index if entity.typ == "CHẨN_ĐOÁN" else rxnorm_index
         scored = _link_index(index, entity.text)
+        if entity.link_text and norm(entity.link_text) != norm(entity.text):
+            hinted = _link_index(index, entity.link_text)
+            if hinted and (
+                not scored
+                or scored[0].match_mode == "fuzzy"
+                or hinted[0].score > scored[0].score + 0.03
+            ):
+                scored = hinted
         entity.candidates = [item.code for item in scored]
         if audit is not None:
             audit.append({
