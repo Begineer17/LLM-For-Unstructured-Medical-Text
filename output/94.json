@@ -1,0 +1,152 @@
+[
+  {
+    "text": "Ung thư vú di căn ER+/HER2−",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      49,
+      76
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "weekly taxol",
+    "type": "THUỐC",
+    "position": [
+      98,
+      110
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1153806",
+      "1153807"
+    ]
+  },
+  {
+    "text": "fulvestrant",
+    "type": "THUỐC",
+    "position": [
+      114,
+      125
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282357"
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      181,
+      207
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      316
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      318,
+      326
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn kèm theo đi ngoài phân lỏng, toàn nước,  không nhầy máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      328,
+      387
+    ],
+    "assertions": []
+  },
+  {
+    "text": "VAS 7/10",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      433,
+      441
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      451,
+      459
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau bụng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      559,
+      580
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Buồn nôn, nôn ra thức ăn và dịch dạ dày, không có máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      582,
+      635
+    ],
+    "assertions": []
+  },
+  {
+    "text": "compazine",
+    "type": "THUỐC",
+    "position": [
+      764,
+      773
+    ],
+    "assertions": [],
+    "candidates": [
+      "203546"
+    ]
+  },
+  {
+    "text": "morphineoral",
+    "type": "THUỐC",
+    "position": [
+      812,
+      824
+    ],
+    "assertions": [],
+    "candidates": [
+      "1181672",
+      "1181673"
+    ]
+  },
+  {
+    "text": "lorazepam",
+    "type": "THUỐC",
+    "position": [
+      829,
+      838
+    ],
+    "assertions": [],
+    "candidates": [
+      "6470"
+    ]
+  }
+]

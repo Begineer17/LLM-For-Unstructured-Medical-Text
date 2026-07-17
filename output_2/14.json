@@ -1,0 +1,109 @@
+[
+  {
+    "text": "đau ngực tráikèm theo  khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      69,
+      99
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      123,
+      136
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      139,
+      146
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      149,
+      158
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      182,
+      195
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      239,
+      246
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      330,
+      339
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các nghiệm pháp gắng sức",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      412,
+      436
+    ]
+  },
+  {
+    "text": "Xạ hình tưới máu cơ tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      472,
+      495
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      553,
+      572
+    ]
+  },
+  {
+    "text": "Bệnh động mạch vành mạn tính có thiếu máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      699,
+      747
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hẹp 60% đoạn gần động mạch liên thất trước trái",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      749,
+      796
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

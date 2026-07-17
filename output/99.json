@@ -1,0 +1,49 @@
+[
+  {
+    "text": "rối loạn lo âu, không biệt định nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      39,
+      83
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "buồn nôn, đau dai dẳng, và táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      206,
+      240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      272,
+      280
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau dai dẳng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      287,
+      299
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      306,
+      313
+    ],
+    "assertions": []
+  }
+]

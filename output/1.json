@@ -1,0 +1,271 @@
+[
+  {
+    "text": "metoprolol 25mg po bid",
+    "type": "THUỐC",
+    "position": [
+      53,
+      75
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1370489"
+    ]
+  },
+  {
+    "text": "doxycycline cho viêm tuyến mồ hôi",
+    "type": "THUỐC",
+    "position": [
+      82,
+      115
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "atenolol (uống hôm nay)",
+    "type": "THUỐC",
+    "position": [
+      122,
+      145
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "caffeine",
+    "type": "THUỐC",
+    "position": [
+      356,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1886"
+    ]
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      666,
+      681
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó thở nhẹ khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      688,
+      707
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác thắt chặt ngực vùng trước tim (khởi phát lúc 17 giờ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      714,
+      775
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng đánh trống ngực (khởi phát lúc 17 giờ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      782,
+      825
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở (khởi phát lúc 17 giờ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      832,
+      862
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm thấy mệt mỏi nhiều khi gắng sức trong tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      869,
+      919
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm thấy mệt mỏi nhiều hơn sau khi luyện tập thể dục so với mọi ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      926,
+      994
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1053,
+      1068
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1084,
+      1099
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1121,
+      1128
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1180,
+      1187
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác thắt chặt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1217,
+      1240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1339,
+      1346
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không  buồn nôn, hay nôn, đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1454,
+      1489
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không liên quan đến gắng sức hoặc tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1496,
+      1536
+    ],
+    "assertions": []
+  },
+  {
+    "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1631,
+      1752
+    ]
+  },
+  {
+    "text": "metoprolol 25mg po bid",
+    "type": "THUỐC",
+    "position": [
+      1772,
+      1794
+    ],
+    "assertions": [],
+    "candidates": [
+      "1370489"
+    ]
+  },
+  {
+    "text": "atenololtrong ngày",
+    "type": "THUỐC",
+    "position": [
+      1849,
+      1867
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "aspirin 325mg x 1",
+    "type": "THUỐC",
+    "position": [
+      2199,
+      2216
+    ],
+    "assertions": [],
+    "candidates": [
+      "1191"
+    ]
+  },
+  {
+    "text": "ecg bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2331,
+      2346
+    ]
+  },
+  {
+    "text": "phân tích nước tiểu không có gì đáng chú ý",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2618,
+      2660
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực không có gì đáng chú ý",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2693,
+      2733
+    ]
+  },
+  {
+    "text": "điện tâm đồ là không ghi nhận gì bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2771,
+      2814
+    ]
+  },
+  {
+    "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2821,
+      2942
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "text": "NSAID để điều trị đau đầu gối (đã ngừng)",
+    "type": "THUỐC",
+    "position": [
+      59,
+      99
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "omeprazole (bắt đầu dùng)",
+    "type": "THUỐC",
+    "position": [
+      106,
+      131
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "viêm dạ dày",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1533,
+      1544
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1596,
+      1606
+    ],
+    "assertions": [],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "sỏi đoạn cuối ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1645,
+      1670
+    ]
+  },
+  {
+    "text": "men gan tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1706,
+      1718
+    ]
+  },
+  {
+    "text": "Xét nghiệm chức năng gan ghi nhận tăng men gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1823,
+      1869
+    ]
+  },
+  {
+    "text": "Nội soi thực quản - dạ dày - tá tràng: viêm dạ dày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1901,
+      1951
+    ]
+  },
+  {
+    "text": "Cộng hưởng từ mật tụy : sỏi đoạn cuối ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1953,
+      2002
+    ]
+  },
+  {
+    "text": "sỏi ống dẫn mật chung đoạn cuối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2214,
+      2245
+    ]
+  }
+]

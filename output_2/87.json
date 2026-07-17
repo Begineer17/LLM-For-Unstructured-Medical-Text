@@ -1,0 +1,168 @@
+[
+  {
+    "text": "chia tay bạn trai cũ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      60,
+      80
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh lý mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      85,
+      101
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "trầm cảm và  rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      108,
+      135
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tổn thương chi dưới do tự tử không thành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      179,
+      219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      263,
+      266
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "buồn chán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      314,
+      323
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "uống nhiều rượu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      340
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "hút cần sa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      341,
+      351
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "tổn thương chi dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      441,
+      460
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tổn thương tổn thương chi dưới nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      622,
+      665
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phẫu thuật cắt cụt chân trái bên trên gối  và cắt cụt chân phải bên dưới gối / biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      678,
+      857
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "position": [
+      847,
+      857
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124"
+    ]
+  },
+  {
+    "text": "kháng sinh tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      943,
+      963
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "lắp chân giả",
+    "type": "THUỐC",
+    "position": [
+      988,
+      1000
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suy nghĩ tích cực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1011,
+      1028
+    ],
+    "assertions": []
+  },
+  {
+    "text": "uộc sống không dừng lại vì một chấn thương từ bên ngoài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1059,
+      1114
+    ],
+    "assertions": []
+  }
+]

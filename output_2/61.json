@@ -1,0 +1,99 @@
+[
+  {
+    "text": "đau vùng xương bánh chè – đùi phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      107
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      202,
+      218
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      609,
+      625
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      665,
+      677
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hầu hết các hoạt động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      832,
+      853
+    ],
+    "assertions": []
+  },
+  {
+    "text": "leo cầu thang",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      880
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gập sâu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      884,
+      891
+    ],
+    "assertions": []
+  },
+  {
+    "text": "x-quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1043,
+      1050
+    ]
+  },
+  {
+    "text": "thay đổi thoái hóa",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1083,
+      1101
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1148,
+      1168
+    ]
+  },
+  {
+    "text": "góc tăng lên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1203,
+      1215
+    ]
+  }
+]

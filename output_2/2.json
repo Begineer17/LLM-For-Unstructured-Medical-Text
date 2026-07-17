@@ -1,0 +1,50 @@
+[
+  {
+    "text": "xơ gan do rượu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      61,
+      75
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      191,
+      208
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      270,
+      287
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      338,
+      355
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hội chứng não gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      432,
+      449
+    ],
+    "assertions": []
+  }
+]

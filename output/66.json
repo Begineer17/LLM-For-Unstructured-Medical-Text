@@ -1,0 +1,190 @@
+[
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      150,
+      157
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.9"
+    ]
+  },
+  {
+    "text": "đau bàn chân phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      360,
+      377
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất thăng bằng khi đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      384,
+      409
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm bể thận và viêm phế quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      473,
+      502
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "một liệu trình 14 day course of ertapenem",
+    "type": "THUỐC",
+    "position": [
+      555,
+      596
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hct (hematocrit) 8.126.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      808,
+      832
+    ]
+  },
+  {
+    "text": "tiểu cầu (platelets) 478",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      839,
+      863
+    ]
+  },
+  {
+    "text": "hco3- (bicarbonate) 20",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      870,
+      892
+    ]
+  },
+  {
+    "text": "ag (anion gap) 13",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      899,
+      916
+    ]
+  },
+  {
+    "text": "bun/creatinine (ure/creatinine)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      923,
+      954
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      927,
+      937
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      943,
+      953
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "glucose",
+    "type": "THUỐC",
+    "position": [
+      961,
+      968
+    ],
+    "assertions": [],
+    "candidates": [
+      "4850"
+    ]
+  },
+  {
+    "text": "glucose (đường huyết) 316",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      961,
+      986
+    ]
+  },
+  {
+    "text": "lactate",
+    "type": "THUỐC",
+    "position": [
+      993,
+      1000
+    ],
+    "assertions": [],
+    "candidates": [
+      "114202"
+    ]
+  },
+  {
+    "text": "lactate (acid lactat) 1.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      993,
+      1018
+    ]
+  },
+  {
+    "text": "Kết quả ua (urinalysis - tổng phân tích nước tiểu): 12 bạch cầu, không vi khuẩn, 1 hồng cầu, âm tính nitrite",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1025,
+      1133
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực cho thấy dòng picc đã đặt, không có quá trình bệnh lý tim phổi cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1190,
+      1279
+    ]
+  },
+  {
+    "text": "chụp x-quang bàn chân phải không phát hiện gãy xương hoặc viêm xương tủy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1286,
+      1358
+    ]
+  },
+  {
+    "text": "Bên phải âm tính với huyết khối tĩnh mạch sâu (DVT)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1365,
+      1416
+    ]
+  }
+]

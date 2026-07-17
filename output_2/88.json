@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Đái tháo đường típ 1 có biến chứng viêm thần kinh ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Viêm gan virus C và B",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      115,
+      136
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng áp động mạch phổi mức độ trung bình",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      143,
+      183
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "U lympho không hodgkin tế bàoB lớn lan toả",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      189,
+      231
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Dùngmethadonekéo dài",
+    "type": "THUỐC",
+    "position": [
+      356,
+      376
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "lasixđã dừng cách vài tuần",
+    "type": "THUỐC",
+    "position": [
+      383,
+      409
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Phù chân trái và hoại tử ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      453,
+      492
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn trong việc tự chăm sóc bản thân tại nhà",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      534,
+      582
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lasix",
+    "type": "THUỐC",
+    "position": [
+      604,
+      609
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "position": [
+      664,
+      669
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  }
+]

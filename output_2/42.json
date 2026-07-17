@@ -1,0 +1,121 @@
+[
+  {
+    "text": "methadone",
+    "type": "THUỐC",
+    "position": [
+      162,
+      171
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6813"
+    ]
+  },
+  {
+    "text": "phù hai bên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      321,
+      332
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ, RL",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      339,
+      349
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chủ quan sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      356,
+      368
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      375,
+      382
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau tăng dần khi đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      389,
+      412
+    ],
+    "assertions": []
+  },
+  {
+    "text": "RL (Chân phải)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      452,
+      466
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù, ban đỏ, chủ quan sốt, ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      540,
+      574
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù hai bên và ban đỏ, RL",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      801,
+      826
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      842,
+      850
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      866,
+      873
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      889,
+      897
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  }
+]

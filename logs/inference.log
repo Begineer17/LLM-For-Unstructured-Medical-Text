@@ -1,0 +1,205 @@
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2942
+INFO LLM extraction response: 52 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=593
+INFO LLM extraction response: 6 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=4428
+INFO LLM extraction response: 46 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2246
+INFO LLM extraction response: 32 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1420
+INFO LLM extraction response: 26 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=584
+INFO LLM extraction response: 8 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2308
+INFO LLM extraction response: 29 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=964
+INFO LLM extraction response: 8 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1069
+INFO LLM extraction response: 24 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=784
+INFO LLM extraction response: 16 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=514
+INFO LLM extraction response: 13 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1210
+INFO LLM extraction response: 19 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2572
+INFO LLM extraction response: 34 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=798
+INFO LLM extraction response: 12 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=281
+INFO LLM extraction response: 4 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2286
+INFO LLM extraction response: 54 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1983
+INFO LLM extraction response: 33 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=833
+INFO LLM extraction response: 14 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1216
+INFO LLM extraction response: 17 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=3007
+INFO LLM extraction response: 49 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=520
+INFO LLM extraction response: 7 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=379
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2878
+INFO LLM extraction response: 57 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1361
+INFO LLM extraction response: 13 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=440
+INFO LLM extraction response: 7 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=378
+INFO LLM extraction response: 4 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1368
+INFO LLM extraction response: 28 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2422
+INFO LLM extraction response: 50 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=373
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1517
+INFO LLM extraction response: 21 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=196
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2326
+INFO LLM extraction response: 29 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1627
+INFO LLM extraction response: 28 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1377
+INFO LLM extraction response: 20 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1725
+INFO LLM extraction response: 51 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2420
+INFO LLM extraction response: 49 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1739
+INFO LLM extraction response: 31 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1133
+INFO LLM extraction response: 21 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=670
+INFO LLM extraction response: 15 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1752
+INFO LLM extraction response: 27 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=3347
+INFO LLM extraction response: 48 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=925
+INFO LLM extraction response: 14 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1508
+INFO LLM extraction response: 17 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1980
+WARNING LLM JSON was truncated; recovered 119 complete items
+INFO LLM extraction response: 119 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=993
+INFO LLM extraction response: 9 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=616
+INFO LLM extraction response: 10 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2984
+INFO LLM extraction response: 11 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2762
+INFO LLM extraction response: 40 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1275
+INFO LLM extraction response: 28 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2073
+INFO LLM extraction response: 48 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1311
+INFO LLM extraction response: 22 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=989
+INFO LLM extraction response: 12 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1229
+INFO LLM extraction response: 16 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2956
+INFO LLM extraction response: 79 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=136
+INFO LLM extraction response: 4 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1499
+INFO LLM extraction response: 42 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=373
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2931
+INFO LLM extraction response: 57 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2126
+INFO LLM extraction response: 24 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=879
+INFO LLM extraction response: 6 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1215
+INFO LLM extraction response: 11 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=334
+INFO LLM extraction response: 6 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1676
+INFO LLM extraction response: 35 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1747
+INFO LLM extraction response: 19 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=646
+INFO LLM extraction response: 10 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1416
+INFO LLM extraction response: 33 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=503
+INFO LLM extraction response: 6 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=297
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=983
+INFO LLM extraction response: 17 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=2360
+INFO LLM extraction response: 52 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1009
+INFO LLM extraction response: 25 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1497
+INFO LLM extraction response: 26 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1707
+INFO LLM extraction response: 25 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1805
+INFO LLM extraction response: 20 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1828
+INFO LLM extraction response: 21 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1255
+INFO LLM extraction response: 35 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1232
+WARNING LLM JSON was truncated; recovered 128 complete items
+INFO LLM extraction response: 128 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=589
+INFO LLM extraction response: 17 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=344
+INFO LLM extraction response: 4 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=581
+INFO LLM extraction response: 9 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=462
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1251
+INFO LLM extraction response: 19 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=414
+INFO LLM extraction response: 6 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1415
+INFO LLM extraction response: 27 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=611
+INFO LLM extraction response: 12 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=859
+INFO LLM extraction response: 19 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1177
+INFO LLM extraction response: 16 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=964
+WARNING LLM JSON was truncated; recovered 85 complete items
+INFO LLM extraction response: 85 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1438
+WARNING LLM JSON was truncated; recovered 20 complete items
+INFO LLM extraction response: 20 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=235
+INFO LLM extraction response: 4 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1163
+INFO LLM extraction response: 21 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=612
+INFO LLM extraction response: 8 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=373
+INFO LLM extraction response: 5 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=887
+INFO LLM extraction response: 26 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=673
+INFO LLM extraction response: 11 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1639
+INFO LLM extraction response: 36 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1255
+INFO LLM extraction response: 28 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=499
+INFO LLM extraction response: 7 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=341
+INFO LLM extraction response: 9 items
+INFO LLM extraction request: endpoint=http://127.0.0.1:18080/v1 model=qwen3-8b-q4 chars=1513
+INFO LLM extraction response: 38 items
+INFO wrote output.zip

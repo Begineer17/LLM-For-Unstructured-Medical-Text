@@ -1,0 +1,157 @@
+[
+  {
+    "text": "Suy thận mạn giai đoạn V do đái tháo đường và tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      107
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "u ác của tuyến tiền liệt điều trị bằng xạ trị cấy hạt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      114,
+      167
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đặt shunt động tĩnh mạch (AVF) ở tay phải (RUE AVF)",
+    "type": "THUỐC",
+    "position": [
+      259,
+      310
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Sinh thiết tuyến tiền liệt",
+    "type": "THUỐC",
+    "position": [
+      317,
+      343
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "mệt mỏi, mất trí nhớ chi tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      387,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mệt mỏi nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      628,
+      641
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn không ngon miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      648,
+      667
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ngứa da toàn thân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      674,
+      697
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất trí nhớ chi tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      704,
+      724
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      731,
+      751
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn và nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      759,
+      774
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Kết quả xét nghiệm cho thấy creatinine tăng từ 5.2 lên 6.3 mg/dl (460 - 557 umol/l) và",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      795,
+      881
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      823,
+      833
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "Ure tăng từ 69 lên 91 mg/dl ( 24.6 -32.5 mmol/l)trong 2 tháng qua,  photpho 8.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      885,
+      964
+    ]
+  },
+  {
+    "text": "đánh giá trước ghép thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1018,
+      1042
+    ]
+  },
+  {
+    "text": "ghép thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1058,
+      1067
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "text": "đái tháo đường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      62
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      69,
+      82
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "triệu chứng liên quan đến tai biến mạch máu não từ vùng này",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      338,
+      397
+    ],
+    "assertions": []
+  }
+]

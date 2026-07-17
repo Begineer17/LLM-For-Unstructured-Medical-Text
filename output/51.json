@@ -1,0 +1,185 @@
+[
+  {
+    "text": "Đái tháo đường type 2",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      78
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      85,
+      98
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "cảm thấy khó chịu chung",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      205,
+      228
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghẹt mũi nhiều hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      235,
+      254
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      261,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      284,
+      291
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      298,
+      307
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy: vài tuần tiêu chảy bùng nổ, vài lần mỗi ngày, chủ yếu là phân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      339,
+      411
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy: không thấy  phân đen, nhầy, máu đỏ tươi hoặc dịch nhầy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      418,
+      483
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali là 2.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      583,
+      594
+    ]
+  },
+  {
+    "text": "Được bổ sung kali 80mEq trong 24 giờ",
+    "type": "THUỐC",
+    "position": [
+      601,
+      637
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Quay lại để làm lại xét nghiệm vào ngày",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      644,
+      683
+    ]
+  },
+  {
+    "text": "Lặp lại xét nghiệm cho thấy kali vẫn giảm xuống 2.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      690,
+      741
+    ]
+  },
+  {
+    "text": "Được kê azithromycin vào ngày",
+    "type": "THUỐC",
+    "position": [
+      787,
+      816
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "kali là 2.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1032,
+      1043
+    ]
+  },
+  {
+    "text": "kali vẫn giảm xuống 2.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1050,
+      1073
+    ]
+  },
+  {
+    "text": "kali dai dẳng 2.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1080,
+      1097
+    ]
+  },
+  {
+    "text": "Nhận 40meq po k",
+    "type": "THUỐC",
+    "position": [
+      1131,
+      1146
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nhận 40meq iv k",
+    "type": "THUỐC",
+    "position": [
+      1153,
+      1168
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hạ kali máu rõ rệt trong bối cảnh tiêu chảy và có khả năng nhiễm trùng đường hô hấp trên cấp, không xác định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1203,
+      1311
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

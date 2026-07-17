@@ -1,0 +1,152 @@
+[
+  {
+    "text": "Suy thận mạn giai đoạn V do đái tháo đường và tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      107
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "u ác của tuyến tiền liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      114,
+      138
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đặt shunt động tĩnh mạch (AVF) ở tay phải (RUE AVF)",
+    "type": "THUỐC",
+    "position": [
+      259,
+      310
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Sinh thiết tuyến tiền liệt",
+    "type": "THUỐC",
+    "position": [
+      317,
+      343
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "mệt mỏi, mất trí nhớ chi tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      387,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó chịu mệt mỏi nhiều, ăn không ngon miệng, ngứa da toàn thân nhiều, và mất trí nhớ chi tiết, khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      439,
+      554
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mệt mỏi nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      628,
+      641
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn không ngon miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      648,
+      667
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ngứa da toàn thân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      674,
+      697
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất trí nhớ chi tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      704,
+      724
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      731,
+      751
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn và nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      759,
+      774
+    ],
+    "assertions": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      823,
+      833
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine tăng từ 5.2 lên 6.3 mg/dl (460 - 557 umol/l) và",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      823,
+      881
+    ]
+  },
+  {
+    "text": "đánh giá trước ghép thận",
+    "type": "THUỐC",
+    "position": [
+      1018,
+      1042
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

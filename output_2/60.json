@@ -1,0 +1,55 @@
+[
+  {
+    "text": "triệu chứng trào ngược",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      528,
+      550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Kêt quả không",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      615,
+      628
+    ]
+  },
+  {
+    "text": "cho thấy thoát vị hoành cách đây một năm.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      629,
+      670
+    ]
+  },
+  {
+    "text": "thoát vị cạnh thực quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      694,
+      717
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Thoát vị",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      733,
+      741
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Vị trí nối thực quản - dạ dày",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      822,
+      851
+    ]
+  }
+]

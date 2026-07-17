@@ -1,0 +1,70 @@
+[
+  {
+    "text": "octreotide",
+    "type": "THUỐC",
+    "position": [
+      206,
+      216
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7617"
+    ]
+  },
+  {
+    "text": "flagyl, chăm sóc vết thương tại chỗ, nhịn ăn đường miệng, dinh dưỡng tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      223,
+      301
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "flagyl",
+    "type": "THUỐC",
+    "position": [
+      742,
+      748
+    ],
+    "assertions": [],
+    "candidates": [
+      "202866"
+    ]
+  },
+  {
+    "text": "Nhịn ăn uống đường miệng, nuôi dưỡng đường tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      1216,
+      1268
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Catheter PICC được chuyển sang tay trái",
+    "type": "THUỐC",
+    "position": [
+      1270,
+      1309
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "PICC được chuyển sang LUE",
+    "type": "THUỐC",
+    "position": [
+      1412,
+      1437
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

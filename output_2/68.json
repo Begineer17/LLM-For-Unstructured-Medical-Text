@@ -1,0 +1,44 @@
+[
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính, không xác định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      101
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tâm thần phân liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      108,
+      126
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "yếu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      209,
+      212
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đáng chú ý nhất ở ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      247,
+      269
+    ],
+    "assertions": []
+  }
+]

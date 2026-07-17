@@ -1,0 +1,140 @@
+[
+  {
+    "text": "đau bụng dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      37,
+      52
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      133
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      136,
+      147
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      150,
+      157
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất ăn ngon",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      160,
+      171
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thượng vị và góc phần tư trên bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      203,
+      241
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      244,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chướng bụng, ớn lạnh, mất ăn ngon",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      302,
+      335
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      412,
+      415
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhịp tim nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      418,
+      432
+    ],
+    "assertions": []
+  },
+  {
+    "text": "công thức máu là 32",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      454,
+      473
+    ]
+  },
+  {
+    "text": "suy thận cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      476,
+      488
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bất thường điện giải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      491,
+      511
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh: Kết quả chụp cắt lớp vi tính cho thấy viêm túi mật thủng cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      512,
+      605
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  },
+  {
+    "text": "Đặt ống dẫn lưu phúc mạc qua da cho túi mật",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      627,
+      670
+    ]
+  }
+]

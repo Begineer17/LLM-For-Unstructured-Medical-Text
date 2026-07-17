@@ -1,0 +1,213 @@
+[
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      101,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "tăng huyết áp vô căn (nguyên phát) (Tăng huyết áp)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      193,
+      243
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu (tăng lipid máu, không đặc hiệu)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      250,
+      313
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường type 2 (Đái tháo đường típ 2)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      320,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính, không xác định (bệnh phổi tắc nghẽn mạn tính, không xác định)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      371,
+      462
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch (bệnh tim mạch do xơ vữa động mạch) đã phẫu thuật bắc cầu chủ động mạch vành (sp CABG)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      469,
+      589
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "aspirin 81mg (asa81)",
+    "type": "THUỐC",
+    "position": [
+      760,
+      780
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "315431"
+    ]
+  },
+  {
+    "text": "clopidogrel (prasugrel chuyển sang clopidogrel do Đột quỵ gần đây)",
+    "type": "THUỐC",
+    "position": [
+      787,
+      853
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "metoprolol succinate 100mg daily (tăng liều)",
+    "type": "THUỐC",
+    "position": [
+      860,
+      904
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1370483"
+    ]
+  },
+  {
+    "text": "lasix 40mg daily (tăng liều)",
+    "type": "THUỐC",
+    "position": [
+      911,
+      939
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "200809"
+    ]
+  },
+  {
+    "text": "atorvastatin 80mg daily (bắt đầu)",
+    "type": "THUỐC",
+    "position": [
+      946,
+      979
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "329299"
+    ]
+  },
+  {
+    "text": "lisinopril 2.5mg daily (bắt đầu)",
+    "type": "THUỐC",
+    "position": [
+      986,
+      1018
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "311353",
+      "316152"
+    ]
+  },
+  {
+    "text": "ranexa 500mg daily (tiếp tục)",
+    "type": "THUỐC",
+    "position": [
+      1025,
+      1054
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1103,
+      1111
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1410,
+      1418
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có đau ngực, khó thở, đánh trống ngực",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1564,
+      1607
+    ]
+  },
+  {
+    "text": "tổng trạng thái ổn",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1615,
+      1633
+    ]
+  },
+  {
+    "text": "Ngủ kê cao đầu bằng 2 gối vào ban đêm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1641,
+      1678
+    ]
+  }
+]

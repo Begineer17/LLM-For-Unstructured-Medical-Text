@@ -1,0 +1,225 @@
+[
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "position": [
+      298,
+      308
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "11124"
+    ]
+  },
+  {
+    "text": "ceftazidime",
+    "type": "THUỐC",
+    "position": [
+      311,
+      322
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "2191"
+    ]
+  },
+  {
+    "text": "amiodarone",
+    "type": "THUỐC",
+    "position": [
+      325,
+      335
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "703"
+    ]
+  },
+  {
+    "text": "thay thế bicarbonate",
+    "type": "THUỐC",
+    "position": [
+      338,
+      358
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "position": [
+      728,
+      738
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124"
+    ]
+  },
+  {
+    "text": "ceftazidime",
+    "type": "THUỐC",
+    "position": [
+      776,
+      787
+    ],
+    "assertions": [],
+    "candidates": [
+      "2191"
+    ]
+  },
+  {
+    "text": "amiodarone",
+    "type": "THUỐC",
+    "position": [
+      950,
+      960
+    ],
+    "assertions": [],
+    "candidates": [
+      "703"
+    ]
+  },
+  {
+    "text": "thiếu máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1633,
+      1642
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân và máu trong trực tràng (thỉnh thoảng)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1645,
+      1688
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm phổi thuỳ, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1691,
+      1721
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rung cuống nhĩ với đáp ứng thất nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1724,
+      1761
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy giảm huyết động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1764,
+      1783
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rối loạn cân bằng kiềm toan phối hợp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1786,
+      1822
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sưng, sưng nhẹ, đau nhẹ ở mắt cá chân trái (3 ngày)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1825,
+      1876
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hct vào ngày xuất viện là 24.5",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2556,
+      2586
+    ]
+  },
+  {
+    "text": "hct lặp lại tại 26.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2589,
+      2609
+    ]
+  },
+  {
+    "text": "hct trả về là 24.7 (tại cơ sở điều dưỡng)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2612,
+      2653
+    ]
+  },
+  {
+    "text": "rối loạn cân bằng kiềm toan phối hợp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2656,
+      2692
+    ]
+  },
+  {
+    "text": "chẩn đoán viêm phổi thùy dưới trái bằng hình ảnh",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2721,
+      2769
+    ]
+  },
+  {
+    "text": "suy thận cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2877,
+      2889
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tái phát u ác trực tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2892,
+      2916
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "rung cuống nhĩ với đáp ứng thất nhanh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2919,
+      2956
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

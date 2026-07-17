@@ -1,0 +1,107 @@
+[
+  {
+    "text": "ung thư vú trái giai IIIB ung thư vú trái",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      58,
+      99
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "levafloxacin và cephalexin",
+    "type": "THUỐC",
+    "position": [
+      698,
+      724
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      938,
+      944
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau khi sờ nắn vùng mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      987,
+      1009
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1016,
+      1025
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ ở vị trí phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1154,
+      1180
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ấn vùng mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1187,
+      1201
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1208,
+      1217
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chọc hút dịch",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1326,
+      1339
+    ]
+  },
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "position": [
+      1351,
+      1361
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124"
+    ]
+  }
+]

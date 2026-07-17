@@ -1,0 +1,226 @@
+[
+  {
+    "text": "thông não so với chụp cắt lớp vi tính (ct) đầu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      93,
+      139
+    ]
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      263,
+      270
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "não úng thuỷ khác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      388,
+      405
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "điều trị chứng tăng nhãn áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      489,
+      516
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Hệ thống dẫn lưu",
+    "type": "THUỐC",
+    "position": [
+      537,
+      553
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Hệ thống dẫn lưu",
+    "type": "THUỐC",
+    "position": [
+      597,
+      613
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu kéo dài kèm theo mờ mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      703,
+      734
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ tiến triển trong 2 tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      772,
+      807
+    ],
+    "assertions": []
+  },
+  {
+    "text": "não úng tuỷ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      846,
+      857
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "não úng thủy",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      968,
+      980
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1109,
+      1116
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù gai thị",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1192,
+      1203
+    ]
+  },
+  {
+    "text": "mờ mắt ở cả hai mắt, bên trái nặng hơn bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1237,
+      1284
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng tần suất đau đầu gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1347,
+      1378
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1411,
+      1426
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ ở cả hai mắt, bên trái nặng hơn bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1433,
+      1481
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cơn  đau đầu nhiều hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1489,
+      1511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1543,
+      1550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1614,
+      1621
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khám ngoại trú",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1700,
+      1714
+    ]
+  },
+  {
+    "text": "phù gai thị",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1782,
+      1793
+    ]
+  },
+  {
+    "text": "Phù gai thị",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1872,
+      1883
+    ]
+  },
+  {
+    "text": "Tăng nhãn áp so với chụp cắt lớp vi tính (ct) đầu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1987,
+      2036
+    ]
+  },
+  {
+    "text": "Phù gai thị",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2078,
+      2089
+    ]
+  }
+]

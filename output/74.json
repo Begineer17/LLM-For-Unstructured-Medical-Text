@@ -1,0 +1,92 @@
+[
+  {
+    "text": "cipro",
+    "type": "THUỐC",
+    "position": [
+      165,
+      170
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "203563"
+    ]
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      177,
+      184
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "Kháng sinh cho nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "THUỐC",
+    "position": [
+      191,
+      256
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "iv morphineiv morphine and toradol",
+    "type": "THUỐC",
+    "position": [
+      634,
+      668
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cipro",
+    "type": "THUỐC",
+    "position": [
+      1012,
+      1017
+    ],
+    "assertions": [],
+    "candidates": [
+      "203563"
+    ]
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      1021,
+      1028
+    ],
+    "assertions": [],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "công thức máu (cbc)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1527,
+      1546
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) bụng và chậu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1597,
+      1635
+    ]
+  }
+]

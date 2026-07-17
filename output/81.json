@@ -1,0 +1,37 @@
+[
+  {
+    "text": "vết thương thấu bụng giữa bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      95,
+      129
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh:",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      227,
+      254
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) sọ  trước mổ cho thấy độ dày niêm mạc xoang hàm dày lên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      257,
+      338
+    ]
+  },
+  {
+    "text": "không có tổn thương rõ ràng khác trên chụp cắt lớp vi tính (ct) bụng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      341,
+      409
+    ]
+  }
+]

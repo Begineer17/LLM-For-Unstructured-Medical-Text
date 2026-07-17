@@ -1,0 +1,91 @@
+[
+  {
+    "text": "đại tiện ra máu đỏ tươi gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      196,
+      229
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      232,
+      241
+    ],
+    "assertions": []
+  },
+  {
+    "text": "qua đường hậu môn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      273,
+      290
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Màu sắc: đỏ tươi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      293,
+      309
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng kèm theo: chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      312,
+      343
+    ],
+    "assertions": []
+  },
+  {
+    "text": "inr là 2.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      418,
+      428
+    ]
+  },
+  {
+    "text": "rối loạn đông máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      489,
+      506
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng Cr theo phòng cấp cứu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      531,
+      557
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "inr là 2.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      606,
+      616
+    ]
+  },
+  {
+    "text": "tăng Cr theo phòng cấp cứu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      619,
+      645
+    ]
+  }
+]

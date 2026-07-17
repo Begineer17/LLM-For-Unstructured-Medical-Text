@@ -1,0 +1,32 @@
+[
+  {
+    "text": "dịch yếu tố IX đậm đặc",
+    "type": "THUỐC",
+    "position": [
+      151,
+      173
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "xuất huyết nội sọ không do chấn thương, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      205,
+      259
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Điều trị chống đông",
+    "type": "THUỐC",
+    "position": [
+      262,
+      281
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

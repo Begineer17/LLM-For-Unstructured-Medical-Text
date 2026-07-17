@@ -1,0 +1,56 @@
+[
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      59,
+      79
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      190,
+      210
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      247,
+      258
+    ]
+  },
+  {
+    "text": "hở van hai lá nặng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      268,
+      286
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Chụp động mạch vành",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      289,
+      308
+    ]
+  },
+  {
+    "text": "lợi tiểu",
+    "type": "THUỐC",
+    "position": [
+      364,
+      372
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

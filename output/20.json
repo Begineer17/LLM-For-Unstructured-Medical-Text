@@ -1,0 +1,230 @@
+[
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      142,
+      157
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "rung nhĩ kịch phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      172,
+      190
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I48.0"
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "position": [
+      354,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6918"
+    ]
+  },
+  {
+    "text": "desmopressin",
+    "type": "THUỐC",
+    "position": [
+      405,
+      417
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "3251"
+    ]
+  },
+  {
+    "text": "Gọi xe cứu thương",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1375,
+      1392
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mất vận động vùng đỉnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1438,
+      1460
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp x-quang ngực Hình ảnh mức nước - hơi vùng ngực.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1467,
+      1519
+    ]
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang cho thấy tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, và xẹp phổi hai đáy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1526,
+      1690
+    ]
+  },
+  {
+    "text": "Tình trạng tiến triển nặng trước nhập viện, bệnh nhân nằm tại giường, không thể tự di chuyển và không chịu lực được khi đứng.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1695,
+      1820
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp x-quang ngực: mức nước-khí",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2023,
+      2054
+    ]
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang: tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, xẹp phổi hai đáy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2061,
+      2214
+    ]
+  },
+  {
+    "text": "xạ hình tưới máu cơ tim  mibi: khuyết tật toàn bộ, không hồi phục, kích thước vừa phải ở thành dưới gần mấu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2221,
+      2328
+    ]
+  },
+  {
+    "text": "siêu âm tim qua thành ngực (siêu âm tim qua thành ngực): EF30, mất vận động vùng đỉnh, hở van ba lá vừa-nặng (mod-severe TR) và hở van hai lá/van động mạch chủ nhẹ (mild ARMR)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2335,
+      2510
+    ]
+  },
+  {
+    "text": "Gãy xương hông phải: gãy cổ xương đùi phải, lún đầu dưới",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2517,
+      2573
+    ]
+  },
+  {
+    "text": "Các thủ thuật đã thực hiện",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2578,
+      2604
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2611,
+      2645
+    ]
+  },
+  {
+    "text": "siêu âm tim qua thành ngực (siêu âm tim qua thành ngực)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2652,
+      2707
+    ]
+  },
+  {
+    "text": "chụp xạ hình tim bằng mibi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2714,
+      2740
+    ]
+  },
+  {
+    "text": "Nhồi máu cơ tim vùng vách liên thất, mạn tính và đỉnh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2847,
+      2900
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "rung nhĩ kịch phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2907,
+      2925
+    ],
+    "assertions": [],
+    "candidates": [
+      "I48.0"
+    ]
+  },
+  {
+    "text": "rung nhĩ kịch phát liên tục kể từ Nhồi máu cơ tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2907,
+      2956
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2941,
+      2956
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "tiểu đêm nhiều  do  tăng sản tuyến tiền liệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2963,
+      3007
+    ],
+    "assertions": []
+  }
+]

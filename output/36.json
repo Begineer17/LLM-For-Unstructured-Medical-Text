@@ -1,0 +1,308 @@
+[
+  {
+    "text": "azathioprine",
+    "type": "THUỐC",
+    "position": [
+      208,
+      220
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1256"
+    ]
+  },
+  {
+    "text": "prograf (dose decreased from 5mg bid to 1mg bid)",
+    "type": "THUỐC",
+    "position": [
+      233,
+      281
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "108513",
+      "108514"
+    ]
+  },
+  {
+    "text": "cellcept (bệnh nhân đang dùng cellcept)",
+    "type": "THUỐC",
+    "position": [
+      294,
+      333
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      457,
+      467
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      514,
+      524
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      573,
+      583
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      653,
+      661
+    ],
+    "assertions": [],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      692,
+      702
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "pcr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      794,
+      797
+    ]
+  },
+  {
+    "text": "prograf dose decreased from 5mg bid to 1mg bid",
+    "type": "THUỐC",
+    "position": [
+      893,
+      939
+    ],
+    "assertions": [],
+    "candidates": [
+      "108513",
+      "108514"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      953,
+      963
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1179,
+      1189
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "k",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1218,
+      1219
+    ]
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      1385,
+      1393
+    ],
+    "assertions": [],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "pcr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1419,
+      1422
+    ]
+  },
+  {
+    "text": "prograf dose decreased from 5mg bid to 1mg bid",
+    "type": "THUỐC",
+    "position": [
+      1469,
+      1515
+    ],
+    "assertions": [],
+    "candidates": [
+      "108513",
+      "108514"
+    ]
+  },
+  {
+    "text": "siêu âm thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1529,
+      1541
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1736,
+      1746
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine 5.1; k 5.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1736,
+      1757
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1936,
+      1946
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine 5.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1936,
+      1950
+    ]
+  },
+  {
+    "text": "k 5.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1963,
+      1968
+    ]
+  },
+  {
+    "text": "pcr dương tính với virus bk",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1981,
+      2008
+    ]
+  },
+  {
+    "text": "siêu âm thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2045,
+      2057
+    ]
+  },
+  {
+    "text": "Sinh thiết thận",
+    "type": "THUỐC",
+    "position": [
+      2139,
+      2154
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Sinh thiết thận lại",
+    "type": "THUỐC",
+    "position": [
+      2191,
+      2210
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh lý thận do BK",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2282,
+      2300
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Lo ngại về đào thải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2313,
+      2332
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có bằng chứng đào thải kháng thể hữu hình cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2345,
+      2401
+    ]
+  }
+]

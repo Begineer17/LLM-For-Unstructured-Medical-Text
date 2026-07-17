@@ -1,0 +1,264 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      52
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng lipid máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      55,
+      69
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      72,
+      92
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch sau CABG",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      95,
+      137
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      140,
+      147
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp phổi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      189,
+      207
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "CABG",
+    "type": "THUỐC",
+    "position": [
+      240,
+      244
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "position": [
+      272,
+      277
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      342,
+      349
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức nhẹ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      352,
+      376
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho khan ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      379,
+      389
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sưng phù hai mắt cá chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      392,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      419,
+      434
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      437,
+      440
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Suy tim sung huyết cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      485,
+      507
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "position": [
+      544,
+      549
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "thông tim trái và phải",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      724,
+      746
+    ]
+  },
+  {
+    "text": "thông tim trái",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      749,
+      763
+    ]
+  },
+  {
+    "text": "thông tim phải",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      766,
+      780
+    ]
+  },
+  {
+    "text": "graft SVG bị tắc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      812,
+      828
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "graft lima ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      831,
+      849
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh động mạch vành phải nặng hơn với 60 RPL và 40 mid RCA",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      852,
+      910
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Động mạch vành trái bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      913,
+      944
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "áp lực nạp tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      947,
+      962
+    ]
+  },
+  {
+    "text": "áp lực tâm thu phổi ở",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      965,
+      986
+    ]
+  },
+  {
+    "text": "áp lực tĩnh mạch bít",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      989,
+      1009
+    ]
+  }
+]

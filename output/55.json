@@ -1,0 +1,29 @@
+[
+  {
+    "text": "sốt, đau quanh vết mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      42,
+      63
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      87,
+      90
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau quanh vết mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      93,
+      109
+    ],
+    "assertions": []
+  }
+]

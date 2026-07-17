@@ -1,0 +1,160 @@
+[
+  {
+    "text": "vàng da không đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      135
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      138,
+      142
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăngtăng các xét nghiệm chức năng gan và bilirubin khi khám",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      177,
+      236
+    ]
+  },
+  {
+    "text": "âm tính đánh giá từ xét nghiệm huyết thanh của cô ấy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      239,
+      291
+    ]
+  },
+  {
+    "text": "siêu âm cho thấy giãn đường dẫn mật trong gan ở ống mật chủ 15 mm tại mức tuyến tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      294,
+      377
+    ]
+  },
+  {
+    "text": "ercp (nội soi mật tụy ngược dòng) bởi Bác sĩ cho thấy một khối phình to 2 cm ở nhúm tá tràng lớn với gợi ý về một khối khối u lân cận",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      380,
+      513
+    ]
+  },
+  {
+    "text": "một chỗ hẹp đơn lẻ được thấy, dài 7 mm ở một phần ba dưới của ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      516,
+      589
+    ]
+  },
+  {
+    "text": "lấy mẫu tế bào bằng chổi là phiên hình",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      592,
+      630
+    ]
+  },
+  {
+    "text": "sinh thiết cho thấy ung thư biểu mô tuyến, biệt hóa vừa phải đến kém",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      633,
+      701
+    ]
+  },
+  {
+    "text": "các đặc điểm mô học phù hợp với một khối u có nguồn gốc từ đường mật tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      704,
+      776
+    ]
+  },
+  {
+    "text": "tăng các xét nghiệm chức năng gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      826,
+      859
+    ]
+  },
+  {
+    "text": "bilirubin",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      862,
+      871
+    ]
+  },
+  {
+    "text": "lấy mẫu tế bào bằng chổi là phiên hình",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      874,
+      912
+    ]
+  },
+  {
+    "text": "sinh thiết cho thấy ung thư biểu mô tuyến, biệt hóa vừa phải đến kém",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      915,
+      983
+    ]
+  },
+  {
+    "text": "siêu âm cho thấy giãn đường dẫn mật trong gan ở ống mật chủ 15 mm tại mức tuyến tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1013,
+      1096
+    ]
+  },
+  {
+    "text": "ercp (nội soi mật tụy ngược dòng) cho thấy một khối phình to 2 cm ở nhúm tá tràng lớn với gợi ý về một khối khối u lân cận",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1099,
+      1221
+    ]
+  },
+  {
+    "text": "một chỗ hẹp đơn lẻ được thấy, dài 7 mm ở một phần ba dưới của ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1224,
+      1297
+    ]
+  },
+  {
+    "text": "u ác của đầu tuỵ mới được chẩn đoán",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1387,
+      1422
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "các đặc điểm mô học phù hợp với một khối u có nguồn gốc từ đường mật tụy",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1425,
+      1497
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

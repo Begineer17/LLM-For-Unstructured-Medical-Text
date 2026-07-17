@@ -1,0 +1,442 @@
+[
+  {
+    "text": "Tăng huyết áp.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      39,
+      53
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đái tháo đường, có biến chứng bệnh lý thần kinh ngoại biên.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      54,
+      113
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Suy tim không do thiếu máu cơ tim (theo chẩn đoán trước đây).",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      114,
+      175
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh thận mạn tính.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      176,
+      195
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Torsemide: uống 1 viên/ngày, đôi khi 2 viên/ngày.",
+    "type": "THUỐC",
+    "position": [
+      224,
+      273
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Insulin glargine: theo đơn 100 đơn vị x 2 lần/ngày, hiện đã ngừng sử dụng.",
+    "type": "THUỐC",
+    "position": [
+      274,
+      348
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Isosorbide: đã hết thuốc khoảng 3 tuần trước nhập viện.",
+    "type": "THUỐC",
+    "position": [
+      349,
+      404
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Rosuvastatin (Crestor): đã hết thuốc khoảng 3 tuần trước nhập viện.",
+    "type": "THUỐC",
+    "position": [
+      405,
+      472
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Carvedilol: đã hết thuốc khoảng 3 tuần trước nhập viện.",
+    "type": "THUỐC",
+    "position": [
+      473,
+      528
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "xét nghiệm bất thường - tăng kali máu và Creatinine tăng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      566,
+      622
+    ]
+  },
+  {
+    "text": "Creatinine",
+    "type": "THUỐC",
+    "position": [
+      607,
+      617
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "Các sự kiện trước khi nhập viện",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      623,
+      654
+    ]
+  },
+  {
+    "text": "Đi khám bác sĩ chăm sóc chính (PCP) để tái khám hàng năm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      657,
+      713
+    ]
+  },
+  {
+    "text": "Báo cáo đang dùng 1 viên Torsemide/ ngày , đôi khi 2 viên",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      716,
+      773
+    ]
+  },
+  {
+    "text": "Torsemide",
+    "type": "THUỐC",
+    "position": [
+      741,
+      750
+    ],
+    "assertions": [],
+    "candidates": [
+      "38413"
+    ]
+  },
+  {
+    "text": "Bác sĩ đề nghị ngừng sử dụng torsemide lâu dài",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      776,
+      822
+    ]
+  },
+  {
+    "text": "torsemide",
+    "type": "THUỐC",
+    "position": [
+      805,
+      814
+    ],
+    "assertions": [],
+    "candidates": [
+      "38413"
+    ]
+  },
+  {
+    "text": "Bệnh nhân không kiểm tra đường huyết thường xuyên tại nhà do hết que thử đường máu.",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      825,
+      908
+    ]
+  },
+  {
+    "text": "glucose",
+    "type": "THUỐC",
+    "position": [
+      911,
+      918
+    ],
+    "assertions": [],
+    "candidates": [
+      "4850"
+    ]
+  },
+  {
+    "text": "glucose là thấp, nên ngừng dùng glargine",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      911,
+      951
+    ]
+  },
+  {
+    "text": "Báo cáo bị ngã gần đây",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      954,
+      976
+    ]
+  },
+  {
+    "text": "Dùng xe đẩy hàng làm dụng cụ hỗ trợ đi lại",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      979,
+      1021
+    ]
+  },
+  {
+    "text": "Các loại thuốc (isosorbide, crestor, carvedilol) đã hết khi đi khám PCP",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1024,
+      1095
+    ]
+  },
+  {
+    "text": "isosorbide",
+    "type": "THUỐC",
+    "position": [
+      1040,
+      1050
+    ],
+    "assertions": [],
+    "candidates": [
+      "6057"
+    ]
+  },
+  {
+    "text": "crestor",
+    "type": "THUỐC",
+    "position": [
+      1052,
+      1059
+    ],
+    "assertions": [],
+    "candidates": [
+      "320864"
+    ]
+  },
+  {
+    "text": "carvedilol",
+    "type": "THUỐC",
+    "position": [
+      1061,
+      1071
+    ],
+    "assertions": [],
+    "candidates": [
+      "20352"
+    ]
+  },
+  {
+    "text": "Hết isosorbide, crestor, carvedilol khoảng 3 tuần trước",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1098,
+      1153
+    ]
+  },
+  {
+    "text": "isosorbide",
+    "type": "THUỐC",
+    "position": [
+      1102,
+      1112
+    ],
+    "assertions": [],
+    "candidates": [
+      "6057"
+    ]
+  },
+  {
+    "text": "crestor",
+    "type": "THUỐC",
+    "position": [
+      1114,
+      1121
+    ],
+    "assertions": [],
+    "candidates": [
+      "320864"
+    ]
+  },
+  {
+    "text": "carvedilol",
+    "type": "THUỐC",
+    "position": [
+      1123,
+      1133
+    ],
+    "assertions": [],
+    "candidates": [
+      "20352"
+    ]
+  },
+  {
+    "text": "Các xét nghiệm xét nghiệm được kiểm tra bởi PCP: kali là 6.3 mẫu không tan máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1156,
+      1234
+    ]
+  },
+  {
+    "text": "kali 6.3, mẫu không tan máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1356,
+      1383
+    ]
+  },
+  {
+    "text": "kali (k).8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1386,
+      1396
+    ]
+  },
+  {
+    "text": "ure (bun) 83",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1399,
+      1411
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1414,
+      1424
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine 5.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1414,
+      1428
+    ]
+  },
+  {
+    "text": "hemoglobin 7.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1431,
+      1445
+    ]
+  },
+  {
+    "text": "hba1c 6.5",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1448,
+      1457
+    ]
+  },
+  {
+    "text": "bnp 21,000",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1460,
+      1470
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1473,
+      1509
+    ]
+  },
+  {
+    "text": "cúm âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1512,
+      1523
+    ]
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh: chụp x-quang ngực: Tăng gánh nhẹ tuần hoàn phổi, tràn dịch màng phổi hai bên nhẹ, tim to",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1524,
+      1640
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Các thủ thuật đã thực hiện",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1641,
+      1667
+    ]
+  },
+  {
+    "text": "Được dùng insulin và dextrose cho tăng kali máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1670,
+      1717
+    ]
+  },
+  {
+    "text": "iv lasix 40 mg once",
+    "type": "THUỐC",
+    "position": [
+      1720,
+      1739
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

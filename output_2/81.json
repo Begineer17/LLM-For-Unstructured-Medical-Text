@@ -1,0 +1,43 @@
+[
+  {
+    "text": "vết thương thấu bụng giữa bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      95,
+      129
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) sọ  trước mổ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      257,
+      295
+    ]
+  },
+  {
+    "text": "độ dày niêm mạc xoang hàm dày lên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      305,
+      338
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) bụng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      379,
+      409
+    ]
+  },
+  {
+    "text": "nội soi ổ bụng chẩn đoán",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      438,
+      462
+    ]
+  }
+]

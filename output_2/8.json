@@ -1,0 +1,75 @@
+[
+  {
+    "text": "kết quả chọc hút bất thường của nốt tuyến giáp thùy trái",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      76,
+      132
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "nốt tuyến giáp thùy trái kích thước khoảng 1 cm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      190,
+      237
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thủ thuật chọc hút bằng kim nhỏ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      268,
+      299
+    ]
+  },
+  {
+    "text": "Kết quả xét nghiệm tế bào học từ dịch chọc hút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      326,
+      372
+    ]
+  },
+  {
+    "text": "triệu chứng chèn ép vùng cổ như khó nuốt, khó thở hoặc khàn tiếng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      536,
+      601
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Kết quả tế bào học từ dịch chọc hút nốt tuyến giáp trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      751,
+      806
+    ]
+  },
+  {
+    "text": "Chọc hút bằng kim nhỏ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      852,
+      873
+    ]
+  },
+  {
+    "text": "Nốt tuyến giáp thùy trái kích thước khoảng 1 cm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      916,
+      963
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

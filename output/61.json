@@ -1,0 +1,65 @@
+[
+  {
+    "text": "đau vùng xương bánh chè – đùi phải dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      114
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      202,
+      218
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      609,
+      625
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      665,
+      677
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hầu hết các hoạt động, đặc biệt là leo cầu thang và gập sâu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      832,
+      891
+    ],
+    "assertions": []
+  },
+  {
+    "text": "x-quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1043,
+      1050
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1148,
+      1168
+    ]
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "text": "Tái phát các cơn ngất xỉu trong khoảng vài năm nay.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      50,
+      101
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Ban đầu các cơn xảy ra vài lần một năm, tăng tần suất lên hơn một lần một tháng.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      104,
+      184
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      217,
+      250
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      253,
+      266
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "phình động mạch chủ nhỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      269,
+      292
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ngất xỉu trong xe",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      533,
+      550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tỉnh dậy thấy cháu gái hét lên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      553,
+      583
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ước tính mất ý thức có thể trong 30 giây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      586,
+      626
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm thấy khỏe khi thức dậy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      661,
+      687
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      690,
+      711
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không quầng sáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      714,
+      730
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      733,
+      748
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      751,
+      765
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      768,
+      783
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không mất kiểm soát đại tiện hoặc tiểu tiện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      786,
+      829
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau chân sau khi đi bộ vài chặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      832,
+      864
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      875
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      878,
+      898
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở về đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      901,
+      915
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      918,
+      933
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù mắt cá chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      936,
+      951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      954,
+      969
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      972,
+      980
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xỉu trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      983,
+      992
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1016,
+      1024
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hơn một lần một tháng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1110,
+      1131
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1453,
+      1457
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đi bộ vài chặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1562,
+      1577
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1837,
+      1857
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở về đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2052,
+      2066
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2256,
+      2271
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xỉu trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2807,
+      2816
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Được đưa đến một bệnh viện OSH sau khi bị té ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3036,
+      3084
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mạch 83, huyết áp 159/72, nhịp thở 20, spo2 (độ bão hòa oxy) 94-95 RA",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3117,
+      3186
+    ]
+  },
+  {
+    "text": "rung nhĩ kèm đáp ứng thất nhanh mới ở mức 130-150, sau đó là nhịp tim chậm tương đối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3200,
+      3284
+    ]
+  },
+  {
+    "text": "điện tâm đồ (ecg) cho thấy bằng chứng có thể là nhồi máu cơ tim vùng dưới cũ và những thay đổi sóng T không đặc hiệu thay đổi sóng t",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3288,
+      3420
+    ]
+  },
+  {
+    "text": "nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3336,
+      3351
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "bảng công thức sinh hóa máu cơ bản, bảng công thức máu, bảng chức năng gan và bản phân tích nước tiểu đều bình thườngbình thườngbình thườngbình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3424,
+      3574
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3578,
+      3591
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực cho thấy tim to nhưng không có bất thường nào khác",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3595,
+      3663
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính sọ não bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3667,
+      3706
+    ]
+  },
+  {
+    "text": "bảng công thức sinh hóa máu cơ bản bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3973,
+      4019
+    ]
+  },
+  {
+    "text": "bảng công thức máu bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4022,
+      4052
+    ]
+  },
+  {
+    "text": "bảng chức năng gan bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4055,
+      4085
+    ]
+  },
+  {
+    "text": "bản phân tích nước tiểu bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4088,
+      4123
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4126,
+      4139
+    ]
+  },
+  {
+    "text": "rung nhĩ kèm đáp ứng thất nhanh mới ở mức 130-150, sau đó là nhịp tim chậm tương đối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4142,
+      4226
+    ]
+  },
+  {
+    "text": "Có thể là nhồi máu cơ tim vùng dưới cũ (điện tâm đồ (ecg))",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4229,
+      4287
+    ]
+  },
+  {
+    "text": "nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4239,
+      4254
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "thay đổi sóng t không đặc hiệu (điện tâm đồ (ecg))",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4290,
+      4340
+    ]
+  },
+  {
+    "text": "Tim to (chụp x-quang ngực)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4360,
+      4386
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính sọ não bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4389,
+      4428
+    ]
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "text": "bệnh động mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      34,
+      53
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh lý thần kinh ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      55,
+      83
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      160,
+      167
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      199,
+      206
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      248,
+      255
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      258,
+      265
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đi lại khó khăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      310
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cần dùng gậy hỗ trợ đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      312,
+      338
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau hai bàn chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      341,
+      357
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh lý thần kinh ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      361,
+      389
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đo sức bền cơ tim bằng đồng vị phóng xạ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      434,
+      473
+    ]
+  },
+  {
+    "text": "dị tật cố định vùng trước vách và vách dưới",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      485,
+      528
+    ]
+  },
+  {
+    "text": "giảm chức năng tâm thu thất trái nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      534,
+      579
+    ]
+  },
+  {
+    "text": "rối loạn chức năng thất trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      589,
+      617
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      621,
+      640
+    ]
+  },
+  {
+    "text": "bệnh ba thân động mạch vành nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      650,
+      690
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành can thiệp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      721,
+      750
+    ]
+  },
+  {
+    "text": "đoạn giữa của động mạch liên thất trước (LAD)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      813,
+      858
+    ]
+  }
+]

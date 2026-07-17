@@ -1,0 +1,110 @@
+[
+  {
+    "text": "u cơ trơn tử cung, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      72
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "iron",
+    "type": "THUỐC",
+    "position": [
+      104,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "90176"
+    ]
+  },
+  {
+    "text": "lower abdominal pain",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      228,
+      248
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy máu nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      255,
+      269
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm được thực hiện vào [Date]",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      312,
+      345
+    ]
+  },
+  {
+    "text": "huyết cầu tố là 26.1 vào thời điểm đó",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      352,
+      389
+    ]
+  },
+  {
+    "text": "huyết cầu tố 26.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      694,
+      711
+    ]
+  },
+  {
+    "text": "Tử cung đo 14,2 x 8,8 x 7,5 cm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      792,
+      822
+    ]
+  },
+  {
+    "text": "U cơ trơn lớn nhất ở đoạn dưới của tử cung đo 4,1 x 4,8 x 4,1 cm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      829,
+      893
+    ]
+  },
+  {
+    "text": "Dải nội mạc tử cung không thể xác định được",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      900,
+      943
+    ]
+  },
+  {
+    "text": "Cả hai buồng trứng đều có vẻ bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      950,
+      990
+    ]
+  },
+  {
+    "text": "Không thấy dịch tự do trong túi cùng Douglas",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      997,
+      1041
+    ]
+  }
+]

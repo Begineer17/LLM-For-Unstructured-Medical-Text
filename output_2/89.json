@@ -1,0 +1,198 @@
+[
+  {
+    "text": "nội soi mật tuỵ ngược dòng (ERCP)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      53,
+      86
+    ]
+  },
+  {
+    "text": "đặt stent ống tuỵ gần",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      88,
+      109
+    ]
+  },
+  {
+    "text": "phẫu thuật cắt bỏ khối u thần kinh nội tiết ở thân tụy",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      112,
+      166
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "octreotide",
+    "type": "THUỐC",
+    "position": [
+      206,
+      216
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7617"
+    ]
+  },
+  {
+    "text": "flagyl",
+    "type": "THUỐC",
+    "position": [
+      223,
+      229
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "202866"
+    ]
+  },
+  {
+    "text": "chăm sóc vết thương tại chỗ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      231,
+      258
+    ]
+  },
+  {
+    "text": "nhịn ăn đường miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      260,
+      279
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "dinh dưỡng tĩnh mạch",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      281,
+      301
+    ]
+  },
+  {
+    "text": "Tuột sonde dẫn lưu ổ bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      346,
+      371
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rò ống tuỵ mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      470,
+      484
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Clostridioides difficile",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      671,
+      695
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm trùng vết mổổ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      700,
+      719
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "flagyl",
+    "type": "THUỐC",
+    "position": [
+      742,
+      748
+    ],
+    "assertions": [],
+    "candidates": [
+      "202866"
+    ]
+  },
+  {
+    "text": "chăm sóc vết thương tại chỗ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      750,
+      777
+    ]
+  },
+  {
+    "text": "sưng nề",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1171,
+      1178
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1180,
+      1182
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ống dẫn lưu bị tuột ra 15,24 cm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1184,
+      1215
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhịn ăn uống đường miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1216,
+      1240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Catheter PICC",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1270,
+      1283
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1327,
+      1334
+    ]
+  }
+]

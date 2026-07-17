@@ -1,0 +1,216 @@
+[
+  {
+    "text": "viêm túi mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      109,
+      121
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K81.0"
+    ]
+  },
+  {
+    "text": "percocet",
+    "type": "THUỐC",
+    "position": [
+      273,
+      281
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "42844"
+    ]
+  },
+  {
+    "text": "bệnh túi thừa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      436,
+      449
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "percocet",
+    "type": "THUỐC",
+    "position": [
+      582,
+      590
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "42844"
+    ]
+  },
+  {
+    "text": "đau vùng hạ vị bên phải và hạ vị bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      830,
+      871
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      878,
+      885
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi qua đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      919,
+      936
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      958,
+      961
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      974,
+      983
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "hoa mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      996,
+      1003
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đi tiêu bình thường, không ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1010,
+      1043
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vùng bụng dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1083,
+      1097
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tồi tệ hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1138,
+      1148
+    ],
+    "assertions": []
+  },
+  {
+    "text": "1 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1166,
+      1172
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1206,
+      1215
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ciproflagyl",
+    "type": "THUỐC",
+    "position": [
+      1262,
+      1273
+    ],
+    "assertions": [],
+    "candidates": [
+      "1169007",
+      "1169008"
+    ]
+  },
+  {
+    "text": "percocet",
+    "type": "THUỐC",
+    "position": [
+      1400,
+      1408
+    ],
+    "assertions": [],
+    "candidates": [
+      "42844"
+    ]
+  },
+  {
+    "text": "đổ mồ hôi qua đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1572,
+      1589
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1611,
+      1614
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "viêm túi mật không biến chứng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1718,
+      1747
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

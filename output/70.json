@@ -1,0 +1,304 @@
+[
+  {
+    "text": "Tự điều trị bằng liều cao acetaminophen 500mg, taking 10 pills at a time khi cơn đau dữ dội, thường 4 viên mỗi giờ",
+    "type": "THUỐC",
+    "position": [
+      145,
+      259
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "315266"
+    ]
+  },
+  {
+    "text": "làm hỏng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ",
+    "type": "THUỐC",
+    "position": [
+      262,
+      337
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      775,
+      798
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      801,
+      818
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      821,
+      838
+    ],
+    "assertions": []
+  },
+  {
+    "text": "yếu sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      841,
+      848
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      851,
+      871
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      874,
+      888
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vài lần tiểu ra máu không đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      891,
+      920
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau vùng gan phải (RUQ) và thượng vị lan ra sau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      952,
+      1004
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tự điều trị bằng liều cao acetaminophen 500mg",
+    "type": "THUỐC",
+    "position": [
+      1157,
+      1202
+    ],
+    "assertions": [],
+    "candidates": [
+      "315266"
+    ]
+  },
+  {
+    "text": "làm hỏng dạ dày của cô ấy bằng cách uống 2 chai thuốc an thần trong quá khứ",
+    "type": "THUỐC",
+    "position": [
+      1205,
+      1280
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng men gan với tăng bilirubin máu: ast 421, alt 336, alp 185, bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1312,
+      1399
+    ]
+  },
+  {
+    "text": "âm tính siêu âm bụng có doppler",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1402,
+      1433
+    ]
+  },
+  {
+    "text": "âm tính chụp hida",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1436,
+      1453
+    ]
+  },
+  {
+    "text": "Chưa từng xét nghiệm nồng độ acetaminophen",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1456,
+      1498
+    ]
+  },
+  {
+    "text": "acetaminophen",
+    "type": "THUỐC",
+    "position": [
+      1485,
+      1498
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161"
+    ]
+  },
+  {
+    "text": "Chưa từng dùng nac",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1501,
+      1519
+    ]
+  },
+  {
+    "text": "ercp cho thấy túi mật giãn nở rõ rệt nhưng không có sỏi hoặc bệnh lý khác",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1558,
+      1631
+    ]
+  },
+  {
+    "text": "được cho là đã tống ra một viên sỏi mật",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1662,
+      1701
+    ]
+  },
+  {
+    "text": "tăng bilirubin máu và tăng men gan kéo dài",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1739,
+      1781
+    ]
+  },
+  {
+    "text": "ast 421",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1830,
+      1837
+    ]
+  },
+  {
+    "text": "alt 336",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1840,
+      1847
+    ]
+  },
+  {
+    "text": "alp 185",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1850,
+      1857
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1860,
+      1883
+    ]
+  },
+  {
+    "text": "total bili bắt đầu tăng lên đạt đỉnh 6.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1886,
+      1926
+    ]
+  },
+  {
+    "text": "bảng xét nghiệm viêm gan virus là âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1929,
+      1970
+    ]
+  },
+  {
+    "text": "ferritin là bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1973,
+      1996
+    ]
+  },
+  {
+    "text": "ceruloplasmin vẫn đang chờ kết quả đang chờ kết quả tại thời điểm chuyển viện",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1999,
+      2076
+    ]
+  },
+  {
+    "text": "siêu âm bụng có doppler âm tính âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2106,
+      2145
+    ]
+  },
+  {
+    "text": "âm tính chụp hida",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2148,
+      2165
+    ]
+  },
+  {
+    "text": "ercp cho thấy túi mật giãn nở rõ rệt túi mật giãn nhưng không có sỏi hoặc bệnh lý giải phẫu bệnh khác",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2168,
+      2269
+    ]
+  },
+  {
+    "text": "tăng men gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2327,
+      2339
+    ]
+  },
+  {
+    "text": "tăng bilirubin máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2342,
+      2360
+    ]
+  }
+]

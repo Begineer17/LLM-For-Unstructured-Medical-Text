@@ -1,0 +1,286 @@
+[
+  {
+    "text": "ho đái tháo đường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      51,
+      68
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      75,
+      88
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      95,
+      102
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.9"
+    ]
+  },
+  {
+    "text": "ngưng thở khi ngủ do tắc nghẽn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      109,
+      139
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      176,
+      183
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "mucinex d",
+    "type": "THUỐC",
+    "position": [
+      190,
+      199
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "352777",
+      "1183336"
+    ]
+  },
+  {
+    "text": "thỉnh thoảng tiêu chảy các thuốc của ông ấy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      206,
+      249
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      407,
+      409
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghẹt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      416,
+      426
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở nhẹ-vừa khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      433,
+      469
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      476,
+      483
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      490,
+      497
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt lên đến 101",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      504,
+      519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thỉnh thoảng tiêu chảy các thuốc của ông ấy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      569
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi tiểu nhiều lần vào ban đêm, không có đau buốt khi đi tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      576,
+      636
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức bao gồm cảm giác khó thở sau khi đi bộ vài khối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      668,
+      736
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho đặc như bã theo lời bệnh nhân nhưng ông ấy không khạc nhổ gì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      743,
+      806
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt lần cuối sốt là vào ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      813,
+      841
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy đã tự khỏi vào buổi sáng hôm sau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      848,
+      890
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giãn phế quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1175,
+      1188
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "azithromycin",
+    "type": "THUỐC",
+    "position": [
+      1207,
+      1219
+    ],
+    "assertions": [],
+    "candidates": [
+      "18631"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      1243,
+      1250
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "mucinex d",
+    "type": "THUỐC",
+    "position": [
+      1254,
+      1263
+    ],
+    "assertions": [],
+    "candidates": [
+      "352777",
+      "1183336"
+    ]
+  },
+  {
+    "text": "spo2 là 90-92% spo2 khi thở khí trời, 93% khi không dùng oxy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1361,
+      1421
+    ]
+  },
+  {
+    "text": "số lượng bạch cầu là 12.5",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1532,
+      1557
+    ]
+  },
+  {
+    "text": "vếtvết protein niệu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1607,
+      1626
+    ]
+  },
+  {
+    "text": "troponin âm tính x1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1636,
+      1655
+    ]
+  },
+  {
+    "text": "viêm phổi thùy dưới phải (RLL PNA)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1718,
+      1752
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

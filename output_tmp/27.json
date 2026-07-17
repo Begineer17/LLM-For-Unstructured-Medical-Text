@@ -1,0 +1,283 @@
+[
+  {
+    "text": "hội chứng turner, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      80
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      87,
+      100
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tiền sử phẫu thuật cắt bỏ đại tràng do Ung thư đại tràng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      107,
+      163
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tiền sử Thuyên tắc phổi đang dùng coumadin (tiền sử Thuyên tắc phổi đang dùng coumadin)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      170,
+      257
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "position": [
+      204,
+      212
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "11289"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "position": [
+      248,
+      256
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "11289"
+    ]
+  },
+  {
+    "text": "coumadin",
+    "type": "THUỐC",
+    "position": [
+      355,
+      363
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "11289"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      462
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác có đờm ở cổ họng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      470,
+      495
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cần phải ho nó ra",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      502,
+      519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      535
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      542,
+      555
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      562,
+      576
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không  khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      583,
+      597
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không  thay đổi tính chất cơn đau khi thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      603,
+      656
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      663,
+      689
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      696,
+      717
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không khó thở tăng lên khi xuất hiện  Cơn nhịp nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      724,
+      776
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      783,
+      797
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Gần đây nhập viện để đánh giá tổng quát về tiêu hóa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      843,
+      894
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh giá tổng quát về tiêu hóa vì cảm thấy  khó nuốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      901,
+      953
+    ],
+    "assertions": []
+  },
+  {
+    "text": "albuterolipratropium nebs x2",
+    "type": "THUỐC",
+    "position": [
+      1018,
+      1046
+    ],
+    "assertions": [],
+    "candidates": [
+      "214199"
+    ]
+  },
+  {
+    "text": "metoprolol 5mg iv x2",
+    "type": "THUỐC",
+    "position": [
+      1053,
+      1073
+    ],
+    "assertions": [],
+    "candidates": [
+      "311670",
+      "316299"
+    ]
+  },
+  {
+    "text": "Các chỉ số ban đầu vs là tc 37 độ c hr 88 bp 13482 rr 14 spo2 100ra",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1113,
+      1180
+    ]
+  },
+  {
+    "text": "Bị kích hoạt để hr 140 khoảng một giờ sau khi dùng ống xịt thứ hai",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1187,
+      1253
+    ]
+  },
+  {
+    "text": "hr cải thiện lên mức 110 sau khi dùng metoprolol",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1260,
+      1308
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "position": [
+      1298,
+      1308
+    ],
+    "assertions": [],
+    "candidates": [
+      "6918"
+    ]
+  },
+  {
+    "text": "Bệnh nhân cho biết  cảm thấy khỏe khi đến phòng khám",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1315,
+      1367
+    ]
+  }
+]

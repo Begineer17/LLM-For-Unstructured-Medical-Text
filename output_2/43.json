@@ -1,0 +1,146 @@
+[
+  {
+    "text": "cảm giác như vòi nước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      219,
+      240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác như bị xịt nước bắt đầu ở ngực trái lan sang ngực phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      267,
+      330
+    ],
+    "assertions": []
+  },
+  {
+    "text": "loại trừ khả năng nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      373,
+      406
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      426,
+      437
+    ]
+  },
+  {
+    "text": "siêu âm tim gắng sức dobutamine",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      628,
+      659
+    ]
+  },
+  {
+    "text": "dobutamine",
+    "type": "THUỐC",
+    "position": [
+      649,
+      659
+    ],
+    "assertions": [],
+    "candidates": [
+      "3616"
+    ]
+  },
+  {
+    "text": "thông tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      732,
+      741
+    ]
+  },
+  {
+    "text": "thông tim trái",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      777,
+      791
+    ]
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1191,
+      1202
+    ]
+  },
+  {
+    "text": "siêu âm tim gắng sức dobutamine",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1253,
+      1284
+    ]
+  },
+  {
+    "text": "dobutamine",
+    "type": "THUỐC",
+    "position": [
+      1274,
+      1284
+    ],
+    "assertions": [],
+    "candidates": [
+      "3616"
+    ]
+  },
+  {
+    "text": "chụp tim mạch",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1362,
+      1375
+    ]
+  },
+  {
+    "text": "LHC",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1382,
+      1385
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1423,
+      1457
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "LHC",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1464,
+      1467
+    ]
+  },
+  {
+    "text": "không ghi nhận hẹp gây hạn chế dòng chảy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1468,
+      1508
+    ]
+  }
+]

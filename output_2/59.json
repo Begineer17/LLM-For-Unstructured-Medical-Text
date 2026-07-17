@@ -1,0 +1,235 @@
+[
+  {
+    "text": "chụp cắt lớp vi tính (ct) đầu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      110,
+      139
+    ]
+  },
+  {
+    "text": "tăng đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      160,
+      172
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "não úng thuỷ khác từ thời kỳ sơ sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      388,
+      424
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đặt cảng",
+    "type": "THUỐC",
+    "position": [
+      477,
+      485
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Hệ thống dẫn lưu",
+    "type": "THUỐC",
+    "position": [
+      537,
+      553
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Hệ thống dẫn lưu",
+    "type": "THUỐC",
+    "position": [
+      597,
+      613
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu kéo dài kèm theo mờ mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      703,
+      734
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ tiến triển trong 2 tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      772,
+      807
+    ],
+    "assertions": []
+  },
+  {
+    "text": "não úng tuỷ từ thời kỳ sơ sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      846,
+      876
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "não úng thủy",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      968,
+      980
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1109,
+      1116
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù gai thị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1192,
+      1203
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "mờ mắt ở cả hai mắt, bên trái nặng hơn bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1237,
+      1284
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng tần suất đau đầu gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1347,
+      1378
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1411,
+      1426
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ ở cả hai mắt, bên trái nặng hơn bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1433,
+      1481
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cơn  đau đầu nhiều hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1489,
+      1511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhìn mờ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1543,
+      1550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1614,
+      1621
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bác sĩ nhãn khoa",
+    "type": "THUỐC",
+    "position": [
+      1676,
+      1692
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "phù gai thị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1782,
+      1793
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phù gai thị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1872,
+      1883
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng nhãn áp so với chụp cắt lớp vi tính (ct) đầu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1987,
+      2036
+    ]
+  },
+  {
+    "text": "Phù gai thị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2078,
+      2089
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "text": "tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      70
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh gút không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      77,
+      100
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      107,
+      136
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ung thư đại tràng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      143,
+      160
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      167,
+      174
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.9"
+    ]
+  },
+  {
+    "text": "Bệnh nhân xơ gan mất bù có tăng áp lực tĩnh mạch cửa, cổ trướng và tràn dịch màng phổi.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      181,
+      268
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thuốc trước khi nhập viện lần này: liệu pháp lợi tiểu",
+    "type": "THUỐC",
+    "position": [
+      273,
+      326
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

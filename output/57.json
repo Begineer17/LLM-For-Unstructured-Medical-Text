@@ -1,0 +1,36 @@
+[
+  {
+    "text": "bệnh rễ thần kinh tuỷ sống ở ngón tay cái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      74,
+      115
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh rễ thần kinh tuỷ sống ở ngón tay cái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      187,
+      228
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp cộng hưởng từ (mri) cột sống cổ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      279,
+      315
+    ]
+  },
+  {
+    "text": "hẹp ống sống C4-5, C5-6, C6-7 và hẹp lỗ liên hợp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      325,
+      373
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      61
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "suy tim, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      68,
+      91
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      98,
+      127
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "phình động mạch chủ ngực – bụng giai đoạn 1",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      231,
+      274
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "thuốc lá",
+    "type": "THUỐC",
+    "position": [
+      347,
+      355
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "giai đoạn 2 của phẫu thuật sửa van tĩnh mạch chủ ngực bụng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      435,
+      493
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

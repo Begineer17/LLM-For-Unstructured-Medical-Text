@@ -1,0 +1,319 @@
+[
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      55
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.9"
+    ]
+  },
+  {
+    "text": "đái tháo đường được kiểm soát bằng chế độ ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      62,
+      106
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngừng thở khi ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      113,
+      130
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tiền sử lâm sàng suy tim, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      137,
+      177
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Dị ứng furosemide",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      190,
+      207
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "furosemide",
+    "type": "THUỐC",
+    "position": [
+      197,
+      207
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "4603"
+    ]
+  },
+  {
+    "text": "Lý do nhập viện: khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      239,
+      263
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      441,
+      448
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó nằm vào ban đêm để ngủ vì thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      488
+    ],
+    "assertions": []
+  },
+  {
+    "text": "căng cứng vai trái (ngắt quãng, xảy ra vài lần mỗi ngày, kéo dài 5 phút)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      495,
+      567
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiền sử ho có đờm trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      574,
+      597
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chủ quan sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      604,
+      616
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù chi dưới (ổn định)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      623,
+      645
+    ],
+    "assertions": []
+  },
+  {
+    "text": "căng cứng vai trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      685,
+      703
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kéo dài 5 phút (căng cứng vai trái)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      721,
+      756
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xảy ra vài lần mỗi ngày (căng cứng vai trái)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      773,
+      817
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng liên quan: khó nằm vào ban đêm để ngủ vì khó thở, ho có đờm trắng, chủ quan sốt, phù chi dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      824,
+      929
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bỏ lỡ 3 ngày dùng một số thuốc vì quên đổ thuốc vào hộp (tuần qua)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      972,
+      1038
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu oxy với độ bão hòa oxy là 86 khi thở khí trời",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1083,
+      1134
+    ]
+  },
+  {
+    "text": "cho bumetanide",
+    "type": "THUỐC",
+    "position": [
+      1397,
+      1411
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bumetanide 2mg iv",
+    "type": "THUỐC",
+    "position": [
+      1401,
+      1418
+    ],
+    "assertions": [],
+    "candidates": [
+      "315502"
+    ]
+  },
+  {
+    "text": "vancomycin 1 gram",
+    "type": "THUỐC",
+    "position": [
+      1434,
+      1451
+    ],
+    "assertions": [],
+    "candidates": [
+      "328783",
+      "342893"
+    ]
+  },
+  {
+    "text": "cho levofloxacin",
+    "type": "THUỐC",
+    "position": [
+      1463,
+      1479
+    ],
+    "assertions": [],
+    "candidates": [
+      "82122",
+      "1163468"
+    ]
+  },
+  {
+    "text": "levofloxacin 750mg iv",
+    "type": "THUỐC",
+    "position": [
+      1467,
+      1488
+    ],
+    "assertions": [],
+    "candidates": [
+      "330371"
+    ]
+  },
+  {
+    "text": "cho aspirin",
+    "type": "THUỐC",
+    "position": [
+      1500,
+      1511
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "aspirin 325mg",
+    "type": "THUỐC",
+    "position": [
+      1504,
+      1517
+    ],
+    "assertions": [],
+    "candidates": [
+      "1191"
+    ]
+  },
+  {
+    "text": "albuterolipratropium nebulizer",
+    "type": "THUỐC",
+    "position": [
+      1533,
+      1563
+    ],
+    "assertions": [],
+    "candidates": [
+      "214199"
+    ]
+  },
+  {
+    "text": "cho methylprednisolone",
+    "type": "THUỐC",
+    "position": [
+      1575,
+      1597
+    ],
+    "assertions": [],
+    "candidates": [
+      "6902",
+      "1163489"
+    ]
+  },
+  {
+    "text": "methylprednisolone 125mg iv",
+    "type": "THUỐC",
+    "position": [
+      1579,
+      1606
+    ],
+    "assertions": [],
+    "candidates": [
+      "1743702"
+    ]
+  },
+  {
+    "text": "lợi tiểu 600cc",
+    "type": "THUỐC",
+    "position": [
+      1613,
+      1627
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

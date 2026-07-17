@@ -1,0 +1,242 @@
+[
+  {
+    "text": "bệnh động mạch vành sau can thiệp bắc cầu nối",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      145,
+      153
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bắc cầu nối chủ vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      195,
+      215
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "stent phủ thuốc (DES) ở động mạch liên thất trước (LAD)",
+    "type": "THUỐC",
+    "position": [
+      256,
+      311
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Can thiệp mạch vành qua da",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      319,
+      345
+    ]
+  },
+  {
+    "text": "stent phủ thuốc có chồng lấp nhau ở đoạn giữa động mạch vành phải (RCA)",
+    "type": "THUỐC",
+    "position": [
+      418,
+      489
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nong bóng động mạch vành qua da (PTCA) tại nhánh sau bên (posterolateral branch) của động mạch vành",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      496,
+      595
+    ]
+  },
+  {
+    "text": "đau ngực trái dữ dội lan xuống cánh tay trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      684
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      786,
+      799
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      909,
+      922
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "đau ngực trái dữ dội lan xuống cánh tay trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1076
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vã mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1083,
+      1092
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1099,
+      1106
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tim sóng ST chênh xuống ở các chuyển đạo v4 đến v6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1154,
+      1209
+    ]
+  },
+  {
+    "text": "aspirin",
+    "type": "THUỐC",
+    "position": [
+      1226,
+      1233
+    ],
+    "assertions": [],
+    "candidates": [
+      "1191"
+    ]
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      1256,
+      1269
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "nitroglycerin dạng bôi/dán lên da (mỡ nitroglycerin)",
+    "type": "THUỐC",
+    "position": [
+      1283,
+      1335
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ativan ( Lorazepam)",
+    "type": "THUỐC",
+    "position": [
+      1342,
+      1361
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "lovenox",
+    "type": "THUỐC",
+    "position": [
+      1368,
+      1375
+    ],
+    "assertions": [],
+    "candidates": [
+      "225036"
+    ]
+  },
+  {
+    "text": "vã mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1569,
+      1578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "troponin là 0.10",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1603,
+      1619
+    ]
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1657,
+      1668
+    ]
+  },
+  {
+    "text": "cho thấy nhịp xoangnhịp xoang, tần số 91 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1669,
+      1718
+    ]
+  },
+  {
+    "text": "Sóng ST chênh xuống  ở các chuyển đạo v4 đến v6chênh nhiều so với EKG ở  trước đó",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1746,
+      1827
+    ]
+  }
+]

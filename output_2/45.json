@@ -1,0 +1,75 @@
+[
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      62
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      69,
+      82
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      209,
+      223
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      230,
+      243
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "triệu chứng liên quan đến tai biến mạch máu não từ vùng này",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      338,
+      397
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hẹp khoảng 65% của động mạch cảnh chung trái gần gốc với bằng chứng xơ vữa mảng loét",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      580,
+      664
+    ]
+  },
+  {
+    "text": "hẹp khoảng 65% của động mạch cảnh chung trái gần gốc với bằng chứng xơ vữa mảng loét",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      909,
+      993
+    ]
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "text": "Cắt tuyến giáp với Dr. do ung thư biểu mô tuyến giật nhú",
+    "type": "THUỐC",
+    "position": [
+      121,
+      177
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "guaiac",
+    "type": "THUỐC",
+    "position": [
+      268,
+      274
+    ],
+    "assertions": [],
+    "candidates": [
+      "1373150"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      322,
+      329
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      336,
+      345
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân có guaiac dương tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      352,
+      377
+    ],
+    "assertions": []
+  },
+  {
+    "text": "guaiac",
+    "type": "THUỐC",
+    "position": [
+      360,
+      366
+    ],
+    "assertions": [],
+    "candidates": [
+      "1373150"
+    ]
+  },
+  {
+    "text": "Nội soi đại tràng sau xuất viện cho thấy một khối ở chỗ uốn gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      421,
+      484
+    ]
+  },
+  {
+    "text": "sinh thiết dương tính với ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      491,
+      538
+    ]
+  },
+  {
+    "text": "thiếu máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      597,
+      606
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính ổ bụng năm ngoái cho thấy không có dấu hiệu bệnh lan rộng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      639,
+      717
+    ]
+  },
+  {
+    "text": "khối ở chỗ uốn gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      824,
+      842
+    ]
+  },
+  {
+    "text": "ung thư biểu mô tuyến trên sinh thiết",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      849,
+      886
+    ]
+  },
+  {
+    "text": "tiền sử khối u thận",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      893,
+      912
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư biểu mô tế bào thận",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      919,
+      946
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư biểu mô tuyến giật nhú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      953,
+      983
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

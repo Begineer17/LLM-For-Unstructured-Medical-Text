@@ -1,0 +1,165 @@
+[
+  {
+    "text": "đau bụng vùng thượng vị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      387,
+      410
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      417,
+      425
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có sốt, ớn lạnh, nôn, táo bón, ho, tiểu khó, hoặc các triệu chứng khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      457,
+      533
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt đến 101.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      590,
+      603
+    ]
+  },
+  {
+    "text": "Tăng lên 101.8 trước thủ thuật",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      610,
+      640
+    ]
+  },
+  {
+    "text": "hạ huyết áp, không đặc hiệu trong khi thủ thuật",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      647,
+      694
+    ]
+  },
+  {
+    "text": "chỉ số huyết áp tâm thu trên đường A-line (khi đến MICU)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      701,
+      757
+    ]
+  },
+  {
+    "text": "viêm gan do men",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      787,
+      802
+    ]
+  },
+  {
+    "text": "ast (aspartate aminotransferase) là 319",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      809,
+      848
+    ]
+  },
+  {
+    "text": "aspartate",
+    "type": "THUỐC",
+    "position": [
+      814,
+      823
+    ],
+    "assertions": [],
+    "candidates": [
+      "42543"
+    ]
+  },
+  {
+    "text": "alt (alanine aminotransferase) là 690",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      855,
+      892
+    ]
+  },
+  {
+    "text": "alanine",
+    "type": "THUỐC",
+    "position": [
+      860,
+      867
+    ],
+    "assertions": [],
+    "candidates": [
+      "426"
+    ]
+  },
+  {
+    "text": "phosphatase kiềm (ap) là 983",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      899,
+      927
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần (tbili) là 2.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      934,
+      968
+    ]
+  },
+  {
+    "text": "bạch cầu (wbc) 11.6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      975,
+      994
+    ]
+  },
+  {
+    "text": "levophed",
+    "type": "THUỐC",
+    "position": [
+      1360,
+      1368
+    ],
+    "assertions": [],
+    "candidates": [
+      "227559"
+    ]
+  },
+  {
+    "text": "propofol để an thần",
+    "type": "THUỐC",
+    "position": [
+      1375,
+      1394
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đã đặt phentolamine",
+    "type": "THUỐC",
+    "position": [
+      1401,
+      1420
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

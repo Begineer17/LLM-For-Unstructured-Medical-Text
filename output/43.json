@@ -1,0 +1,132 @@
+[
+  {
+    "text": "cảm giác như vòi nước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      219,
+      240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác như bị xịt nước bắt đầu ở ngực trái lan sang ngực phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      267,
+      330
+    ],
+    "assertions": []
+  },
+  {
+    "text": "loại trừ khả năng nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      373,
+      406
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "siêu âm tim cho thấy hẹp van động mạch chủ nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      426,
+      481
+    ]
+  },
+  {
+    "text": "đã khám với bác sĩ tim mạch tại",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      488,
+      519
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "được đề nghị phẫu thuật thay van động mạch chủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      526,
+      572
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "siêu âm tim gắng sức dobutamine ghi nhận hẹp van động mạch chủ nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      628,
+      703
+    ]
+  },
+  {
+    "text": "dobutamine",
+    "type": "THUỐC",
+    "position": [
+      649,
+      659
+    ],
+    "assertions": [],
+    "candidates": [
+      "3616"
+    ]
+  },
+  {
+    "text": "thông tim trái không ghi nhận hẹp gây hạn chế dòng chảy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      777,
+      832
+    ]
+  },
+  {
+    "text": "siêu âm tim cho thấy hẹp van động mạch chủ nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1191,
+      1246
+    ]
+  },
+  {
+    "text": "siêu âm tim gắng sức dobutamine ghi nhận hẹp van động mạch chủ nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1253,
+      1328
+    ]
+  },
+  {
+    "text": "dobutamine",
+    "type": "THUỐC",
+    "position": [
+      1274,
+      1284
+    ],
+    "assertions": [],
+    "candidates": [
+      "3616"
+    ]
+  },
+  {
+    "text": "hẹp van động mạch chủ nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1423,
+      1457
+    ]
+  },
+  {
+    "text": "LHC không ghi nhận hẹp gây hạn chế dòng chảy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1464,
+      1508
+    ]
+  }
+]

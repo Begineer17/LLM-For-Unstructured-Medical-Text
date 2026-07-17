@@ -1,0 +1,332 @@
+[
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      99,
+      106
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "tăng lipid máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      133,
+      147
+    ]
+  },
+  {
+    "text": "bệnh thận mạn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      231,
+      244
+    ]
+  },
+  {
+    "text": "gleevec (dừng theo chỉ dẫn sau xuất viện)",
+    "type": "THUỐC",
+    "position": [
+      381,
+      422
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      476,
+      495
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      523,
+      530
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      546,
+      552
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cực kỳ yếu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      605,
+      615
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      661,
+      668
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      693,
+      699
+    ],
+    "assertions": []
+  },
+  {
+    "text": "yếu cơ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      739,
+      745
+    ],
+    "assertions": []
+  },
+  {
+    "text": "toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      797,
+      816
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      823,
+      830
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      837,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      850,
+      861
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      884,
+      887
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1000,
+      1007
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      1047,
+      1054
+    ],
+    "assertions": [],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "Toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1101,
+      1120
+    ],
+    "assertions": []
+  },
+  {
+    "text": "yếu cơ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1150,
+      1156
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1163,
+      1174
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1197,
+      1200
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1290,
+      1303
+    ]
+  },
+  {
+    "text": "creatinin",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1318,
+      1327
+    ]
+  },
+  {
+    "text": "troponin",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1341,
+      1349
+    ]
+  },
+  {
+    "text": "inr",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1364,
+      1367
+    ]
+  },
+  {
+    "text": "Tăng men gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1381,
+      1393
+    ]
+  },
+  {
+    "text": "alt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1399,
+      1402
+    ]
+  },
+  {
+    "text": "ast",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1413,
+      1416
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu có đái tháo đườngđái tháo đường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1430,
+      1486
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1519,
+      1536
+    ]
+  },
+  {
+    "text": "đánh giá chuyên khoa huyết học - ung bướu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1586,
+      1627
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đại diện cho cml",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1680,
+      1696
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ngừng gleevec",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1712,
+      1725
+    ],
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      1718,
+      1725
+    ],
+    "assertions": [
+      "isNegated",
+      "isFamily",
+      "isHistorical"
+    ],
+    "candidates": [
+      "282386"
+    ]
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "text": "cipro",
+    "type": "THUỐC",
+    "position": [
+      165,
+      170
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "203563"
+    ]
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      177,
+      184
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "Kháng sinh cho nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "THUỐC",
+    "position": [
+      191,
+      256
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đau tiến triển và lan vào sườn trái và LLQ (Tứ phân vị dưới trái)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      480,
+      545
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ban đầu có buồn nôn nhưng đã thuyên giảm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      552,
+      592
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau cải thiện đáng kể sau khi dùng iv morphineiv morphine and toradol",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      599,
+      668
+    ],
+    "assertions": []
+  },
+  {
+    "text": "morphine",
+    "type": "THUỐC",
+    "position": [
+      648,
+      656
+    ],
+    "assertions": [],
+    "candidates": [
+      "7052"
+    ]
+  },
+  {
+    "text": "đau bụng dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      700,
+      713
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      720,
+      727
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó chịu khi đi tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      734,
+      754
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó chịu khi đại tiện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      761,
+      782
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kháng sinh cho nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "THUỐC",
+    "position": [
+      880,
+      945
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cipro và bactrim",
+    "type": "THUỐC",
+    "position": [
+      1012,
+      1028
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau tiến triển và lan vào sườn trái và LLQ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1075,
+      1117
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau liên tục, lan tỏa ra lưng và có tính chất kéo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1124,
+      1173
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có máu trong phân hoặc nước tiểu, đau đớn khi đi tiểu, tiểu gấp hoặc các triệu chứng tiết niệu khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1244,
+      1349
+    ],
+    "assertions": []
+  },
+  {
+    "text": "CPSOB (đau ngực, khó thở), NV (buồn nôn, nôn mửa), VB (chảy máu âm đạo), khí hư bất thường, thay đổi cân nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1365,
+      1474
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "công thức máu (cbc)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1527,
+      1546
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) bụng và chậu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1597,
+      1635
+    ]
+  },
+  {
+    "text": "Lo ngại về áp xe",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1757,
+      1773
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

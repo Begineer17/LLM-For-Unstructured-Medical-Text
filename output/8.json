@@ -1,0 +1,53 @@
+[
+  {
+    "text": "kết quả chọc hút bất thường của nốt tuyến giáp thùy trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      76,
+      132
+    ]
+  },
+  {
+    "text": "nốt tuyến giáp thùy trái kích thước khoảng 1 cm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      190,
+      237
+    ]
+  },
+  {
+    "text": "Kết quả xét nghiệm tế bào học từ dịch chọc hút ghi nhận bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      326,
+      392
+    ]
+  },
+  {
+    "text": "khó nuốt, khó thở hoặc khàn tiếng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      568,
+      601
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Kết quả tế bào học từ dịch chọc hút nốt tuyến giáp trái ghi nhận bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      751,
+      826
+    ]
+  },
+  {
+    "text": "Nốt tuyến giáp thùy trái kích thước khoảng 1 cm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      916,
+      963
+    ]
+  }
+]

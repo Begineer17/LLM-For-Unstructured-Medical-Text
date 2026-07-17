@@ -1,0 +1,127 @@
+[
+  {
+    "text": "Đái tháo đường type II",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      79
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh động mạch vành sau phẫu thuật bắc cầu nối động mạch vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      86,
+      147
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "suy tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      154,
+      161
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh mạch máu ngoại biên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      168,
+      192
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      199,
+      227
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Ngưng thở khi ngủ do tắc nghẽn đang dùng BiPAP",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      234,
+      280
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "BiPAP",
+    "type": "THUỐC",
+    "position": [
+      275,
+      280
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Ung thư biểu mô tế bào vảy xâm nhập của dương vậtbiệt hóa kém, sau cắt bao quy đầu với bờ diện cắt dương tính.",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      287,
+      397
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "phẫu thuật bắc cầu nối động mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      440,
+      477
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "phẫu thuật cắt bao quy đầu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      484,
+      510
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "thở không xâm nhập BiPAP",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      536,
+      560
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

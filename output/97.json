@@ -1,0 +1,129 @@
+[
+  {
+    "text": "biến đổi ý thức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      484,
+      499
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ thân nhiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      506,
+      519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      537
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực ít",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      567,
+      578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      586,
+      594
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      646,
+      657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ thân nhiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      664,
+      677
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali là 6.6 mmol/l",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      730,
+      748
+    ]
+  },
+  {
+    "text": "creatinin là 1.9 mmol/l",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      755,
+      778
+    ]
+  },
+  {
+    "text": "tiểu cầu là 81 G/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      785,
+      803
+    ]
+  },
+  {
+    "text": "bạch cầu là 10.9 G/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      810,
+      830
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu nhiễm trùng đường tiết niệu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      837,
+      889
+    ]
+  },
+  {
+    "text": "chẩn đoán hình ảnh: chụp x-quang ngực cho thấy không có hình ảnh tổn thương viêm cấp tính so với chụp x-quang ngực trước đó",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      927,
+      1050
+    ]
+  },
+  {
+    "text": "điện tâm đồ cho thấy nhịp chậm xoang",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1179,
+      1215
+    ]
+  },
+  {
+    "text": "đường huyết lúc đóiđường huyết thấp)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1219,
+      1255
+    ]
+  }
+]

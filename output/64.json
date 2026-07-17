@@ -1,0 +1,214 @@
+[
+  {
+    "text": "viêm túi mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      109,
+      121
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ciproflagyl",
+    "type": "THUỐC",
+    "position": [
+      161,
+      172
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1169007",
+      "1169008"
+    ]
+  },
+  {
+    "text": "percocet",
+    "type": "THUỐC",
+    "position": [
+      273,
+      281
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "42844"
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      303,
+      323
+    ]
+  },
+  {
+    "text": "bệnh túi thừa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      436,
+      449
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "percocet (để kiểm soát cơn đau)",
+    "type": "THUỐC",
+    "position": [
+      582,
+      613
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau vùng hạ vị bên phải và hạ vị bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      662,
+      703
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng ở vùng bụng dưới trở nên tồi tệ hơn trong 1 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      741,
+      798
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau vùng hạ vị bên phải và hạ vị bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      830,
+      871
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón trở nên tồi tệ hơn gần đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      878,
+      912
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi qua đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      919,
+      936
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vùng bụng dưới (đau RLQLLQ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1083,
+      1110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tồi tệ hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1138,
+      1148
+    ],
+    "assertions": []
+  },
+  {
+    "text": "1 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1166,
+      1172
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1206,
+      1215
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ciproflagyl",
+    "type": "THUỐC",
+    "position": [
+      1262,
+      1273
+    ],
+    "assertions": [],
+    "candidates": [
+      "1169007",
+      "1169008"
+    ]
+  },
+  {
+    "text": "percocet",
+    "type": "THUỐC",
+    "position": [
+      1400,
+      1408
+    ],
+    "assertions": [],
+    "candidates": [
+      "42844"
+    ]
+  },
+  {
+    "text": "đi tiêu bình thường, không ra máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1482,
+      1515
+    ]
+  },
+  {
+    "text": "đổ mồ hôi qua đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1572,
+      1589
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không ghi nhận sốt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1596,
+      1614
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1662,
+      1682
+    ]
+  }
+]

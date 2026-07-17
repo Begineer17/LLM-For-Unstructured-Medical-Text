@@ -1,0 +1,212 @@
+[
+  {
+    "text": "u cơ trơn tử cung, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      72
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D25.9"
+    ]
+  },
+  {
+    "text": "iron",
+    "type": "THUỐC",
+    "position": [
+      104,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "90176"
+    ]
+  },
+  {
+    "text": "lower abdominal pain",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      228,
+      248
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy máu nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      255,
+      269
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      312,
+      319
+    ]
+  },
+  {
+    "text": "huyết cầu tố",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      352,
+      364
+    ]
+  },
+  {
+    "text": "26.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      368,
+      372
+    ]
+  },
+  {
+    "text": "điều trị bảo tồn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      433,
+      449
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "điều trị nội khoa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      451,
+      468
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "can thiệp x-quang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      470,
+      487
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "điều trị ngoại khoa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      491,
+      510
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "u xơ tử cung",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      542,
+      554
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "huyết cầu tố",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      694,
+      706
+    ]
+  },
+  {
+    "text": "26.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      707,
+      711
+    ]
+  },
+  {
+    "text": "Tử cung",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      792,
+      799
+    ],
+    "assertions": []
+  },
+  {
+    "text": "14,2 x 8,8 x 7,5 cm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      803,
+      822
+    ]
+  },
+  {
+    "text": "U cơ trơn lớn nhất",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      829,
+      847
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đo 4,1 x 4,8 x 4,1 cm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      872,
+      893
+    ]
+  },
+  {
+    "text": "Dải nội mạc tử cung",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      900,
+      919
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồng trứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      957,
+      968
+    ],
+    "assertions": []
+  },
+  {
+    "text": "túi cùng Douglas",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1025,
+      1041
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "bể thận",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1062,
+      1069
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  }
+]

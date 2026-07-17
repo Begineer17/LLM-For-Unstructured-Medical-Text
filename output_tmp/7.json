@@ -1,0 +1,273 @@
+[
+  {
+    "text": "ho Rối loạn cảm xúc (trầm cảm) (tiền sử giai đoạn trầm cảm không đặc hiệu)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      122
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hội chứng nghiện rượu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      129,
+      150
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "seroquel",
+    "type": "THUỐC",
+    "position": [
+      190,
+      198
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "83553"
+    ]
+  },
+  {
+    "text": "tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      465,
+      470
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn từng đợt gần đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      477,
+      500
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      507,
+      525
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi nhìn gần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      532,
+      553
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rối loạn thị giác, nhìn thấy con cái mình ở góc mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      560,
+      611
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác thị giác (ảo giác thị giác)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      618,
+      653
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ảo thanh (AH) (ảo giác thính giác)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      660,
+      694
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tự tử: thụ động, diễn ra liên tục, tưởng tượng về cái chết mãn tính kể từ khi ly hôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      726,
+      810
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn: từng đợt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      817,
+      833
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      840,
+      849
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó khăn về thị lực gần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      856,
+      879
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rối loạn thị giác: nhìn thấy con cái ở góc mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      886,
+      932
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác thị giác, Ảo thanh (AH): có vẻ là ảo giác hơn là ảo ảnh thực sự",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      939,
+      1010
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp ct sọ được phát hiện tình cờ tại Cấp cứu; phát hiện bệnh lý chất trắng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1278,
+      1353
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy là không phát hiện bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1360,
+      1410
+    ]
+  },
+  {
+    "text": "đánh giá thần kinh để tìm bệnh lý chất trắng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1417,
+      1461
+    ]
+  },
+  {
+    "text": "các băng nhóm oligoclonal đang chờ kết quả",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1468,
+      1510
+    ]
+  },
+  {
+    "text": "Được bác sĩ khoa tâm thần cho nhập chỉ định viện tâm thần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1517,
+      1574
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chọc dò dịch não tủy là âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1754,
+      1785
+    ]
+  },
+  {
+    "text": "chụp ct sọ: phát hiện bệnh lý chất trắng (được phát hiện tình cờ)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1818,
+      1883
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy (Đột sống thắt lưng)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1916,
+      1957
+    ]
+  },
+  {
+    "text": "đánh giá thần kinh để tìm bệnh lý chất trắng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1997,
+      2041
+    ]
+  },
+  {
+    "text": "các băng nhóm oligoclonal đang chờ kết quả",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2048,
+      2090
+    ]
+  },
+  {
+    "text": "Nguyên nhân chưa rõ (đối với phát hiện bệnh lý chất trắng)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2097,
+      2155
+    ]
+  },
+  {
+    "text": "Sẽ không điển hình cho Bệnh đa xơ cứng theo ý kiến của bác sĩ thần kinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2162,
+      2233
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ảo giác do rượu (suy nghĩ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2240,
+      2266
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không được coi là thực sự loạn thần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2273,
+      2308
+    ],
+    "assertions": []
+  }
+]

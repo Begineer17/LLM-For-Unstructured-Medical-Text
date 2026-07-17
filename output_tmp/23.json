@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Bệnh tim mạch do xơ vữa động mạch.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      21,
+      55
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ăng huyết áp.Rối loạn lipid máu.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      56,
+      88
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Chụp kiểm tra ghi nhận tụ máu ngoài màng cứng phải cấp tính trên nền tổn thương mạn tính.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      729,
+      818
+    ]
+  },
+  {
+    "text": "Bệnh nhân tiếp tục được theo dõi, các lần chụp CT kiểm tra không ghi nhận diễn tiến xấu nên được xuất viện về nhà.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      820,
+      934
+    ]
+  },
+  {
+    "text": "Đau đầu vùng thái dương phải, đỉnh đầu, đôi khi lan ra sau mắt phải.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2008,
+      2076
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tê bì vùng trán phải, da đầu phải và nửa mặt phải.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2077,
+      2127
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cơn rối loạn ý thức thoáng qua.Mất định hướng.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2128,
+      2174
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mất thăng bằng.Gần ngất.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2175,
+      2199
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng trước nhập viện: Sau cơn bệnh nhân tỉnh táo hoàn toàn, ý thức trở về mức nền ban đầu.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2200,
+      2296
+    ]
+  },
+  {
+    "text": "Có ghi nhận giai đoạn mất định hướng và đi lại không vững theo lời kể người nhà.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2338,
+      2418
+    ]
+  },
+  {
+    "text": "Trong cơn có biểu hiện kích thích nhẹ, ngửa đầu ra sau và nhắm mắt từng lúc.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2419,
+      2495
+    ]
+  },
+  {
+    "text": "Không ghi nhận co giật, cứng đờ, cắn lưỡi hoặc tiểu tiện không tự chủ.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2496,
+      2566
+    ]
+  },
+  {
+    "text": "Cận lâm sàng: CT sọ não trước đó ghi nhận xuất huyết dưới nhện vùng trán phải.Bầm dập nhu mô vùng trán phải và trán - thái dương phải.Lớp dịch dưới màng cứng mỏng vùng thùy trán phải, nghĩ đến nang màng nhện hoặc tụ máu dưới màng cứng mạn tính.Tụ máu ngoài màng cứng phải cấp tính trên nền tổn thương mạn tính.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2567,
+      2877
+    ]
+  }
+]

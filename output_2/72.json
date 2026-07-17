@@ -1,0 +1,158 @@
+[
+  {
+    "text": "vàng da không đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      135
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      138,
+      142
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăngtăng các xét nghiệm chức năng gan và bilirubin",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      177,
+      227
+    ]
+  },
+  {
+    "text": "âm tính đánh giá từ xét nghiệm huyết thanh",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      239,
+      281
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      294,
+      301
+    ]
+  },
+  {
+    "text": "ercp (nội soi mật tụy ngược dòng)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      380,
+      413
+    ]
+  },
+  {
+    "text": "một chỗ hẹp đơn lẻ được thấy, dài 7 mm ở một phần ba dưới của ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      516,
+      589
+    ]
+  },
+  {
+    "text": "lấy mẫu tế bào bằng chổi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      592,
+      616
+    ]
+  },
+  {
+    "text": "sinh thiết",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      633,
+      643
+    ]
+  },
+  {
+    "text": "tăng các xét nghiệm chức năng gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      826,
+      859
+    ]
+  },
+  {
+    "text": "bilirubin",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      862,
+      871
+    ]
+  },
+  {
+    "text": "lấy mẫu tế bào bằng chổi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      874,
+      898
+    ]
+  },
+  {
+    "text": "sinh thiết",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      915,
+      925
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1013,
+      1020
+    ]
+  },
+  {
+    "text": "ercp (nội soi mật tụy ngược dòng)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1099,
+      1132
+    ]
+  },
+  {
+    "text": "một chỗ hẹp đơn lẻ được thấy, dài 7 mm ở một phần ba dưới của ống mật chủ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1224,
+      1297
+    ]
+  },
+  {
+    "text": "ERCP",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1327,
+      1331
+    ]
+  },
+  {
+    "text": "Sinh thiết",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1345,
+      1355
+    ]
+  },
+  {
+    "text": "u ác của đầu tuỵ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1387,
+      1403
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "text": "suy nhược toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      380,
+      399
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở liên tục, nhất là khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      406,
+      439
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      446,
+      448
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hồi hộp (đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      479
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chỉ số bão hòa oxy (đo độ bão hòa oxy dưới 90 %",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      498,
+      545
+    ]
+  },
+  {
+    "text": "Siêu âm tim: chèn ép tim",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      562,
+      586
+    ]
+  }
+]

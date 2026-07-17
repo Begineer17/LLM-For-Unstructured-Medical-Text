@@ -1,0 +1,35 @@
+[
+  {
+    "text": "khởi phát chuyển dạ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      72,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thai máy tốt (FM +)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      118,
+      137
+    ]
+  },
+  {
+    "text": "chưa  ra huyết âm đạo (VB -)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      140,
+      168
+    ]
+  },
+  {
+    "text": "chưa vỡ ối/rỉ ối (LOF -)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      170,
+      194
+    ]
+  }
+]

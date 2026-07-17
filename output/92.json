@@ -1,0 +1,38 @@
+[
+  {
+    "text": "theo dõi đại tràng giãn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      129,
+      152
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Bạch cầu tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      472,
+      485
+    ]
+  },
+  {
+    "text": "chụp ctchưa phát hiện bất thường trên phim chụp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      518,
+      565
+    ]
+  },
+  {
+    "text": "Theo dõi đại tràng giãn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      589,
+      612
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

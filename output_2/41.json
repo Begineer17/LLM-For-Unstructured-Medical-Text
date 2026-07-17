@@ -1,0 +1,483 @@
+[
+  {
+    "text": "buồn nôn và tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      94
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      128
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      176,
+      186
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hội chứng ruột kích thích",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      226,
+      251
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "hội chứng ruột kích thích",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      268,
+      293
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      353,
+      360
+    ]
+  },
+  {
+    "text": "Nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      411,
+      418
+    ]
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      469,
+      476
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      625,
+      635
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      726,
+      736
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn và tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      809,
+      830
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm dạ dày ruột do virus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      842,
+      867
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      899,
+      958
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1008,
+      1018
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1068,
+      1078
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng và nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1115,
+      1137
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1168,
+      1178
+    ],
+    "assertions": [],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "buồn nôn và tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1244,
+      1265
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hội chứng ruột kích thích",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1277,
+      1302
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "loét tá tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1314,
+      1327
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm dạ dày ruột do virus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1406,
+      1431
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1695,
+      1705
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "test hơi thở h. pylori",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1713,
+      1735
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1753,
+      1763
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "đau bụng và nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1776,
+      1798
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1894,
+      1904
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1911,
+      1922
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nausea",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1930,
+      1936
+    ],
+    "assertions": [],
+    "candidates": [
+      "R11.0"
+    ]
+  },
+  {
+    "text": "diarrhea",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1943,
+      1951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "abdominal pain",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1958,
+      1972
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm dạ dày ruột do virus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2025,
+      2050
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2082,
+      2141
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2204,
+      2214
+    ],
+    "assertions": []
+  },
+  {
+    "text": "loét tá tràng và hồi tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2287,
+      2313
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cryptosporidium",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2394,
+      2409
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2473,
+      2483
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "test hơi thở h. pylori",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2491,
+      2513
+    ]
+  },
+  {
+    "text": "đau bụng và nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2541,
+      2563
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2594,
+      2604
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2656,
+      2666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cryptosporidium",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2775,
+      2790
+    ]
+  },
+  {
+    "text": "test hơi thở h. pylori",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2840,
+      2862
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2876,
+      2886
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2925,
+      2932
+    ]
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2958,
+      2965
+    ]
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3016,
+      3023
+    ]
+  },
+  {
+    "text": "Viêm thực quản độ C",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3180,
+      3199
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "loét thực quản 6 mm có điểm sắc tố",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3228,
+      3262
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

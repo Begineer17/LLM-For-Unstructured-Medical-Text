@@ -1,0 +1,84 @@
+[
+  {
+    "text": "Dùngmethadonekéo dài",
+    "type": "THUỐC",
+    "position": [
+      356,
+      376
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "lasixđã dừng cách vài tuần",
+    "type": "THUỐC",
+    "position": [
+      383,
+      409
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Lasix",
+    "type": "THUỐC",
+    "position": [
+      604,
+      609
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "position": [
+      664,
+      669
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "Loét 2 bàn chân",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      851,
+      866
+    ]
+  },
+  {
+    "text": "chảy dịch vàng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      868,
+      882
+    ]
+  },
+  {
+    "text": "hoại tử đen kích thước 2*4 cm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      889,
+      918
+    ]
+  },
+  {
+    "text": "Theo dõiLoét bàn chân nhiễm trùng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      930,
+      963
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "text": "klonopinclonidine (được kê đơn)",
+    "type": "THUỐC",
+    "position": [
+      360,
+      391
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "clonidine (mua trên đường phố)",
+    "type": "THUỐC",
+    "position": [
+      398,
+      428
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suboxone (bắt đầu 3 tuần trước), không dùng đều 5-6 ngày, dừng thuốc trước nhập viện 01 ngày",
+    "type": "THUỐC",
+    "position": [
+      435,
+      527
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "suboxone",
+    "type": "THUỐC",
+    "position": [
+      957,
+      965
+    ],
+    "assertions": [],
+    "candidates": [
+      "352990"
+    ]
+  },
+  {
+    "text": "suboxone",
+    "type": "THUỐC",
+    "position": [
+      1000,
+      1008
+    ],
+    "assertions": [],
+    "candidates": [
+      "352990"
+    ]
+  },
+  {
+    "text": "ý nghĩ tự tử, có nghĩ tự bắn vào đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1057,
+      1093
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lo âu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1100,
+      1105
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hoảng sợ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1106,
+      1114
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hoang tưởng như đang chiếm khí oxy của người khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1121,
+      1170
+    ],
+    "assertions": []
+  }
+]

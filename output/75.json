@@ -1,0 +1,226 @@
+[
+  {
+    "text": "bệnh động mạch vành sau can thiệp bắc cầu nối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nhiều lần chụp mạch và can thiệp tim mạch do đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      100,
+      153
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bắc cầu nối chủ vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      195,
+      215
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Can thiệp mạch vành qua da (POBA) vào động mạch chéo gốc",
+    "type": "THUỐC",
+    "position": [
+      319,
+      375
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Can thiệp mạch vành qua da và đặt 2 stent phủ thuốc có chồng lấp nhau ở đoạn giữa động mạch vành phải (RCA)",
+    "type": "THUỐC",
+    "position": [
+      382,
+      489
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nong bóng động mạch vành qua da (PTCA) tại nhánh sau bên (posterolateral branch) của động mạch vành.",
+    "type": "THUỐC",
+    "position": [
+      496,
+      596
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực trái dữ dội lan xuống cánh tay trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      684
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      786,
+      799
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      909,
+      922
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "đau ngực trái dữ dội lan xuống cánh tay trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1076
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vã mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1083,
+      1092
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1099,
+      1106
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tim sóng ST chênh xuống ở các chuyển đạo v4 đến v6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1154,
+      1209
+    ]
+  },
+  {
+    "text": "aspirin",
+    "type": "THUỐC",
+    "position": [
+      1226,
+      1233
+    ],
+    "assertions": [],
+    "candidates": [
+      "1191"
+    ]
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      1256,
+      1269
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "nitroglycerin dạng bôi/dán lên da (mỡ nitroglycerin)",
+    "type": "THUỐC",
+    "position": [
+      1283,
+      1335
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ativan ( Lorazepam)",
+    "type": "THUỐC",
+    "position": [
+      1342,
+      1361
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "lovenox lúc 0100",
+    "type": "THUỐC",
+    "position": [
+      1368,
+      1384
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "vã mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1569,
+      1578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "troponin là 0.10",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1603,
+      1619
+    ]
+  },
+  {
+    "text": "điện tâm đồ cho thấy nhịp xoangnhịp xoang, tần số 91 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1657,
+      1718
+    ]
+  },
+  {
+    "text": "điện tâm đồ cho thấy Sóng ST chênh xuống  ở các chuyển đạo v4 đến v6chênh nhiều so với EKG ở  trước đó",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1725,
+      1827
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "text": "RNY hepaticojejunostomy",
+    "type": "THUỐC",
+    "position": [
+      185,
+      208
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cholangiogram vào ngày [Ngày] cho thấy tắc nghẽn kéo dài gần chỗ nối mật tụy, ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      814,
+      935
+    ]
+  },
+  {
+    "text": "kết quả lấy mẫu bằng bàn chải cho thấy tế bào bất thường, đáng ngại cho ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1097,
+      1190
+    ]
+  },
+  {
+    "text": "đã được đặt 3 stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      1334,
+      1374
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đặt 3 stent thành vách vĩnh viễn và có 3 ống dẫn mật ngoài-trong tại chỗ",
+    "type": "THUỐC",
+    "position": [
+      1342,
+      1414
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cholangiogram vào ngày [Ngày] cho thấy tắc nghẽn kéo dài gần chỗ nối mật tụy, ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2011,
+      2132
+    ]
+  },
+  {
+    "text": "lấy mẫu bằng bàn chải cho thấy các tế bào bất thường, đáng lo ngại cho ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2291,
+      2383
+    ]
+  },
+  {
+    "text": "đau khi sờ nắn xung quanh vị trí đặt ống dẫn, đặc biệt là khi hít thở sâu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2566,
+      2639
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lấy mẫu bằng bàn chải cho thấy tế bào bất thườngtế bào bất thường, đáng ngại cho ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2670,
+      2772
+    ]
+  },
+  {
+    "text": "cholangiogram vào ngày [Ngày] cho thấy tắc nghẽn kéo dài gần chỗ nối mật tụy, ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2805,
+      2926
+    ]
+  },
+  {
+    "text": "Đặt 3 stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      2952,
+      2984
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

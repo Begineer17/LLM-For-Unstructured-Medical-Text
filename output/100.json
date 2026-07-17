@@ -1,0 +1,222 @@
+[
+  {
+    "text": "tiền sử tăng calci máu trước đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      53,
+      85
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "U ác của đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      123,
+      141
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cường cận giáp nguyên phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      148,
+      174
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      181,
+      197
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cơn đau thắt ngực ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      204,
+      229
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đến khám vì tăng calci máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      263,
+      289
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng calci máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      316,
+      330
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xét nghiệm xét nghiệm ngoại trú được thực hiện hôm nay và canxi là 12.0; canxi ion hóa 6.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      388,
+      478
+    ]
+  },
+  {
+    "text": "xuất hiện hai lần ngất xỉu, một lần khi lái xe lần cuối và một lần khác khi nói chuyện với bạn trong xe một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      486,
+      605
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cả hai lần đều kéo dài vài giây",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      612,
+      643
+    ]
+  },
+  {
+    "text": "Không có các biểu hiện đau ngực, khó thở, chóng mặt trước lần này",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      650,
+      715
+    ]
+  },
+  {
+    "text": "Không có biểu hiện động kinh",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      722,
+      750
+    ]
+  },
+  {
+    "text": "đã chỉ định MRI ngoại trú  có hình ảnh nhồi máu cũ nhỏ ở vỏ não đỉnh trái, không có tổn thương cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      757,
+      860
+    ]
+  },
+  {
+    "text": "Bệnh nhân xuất hiện một lần đau ngực vào chiều ngày vào viện, cơn đau kéo dài khoảng 5 phút",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      958
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sau đó đã được sử dụng ngay 01 viên nitroglycerin đặt dưới lưỡi",
+    "type": "THUỐC",
+    "position": [
+      960,
+      1023
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Hiện tại bệnh nhân còn đau ở sau đầu và cổ từ khi bị ngã trong bồn tắm năm ngoái đến nay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1030,
+      1118
+    ],
+    "assertions": []
+  },
+  {
+    "text": "canxi toàn phần là 12.0; canxi ion hóa 6.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1177,
+      1219
+    ]
+  },
+  {
+    "text": "canx toàn phầni là 12.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1226,
+      1249
+    ]
+  },
+  {
+    "text": "cr (creatinine) 1.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1256,
+      1275
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1260,
+      1270
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh: MRI ngoại trú cho thấy hình ảnh  nhồi máu cũ nhỏ ở vỏ não đỉnh trái nhưng không có quá trình cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1280,
+      1409
+    ]
+  },
+  {
+    "text": "Laxis 20mg tiêm tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      1441,
+      1466
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dịch Natriclori 0.9 %  tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      1481,
+      1513
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

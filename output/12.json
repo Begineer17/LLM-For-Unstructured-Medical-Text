@@ -1,0 +1,142 @@
+[
+  {
+    "text": "ho x1 ngày và kèm theo ho ra máu cỡ đồng xu x3 đêm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      133,
+      187
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho x1 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      230,
+      240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho ra máu x3 đêm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      247,
+      267
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho và mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      321,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      562,
+      564
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      571,
+      578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho ra máu cỡ đồng xu x3 đêm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      585,
+      616
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đờm pha màu hồng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      623,
+      639
+    ],
+    "assertions": []
+  },
+  {
+    "text": "fever (trở thành sốt đến 38.8°C)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      646,
+      678
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau bụng  âm ỉ  trong tháng qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      685,
+      716
+    ],
+    "assertions": []
+  },
+  {
+    "text": "levofloxacin",
+    "type": "THUỐC",
+    "position": [
+      876,
+      888
+    ],
+    "assertions": [],
+    "candidates": [
+      "82122"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      975,
+      982
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "công thức máu (cbc) nâng cao lên 11.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1035,
+      1072
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực không phát hiện viêm phổi hoặc phù phổi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1105,
+      1162
+    ]
+  },
+  {
+    "text": "Lấy mẫu cấy máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1195,
+      1210
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

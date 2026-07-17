@@ -1,0 +1,203 @@
+[
+  {
+    "text": "viêm tủy xương mãn tính và bàng quang thần kinh gây biến chứng liệt hai chi dưới và loét tì đè giai đoạn IV mãn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      18,
+      134
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      321,
+      328
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "vancozosynbactrim",
+    "type": "THUỐC",
+    "position": [
+      541,
+      558
+    ],
+    "assertions": [],
+    "candidates": [
+      "1167956",
+      "1167959"
+    ]
+  },
+  {
+    "text": "zosyn",
+    "type": "THUỐC",
+    "position": [
+      604,
+      609
+    ],
+    "assertions": [],
+    "candidates": [
+      "74170"
+    ]
+  },
+  {
+    "text": "Đau bụng, đau hông từng cơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      970,
+      997
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      999,
+      1010
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mạch nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1011,
+      1021
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tim nhịp nhanh đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1023,
+      1041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Còn sonde tiểu, nước tiểu có cặn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1061,
+      1093
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lactate",
+    "type": "THUỐC",
+    "position": [
+      1111,
+      1118
+    ],
+    "assertions": [],
+    "candidates": [
+      "114202"
+    ]
+  },
+  {
+    "text": "lactate 1.1-->0.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1111,
+      1128
+    ]
+  },
+  {
+    "text": "Cấy nước tiểu : nhiễm khuẩn đường tiết niệu có các vi khuẩn hỗn hợp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1131,
+      1198
+    ]
+  },
+  {
+    "text": "cấy máu :âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1201,
+      1217
+    ]
+  },
+  {
+    "text": "chỉ số marker viêm của anh ấy đã có xu hướng tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1219,
+      1268
+    ]
+  },
+  {
+    "text": "MRI:  không thấy tình trạng viêm xương tủy nặng hơn",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1294,
+      1345
+    ]
+  },
+  {
+    "text": "Xquang ngực thẳng: không thấy thâm nhiễm",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1348,
+      1388
+    ]
+  },
+  {
+    "text": "svo2 là 82",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1402,
+      1412
+    ]
+  },
+  {
+    "text": "đo cvp là 6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1449,
+      1460
+    ]
+  },
+  {
+    "text": "Chẩn đoán: nhiễm trùng huyết đường vào tiết niệu- viêm tủy xương mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1461,
+      1534
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "NS 0.9 %",
+    "type": "THUỐC",
+    "position": [
+      1572,
+      1580
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Cefepim và Vancomycin",
+    "type": "THUỐC",
+    "position": [
+      1594,
+      1615
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

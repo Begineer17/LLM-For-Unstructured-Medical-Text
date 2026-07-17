@@ -1,0 +1,429 @@
+[
+  {
+    "text": "cao acetaminophen",
+    "type": "THUỐC",
+    "position": [
+      167,
+      184
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "161",
+      "1152843"
+    ]
+  },
+  {
+    "text": "acetaminophen 500mg",
+    "type": "THUỐC",
+    "position": [
+      171,
+      190
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "315266"
+    ]
+  },
+  {
+    "text": "thuốc an thần",
+    "type": "THUỐC",
+    "position": [
+      310,
+      323
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      775,
+      798
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      801,
+      818
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      821,
+      838
+    ],
+    "assertions": []
+  },
+  {
+    "text": "yếu sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      841,
+      848
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      851,
+      871
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      874,
+      888
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiểu ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      899,
+      910
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau vùng gan phải (RUQ) và thượng vị lan ra sau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      952,
+      1004
+    ],
+    "assertions": []
+  },
+  {
+    "text": "acetaminophen 500mg",
+    "type": "THUỐC",
+    "position": [
+      1183,
+      1202
+    ],
+    "assertions": [],
+    "candidates": [
+      "315266"
+    ]
+  },
+  {
+    "text": "thuốc an thần",
+    "type": "THUỐC",
+    "position": [
+      1253,
+      1266
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ast 421",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1349,
+      1356
+    ]
+  },
+  {
+    "text": "alt 336",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1358,
+      1365
+    ]
+  },
+  {
+    "text": "alp 185",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1367,
+      1374
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1376,
+      1399
+    ]
+  },
+  {
+    "text": "siêu âm bụng có doppler",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1410,
+      1433
+    ]
+  },
+  {
+    "text": "chụp hida",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1444,
+      1453
+    ]
+  },
+  {
+    "text": "nồng độ acetaminophen",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1477,
+      1498
+    ]
+  },
+  {
+    "text": "acetaminophen",
+    "type": "THUỐC",
+    "position": [
+      1485,
+      1498
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "161"
+    ]
+  },
+  {
+    "text": "nac",
+    "type": "THUỐC",
+    "position": [
+      1516,
+      1519
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ercp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1551,
+      1555
+    ]
+  },
+  {
+    "text": "ercp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1558,
+      1562
+    ]
+  },
+  {
+    "text": "túi mật giãn nở rõ rệt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1572,
+      1594
+    ]
+  },
+  {
+    "text": "sỏi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1610,
+      1613
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh lý khác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1619,
+      1631
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "sỏi mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1694,
+      1701
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng bilirubin máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1739,
+      1757
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng men gan kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1761,
+      1781
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ast 421",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1830,
+      1837
+    ]
+  },
+  {
+    "text": "alt 336",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1840,
+      1847
+    ]
+  },
+  {
+    "text": "alp 185",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1850,
+      1857
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1860,
+      1883
+    ]
+  },
+  {
+    "text": "total bili bắt đầu tăng lên đạt đỉnh 6.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1886,
+      1926
+    ]
+  },
+  {
+    "text": "bảng xét nghiệm viêm gan virus là âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1929,
+      1970
+    ]
+  },
+  {
+    "text": "ferritin",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1973,
+      1981
+    ]
+  },
+  {
+    "text": "là bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1982,
+      1996
+    ]
+  },
+  {
+    "text": "ceruloplasmin",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1999,
+      2012
+    ]
+  },
+  {
+    "text": "siêu âm bụng có doppler",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2106,
+      2129
+    ]
+  },
+  {
+    "text": "chụp hida",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2156,
+      2165
+    ]
+  },
+  {
+    "text": "ercp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2168,
+      2172
+    ]
+  },
+  {
+    "text": "túi mật giãn nở rõ rệt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2182,
+      2204
+    ]
+  },
+  {
+    "text": "sỏi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2233,
+      2236
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh lý giải phẫu bệnh khác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2242,
+      2269
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ercp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2291,
+      2295
+    ]
+  }
+]

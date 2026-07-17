@@ -1,0 +1,158 @@
+[
+  {
+    "text": "đau họng kèm theo nuốt vướng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      369,
+      397
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      404,
+      412
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng tăng cân 3 pound trong 7 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      419,
+      457
+    ],
+    "assertions": []
+  },
+  {
+    "text": "họng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      497,
+      501
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nuốt vướng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      530,
+      540
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Yếu tố làm giảm: đồ uống lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      547,
+      576
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các triệu chứng liên quan: buồn nôn, tăng tăng cân 3 pound trong 7 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      583,
+      658
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tự đo từ temperate đến tmax 102 sốt tại nhà",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      701,
+      744
+    ],
+    "assertions": []
+  },
+  {
+    "text": "glucose",
+    "type": "THUỐC",
+    "position": [
+      994,
+      1001
+    ],
+    "assertions": [],
+    "candidates": [
+      "4850"
+    ]
+  },
+  {
+    "text": "glucose 537",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      994,
+      1005
+    ]
+  },
+  {
+    "text": "glucose",
+    "type": "THUỐC",
+    "position": [
+      1012,
+      1019
+    ],
+    "assertions": [],
+    "candidates": [
+      "4850"
+    ]
+  },
+  {
+    "text": "glucose cải thiện thành 367",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1012,
+      1039
+    ]
+  },
+  {
+    "text": "bun (ure) 3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1046,
+      1057
+    ]
+  },
+  {
+    "text": "cr (creatinine) 1.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1064,
+      1083
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1068,
+      1078
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "ag (anion gap) 17",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1090,
+      1107
+    ]
+  },
+  {
+    "text": "ag (anion gap) đóng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1114,
+      1133
+    ]
+  }
+]

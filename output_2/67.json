@@ -1,0 +1,63 @@
+[
+  {
+    "text": "FNA của một nốt sần tuyến giáp phải có cấu trúc vi nang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      74,
+      129
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      156,
+      177
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      220,
+      227
+    ]
+  },
+  {
+    "text": "cho thấy sỏi mật",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      228,
+      244
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      389,
+      396
+    ]
+  },
+  {
+    "text": "cho thấy sỏi mật",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      397,
+      413
+    ]
+  },
+  {
+    "text": "FNA của một nốt sần tuyến giáp phải có cấu trúc vi nang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      448,
+      503
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

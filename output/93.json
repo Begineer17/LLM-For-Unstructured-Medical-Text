@@ -1,0 +1,63 @@
+[
+  {
+    "text": "Ung thư vú di căn, tràn dịch màng phổi trái tái phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      25,
+      77
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Lý do vào việni: khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      99,
+      123
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lâm sàng: tràn dịch màng ngoài tim mức độ trung bình",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      146,
+      198
+    ]
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh: ung thư di căn theo đường bạch huyết ở hai phổi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      199,
+      274
+    ]
+  },
+  {
+    "text": "dẫn lưu dịch màng tim",
+    "type": "THUỐC",
+    "position": [
+      304,
+      325
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "talc",
+    "type": "THUỐC",
+    "position": [
+      368,
+      372
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "10323"
+    ]
+  }
+]

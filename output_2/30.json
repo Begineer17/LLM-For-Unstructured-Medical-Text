@@ -1,0 +1,251 @@
+[
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      88
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng cholesterol máu đơn thuần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      95,
+      125
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cholesterol",
+    "type": "THUỐC",
+    "position": [
+      100,
+      111
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "2438"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      132,
+      145
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      190,
+      197
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "allopurinol",
+    "type": "THUỐC",
+    "position": [
+      239,
+      250
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "519"
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau",
+    "type": "THUỐC",
+    "position": [
+      293,
+      307
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      363,
+      370
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giácxuất hiện khoảng một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      451,
+      490
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thuốc giảm đau",
+    "type": "THUỐC",
+    "position": [
+      573,
+      587
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      633,
+      644
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      751,
+      758
+    ],
+    "assertions": [],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "allopurinol",
+    "type": "THUỐC",
+    "position": [
+      797,
+      808
+    ],
+    "assertions": [],
+    "candidates": [
+      "519"
+    ]
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      847,
+      854
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      919,
+      926
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bệnh nhân nhìn/nghe thấy có nhiều người (đôi khi tổng cộng khoảng 8 người)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      953,
+      1027
+    ],
+    "assertions": []
+  },
+  {
+    "text": "những người này đang nói chuyện với mình",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1034,
+      1074
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hoang tưởng/lo sợ rằng họ sẽ chạm vào da của mình",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1131,
+      1180
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Điều trị nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1223,
+      1282
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau",
+    "type": "THUỐC",
+    "position": [
+      1289,
+      1303
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      1324,
+      1331
+    ],
+    "assertions": [],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "allopurinol",
+    "type": "THUỐC",
+    "position": [
+      1369,
+      1380
+    ],
+    "assertions": [],
+    "candidates": [
+      "519"
+    ]
+  },
+  {
+    "text": "ảo giác khoảng mỗi đêm lúc 2 giờ sáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1453,
+      1490
+    ],
+    "assertions": []
+  }
+]

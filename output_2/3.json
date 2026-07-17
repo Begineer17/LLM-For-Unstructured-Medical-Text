@@ -1,0 +1,372 @@
+[
+  {
+    "text": "Tái phát các cơn ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      50,
+      75
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng tần suất lên hơn một lần một tháng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      144,
+      183
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      217,
+      250
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      253,
+      266
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "phình động mạch chủ nhỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      269,
+      292
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ngất xỉu trong xe",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      533,
+      550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ước tính mất ý thức có thể trong 30 giây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      586,
+      626
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau chân sau khi đi bộ vài chặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      832,
+      864
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      875
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      878,
+      898
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở về đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      901,
+      915
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      918,
+      933
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù mắt cá chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      936,
+      951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      954,
+      969
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      972,
+      980
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xỉu trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      983,
+      992
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1016,
+      1024
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1837,
+      1857
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở về đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2052,
+      2066
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2256,
+      2271
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xỉu trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2807,
+      2816
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ (ecg)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3288,
+      3305
+    ]
+  },
+  {
+    "text": "nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3336,
+      3351
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "bảng công thức sinh hóa máu cơ bản",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3424,
+      3458
+    ]
+  },
+  {
+    "text": "bảng công thức máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3460,
+      3478
+    ]
+  },
+  {
+    "text": "bảng chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3480,
+      3498
+    ]
+  },
+  {
+    "text": "bản phân tích nước tiểu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3502,
+      3525
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3578,
+      3591
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3595,
+      3612
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính sọ não",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3667,
+      3694
+    ]
+  },
+  {
+    "text": "bảng công thức sinh hóa máu cơ bản",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      3973,
+      4007
+    ]
+  },
+  {
+    "text": "bảng công thức máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      4022,
+      4040
+    ]
+  },
+  {
+    "text": "bảng chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      4055,
+      4073
+    ]
+  },
+  {
+    "text": "bản phân tích nước tiểu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      4088,
+      4111
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4126,
+      4139
+    ]
+  },
+  {
+    "text": "rung nhĩ kèm đáp ứng thất nhanh mới",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4142,
+      4177
+    ]
+  },
+  {
+    "text": "nhịp tim chậm tương đối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4203,
+      4226
+    ]
+  },
+  {
+    "text": "nhồi máu cơ tim vùng dưới cũ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4239,
+      4267
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "thay đổi sóng t không đặc hiệu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4290,
+      4320
+    ]
+  },
+  {
+    "text": "Tim to",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      4360,
+      4366
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính sọ não",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      4389,
+      4416
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      131,
+      164
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "blốc nhĩ thất, hoàn toàn sau khi đặt máy tạo nhịp (PPM)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      171,
+      226
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      233,
+      262
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Suy giảm nhận thức nhẹ suy giảm nhận thức",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      269,
+      310
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Các đợt Cảm giác thắt chặt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      443,
+      474
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác thắt chặt ngực dưới xương ức nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      622,
+      672
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      679,
+      686
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sau xương ức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      726,
+      738
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: Nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      745,
+      778
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phút",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      796,
+      800
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các đợt trong vài tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      817,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xảy ra khi nghỉ ngơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      872,
+      892
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Yếu tố làm giảm: Tự khỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      899,
+      923
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng kèm theo: khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      930,
+      959
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cơn đau thắt ngực không ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1048,
+      1079
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Cơn đau thắt ngực không ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1174,
+      1205
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

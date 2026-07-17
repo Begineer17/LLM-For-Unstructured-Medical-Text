@@ -1,0 +1,307 @@
+[
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      46,
+      77
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      80,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      96,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Rung nhĩ kèm đáp ứng thất nhanh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      122,
+      153
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      156,
+      185
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      358,
+      361
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghẹt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      435,
+      445
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      504,
+      511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù ngoại vi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      548,
+      560
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      643
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy hô hấp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      700,
+      710
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      715,
+      728
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhiễm khuẩn huyết do tụ cầu vàng nhạy cảm methicillin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      991,
+      1044
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Siêu âm mạch máu chi trên",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1116,
+      1141
+    ]
+  },
+  {
+    "text": "xạ hình thông khí - tưới máu phổi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1169,
+      1202
+    ]
+  },
+  {
+    "text": "albuterol",
+    "type": "THUỐC",
+    "position": [
+      1465,
+      1474
+    ],
+    "assertions": [],
+    "candidates": [
+      "435"
+    ]
+  },
+  {
+    "text": "guaifenesin",
+    "type": "THUỐC",
+    "position": [
+      1487,
+      1498
+    ],
+    "assertions": [],
+    "candidates": [
+      "5032"
+    ]
+  },
+  {
+    "text": "furosemide 40 mg",
+    "type": "THUỐC",
+    "position": [
+      1502,
+      1518
+    ],
+    "assertions": [],
+    "candidates": [
+      "315971"
+    ]
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1651,
+      1658
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nghẹt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1691,
+      1701
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1711,
+      1713
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khò khè",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1714,
+      1721
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phù ngoại vi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1722,
+      1734
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiền sử sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1767,
+      1778
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1869,
+      1871
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khò khè",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1875,
+      1882
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghẹt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1985,
+      1995
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2074,
+      2076
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Nhiễm khuẩn huyết do tụ cầu vàng nhạy cảm methicillin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2114,
+      2167
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Siêu âm mạch máu chi trên",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2199,
+      2224
+    ]
+  },
+  {
+    "text": "Xạ hình thông khí – tưới máu phổi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2252,
+      2285
+    ]
+  }
+]

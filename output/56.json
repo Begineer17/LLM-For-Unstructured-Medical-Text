@@ -1,0 +1,214 @@
+[
+  {
+    "text": "tiền sử Đái tháo đường (tiền sử Đái tháo đường)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      23,
+      70
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng huyết áp (tăng huyết áp vô căn (nguyên phát))",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      123
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xét nghiệm gắng sức bất thường",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      172,
+      202
+    ]
+  },
+  {
+    "text": "Thời điểm khởi phát triệu chứng: Hôm qua (không rõ ngày cụ thể)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      203,
+      266
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó chịu vùng ngực gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      322
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở (khó thở)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      337,
+      354
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      357,
+      366
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không rõ (ngụ ý vùng ngực)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      398,
+      424
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: Không rõ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      427,
+      456
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không rõ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      470,
+      478
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      491,
+      500
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chiếu r xạ: Không rõ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      503,
+      523
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các yếu tố làm nặng thêm: Hoạt động gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      570
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các yếu tố làm giảm bớt: Nghỉ ngơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      573,
+      607
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các triệu chứng liên quan: chóng mặt, khó thở, đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      610,
+      666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các sự kiện trước khi nhập viện: xét nghiệm gắng sức bất thường",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      667,
+      730
+    ]
+  },
+  {
+    "text": "Không có đau tại phòng cấp cứu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      787,
+      817
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ bình thường tại phòng cấp cứu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      820,
+      861
+    ]
+  },
+  {
+    "text": "Các chỉ số ban đầu tại phòng cấp cứu: Nhiệt độ 36.7°c, Huyết áp 139/68 mmhg, Mạch 67 lần/phút, Nhịp thở 16 lần/phút, SpO2 100% (không thở oxy) (nhiệt độ 36.7°c, huyết áp 139/68 mmhg, nhịp tim 67 lần/phút, nhịp thở 16 lần/phút, độ bão hòa oxy 100% trên khí trời)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      864,
+      1125
+    ]
+  },
+  {
+    "text": "ống nội khí quản (nghiệm pháp gắng sức trên máy chạy bộ)",
+    "type": "THUỐC",
+    "position": [
+      1154,
+      1210
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Các phát hiện chẩn đoán khác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1211,
+      1239
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nghiệm pháp gắng sức dương tính với thiếu máu cơ tim cục bộ, biểu hiện ST chênh xuống ở các chuyển đạo thành dưới và thành bên.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1240,
+      1367
+    ]
+  },
+  {
+    "text": "Đoạn ST chênh xuống kiểu xuống dốc xuất hiện trong giai đoạn hồi phục, còn tồn tại sau 1 phút và kéo dài đến sau 5 phút hồi phục.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1369,
+      1498
+    ]
+  }
+]

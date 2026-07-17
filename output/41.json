@@ -1,0 +1,366 @@
+[
+  {
+    "text": "omeprazole (vừa ngừng để làm test hơi thở h. pylori)",
+    "type": "THUỐC",
+    "position": [
+      625,
+      677
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Triệu chứng cách đây vài năm (buồn nôn và tiêu chảy)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      779,
+      831
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tập viêm dạ dày ruột do virus (trong năm nay)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      838,
+      883
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiếp tục khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      890,
+      1001
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn ra máu (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1008,
+      1061
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn ra máu (trong 2 ngày qua)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1068,
+      1097
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng đau bụng và nôn ra máu trở nên tồi tệ hơn (khi ngừng omeprazole)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1104,
+      1179
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1168,
+      1178
+    ],
+    "assertions": [],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Triệu chứng cách đây vài năm: tái phát buồn nôn và tiêu chảy, chẩn đoán hội chứng ruột kích thích, phát hiện loét tá tràng khi nội soi.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1205,
+      1340
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Trong năm nay: không thể giữ được bất cứ thứ gì, chẩn đoán viêm dạ dày ruột do virus.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1347,
+      1432
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1695,
+      1705
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Khi ngừng omeprazole: phát triển đau bụng và nôn ra máu trở nên tồi tệ hơn.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1743,
+      1818
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1753,
+      1763
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1894,
+      1904
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn uống kém.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1911,
+      1923
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nausea",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1930,
+      1936
+    ],
+    "assertions": [],
+    "candidates": [
+      "R11.0"
+    ]
+  },
+  {
+    "text": "diarrhea",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1943,
+      1951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "abdominal pain",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1958,
+      1972
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chẩn đoán viêm dạ dày ruột do virus (trong năm nay)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2015,
+      2066
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tiếp tục khó khăn khi ăn uống qua đường miệng, buồn nôn và tiêu chảy (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2073,
+      2184
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhập viện vì nôn ra máu (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2191,
+      2257
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi cho thấy nhiều loét tá tràng và hồi tràng (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2264,
+      2356
+    ]
+  },
+  {
+    "text": "dương tính xét nghiệm phân tìm cryptosporidium (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2363,
+      2452
+    ]
+  },
+  {
+    "text": "Ngừng sử dụng omeprazole để làm test hơi thở h. pylori (gần đây)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2459,
+      2523
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2473,
+      2483
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Phát triển đau bụng và nôn ra máu trở nên tồi tệ hơn (khi ngừng omeprazole)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2530,
+      2605
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2594,
+      2604
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "Tình trạng ngay trước khi nhập viện: Tiếp tục nôn ra máu trong 2 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2610,
+      2683
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dương tính xét nghiệm phân tìm cryptosporidium (2 tuần sau tập viêm dạ dày ruột do virus)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2744,
+      2833
+    ]
+  },
+  {
+    "text": "test hơi thở h. pylori (lý do ngừng omeprazole)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2840,
+      2887
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      2876,
+      2886
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646"
+    ]
+  },
+  {
+    "text": "nội soi (cách đây vài năm)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2925,
+      2951
+    ]
+  },
+  {
+    "text": "nội soi (cho thấy nhiều loét tá tràng và hồi tràng)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2958,
+      3009
+    ]
+  },
+  {
+    "text": "nội soi (Viêm thực quản độ C, loét thực quản dưới 6 mm có điểm sắc tố, nhiều loét nông sạch đáy ở tá tràng và hồi tràng sớm)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      3016,
+      3140
+    ]
+  },
+  {
+    "text": "Viêm thực quản độ C ở thực quản dưới",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3180,
+      3216
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Loét loét thực quản 6 mm có điểm sắc tố",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3223,
+      3262
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nhiều loét sạch đáy loét ở tá tràng kéo dài từ hành tá tràng đến hồi tràng sớm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3269,
+      3347
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      51,
+      59
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau âm ỉ vùng quanh rốn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      120,
+      143
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng âm ỉ quanh rốn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      207,
+      230
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau âm ỉ vùng quanh rốn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      376,
+      399
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ sườn trái từng cơni",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      401,
+      423
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn nhẹ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      430,
+      442
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đại tiện bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      492,
+      512
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      538,
+      552
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      559,
+      572
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khám bụng mềm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      573,
+      586
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khám cơ quan khác chưa phát hiện bất thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      603,
+      646
+    ],
+    "assertions": []
+  }
+]

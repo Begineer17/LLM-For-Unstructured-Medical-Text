@@ -1,0 +1,316 @@
+[
+  {
+    "text": "Bệnh phổi kẽ do sử dụng corticoid liều cao kéo dài",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      44,
+      94
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Hội chứng kháng enzym tổng hợp protein",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      124,
+      162
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      170,
+      177
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.9"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp nguyên phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      184,
+      209
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Sinh thiết nội mạc tử cung",
+    "type": "THUỐC",
+    "position": [
+      247,
+      273
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Corticoid liều cao kéo dài",
+    "type": "THUỐC",
+    "position": [
+      317,
+      343
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      382,
+      389
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "doxycycline",
+    "type": "THUỐC",
+    "position": [
+      430,
+      441
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "3640"
+    ]
+  },
+  {
+    "text": "Suy giảm miễn dịch do sử dụng corticoid kéo dài",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      478,
+      525
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tình trạng tổn thương vùng âm hộ và mông bên phải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      573,
+      622
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tổn thương vùng âm hộ phải lan rộng sang mông phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      682,
+      732
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tổn thương tiếp tục tiến triển",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1066,
+      1096
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xuất hiện nhiều bọng nước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1098,
+      1123
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1150,
+      1159
+    ],
+    "assertions": []
+  },
+  {
+    "text": "một số vị trí rỉ dịch vàng đục giống mủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1161,
+      1200
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tổn thương vùng âm hộ và mông bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1344,
+      1382
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tổn thương cực kỳ đau đớn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1389,
+      1414
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng tổn thương dạng bóng nước ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1421,
+      1472
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lan đến mông bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1479,
+      1500
+    ],
+    "assertions": []
+  },
+  {
+    "text": "có dịch giống mủ có màu vàng  chảy ra từ tổn thương",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1507,
+      1558
+    ],
+    "assertions": []
+  },
+  {
+    "text": "âm hộ bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1602,
+      1616
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: cực kỳ đau đớn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1638,
+      1673
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng ngày càng nặng trong 5 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1691,
+      1729
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1763,
+      1769
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy mủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1771,
+      1778
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      1887,
+      1894
+    ],
+    "assertions": [],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "doxycycline",
+    "type": "THUỐC",
+    "position": [
+      1898,
+      1909
+    ],
+    "assertions": [],
+    "candidates": [
+      "3640"
+    ]
+  },
+  {
+    "text": "ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1986,
+      1992
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dịch tiết có vẻ như mủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1999,
+      2021
+    ],
+    "assertions": []
+  },
+  {
+    "text": "doxycyclinebactrim",
+    "type": "THUỐC",
+    "position": [
+      2235,
+      2253
+    ],
+    "assertions": [],
+    "candidates": [
+      "1167956",
+      "1167959"
+    ]
+  }
+]

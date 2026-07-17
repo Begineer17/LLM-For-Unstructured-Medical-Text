@@ -1,0 +1,144 @@
+[
+  {
+    "text": "Đờm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      107,
+      110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      113,
+      115
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đôi khi đau bụng quặn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      139
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      142,
+      151
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đôi khi đi ngoài ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      154,
+      177
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không tăng cân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      180,
+      200
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cea (kháng nguyên ung thư phôi)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      247,
+      278
+    ]
+  },
+  {
+    "text": "tăng nhẹ lên 4.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      279,
+      295
+    ]
+  },
+  {
+    "text": "mri vùng chậu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      325,
+      338
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      402,
+      409
+    ]
+  },
+  {
+    "text": "sinh thiết",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      553,
+      563
+    ]
+  },
+  {
+    "text": "siêu âm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      578,
+      585
+    ]
+  },
+  {
+    "text": "khối u trực tràng với hình ảnh của một u ác trực tràng đáng kể",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      625,
+      687
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "sinh thiết chỉ cho thấy một u tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      690,
+      725
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "phân giai đoạn phẫu thuật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      740,
+      765
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tem",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      770,
+      773
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

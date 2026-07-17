@@ -1,0 +1,56 @@
+[
+  {
+    "text": "trầm cảm và  rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      108,
+      135
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Phẫu thuật cắt cụt chân trái bên trên gối  và cắt cụt chân phải bên dưới gối / biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      678,
+      857
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "vancomycin",
+    "type": "THUỐC",
+    "position": [
+      847,
+      857
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124"
+    ]
+  },
+  {
+    "text": "kháng sinh tĩnh mạch.",
+    "type": "THUỐC",
+    "position": [
+      943,
+      964
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Có ý định điều trị và lắp chân giả",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      966,
+      1000
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

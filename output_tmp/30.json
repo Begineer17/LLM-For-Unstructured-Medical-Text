@@ -1,0 +1,215 @@
+[
+  {
+    "text": "cholesterol",
+    "type": "THUỐC",
+    "position": [
+      100,
+      111
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "2438"
+    ]
+  },
+  {
+    "text": "gleevec (ngừng uống cách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      190,
+      232
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "allopurinol (ngừng uống",
+    "type": "THUỐC",
+    "position": [
+      239,
+      262
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      264,
+      286
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc giảm đau (ngừng)",
+    "type": "THUỐC",
+    "position": [
+      293,
+      315
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      363,
+      370
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giácxuất hiện khoảng một tháng trước.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      451,
+      491
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      751,
+      758
+    ],
+    "assertions": [],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "allopurinol",
+    "type": "THUỐC",
+    "position": [
+      797,
+      808
+    ],
+    "assertions": [],
+    "candidates": [
+      "519"
+    ]
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      919,
+      926
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bệnh nhân nhìn/nghe thấy có nhiều người (đôi khi tổng cộng khoảng 8 người).",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      953,
+      1028
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thấy những người này đang nói chuyện với mình.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1029,
+      1075
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ảo giác không mang tính chất ra lệnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1076,
+      1112
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bệnh nhân thường hoang tưởng/lo sợ rằng họ sẽ chạm vào da của mình.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1114,
+      1181
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Điều trị nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1223,
+      1282
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau đã ngừng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1289,
+      1312
+    ]
+  },
+  {
+    "text": "Liều gleevec đã ngừng cách nhập viện 5 ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1319,
+      1362
+    ]
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      1324,
+      1331
+    ],
+    "assertions": [],
+    "candidates": [
+      "282386"
+    ]
+  },
+  {
+    "text": "allopurinol",
+    "type": "THUỐC",
+    "position": [
+      1369,
+      1380
+    ],
+    "assertions": [],
+    "candidates": [
+      "519"
+    ]
+  },
+  {
+    "text": "allopurinol đã ngừng cách nhập viện 5 ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1369,
+      1411
+    ]
+  },
+  {
+    "text": "Tình trạng ngay trước khi nhập viện: ảo giác khoảng mỗi đêm lúc 2 giờ sáng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1416,
+      1490
+    ]
+  }
+]

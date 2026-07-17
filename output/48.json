@@ -1,0 +1,347 @@
+[
+  {
+    "text": "Tiền sử bệnh lý rộng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      54,
+      74
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Yếu nửa người trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      123,
+      141
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hôm nay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      179,
+      186
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngã khoảng 6 tuần trước, không va đập đầu, bình thường chụp ct não vào thời điểm đó",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      273,
+      356
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu do phản ứng thần kinh mạch máu sau cơn ngất",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      386,
+      438
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      466,
+      474
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi cài cúc áo và kéo khóa quần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      540,
+      580
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hơi vụng về và tiểu tiện ra sàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      635,
+      666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm thấy yếu sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      682,
+      698
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ra khỏi ghế tựa, nhận thấy ông ấy kéo lê chân trái và cánh tay trái được cho là lơ lửng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      720,
+      820
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ước lượng vị trí ngồi xuống ghế ăn trưa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      827,
+      879
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      886,
+      901
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng kéo dài khoảng 30 phút, sau đó ông ấy trở về trạng thái bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      908,
+      986
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác bất thường ở bên phải đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1006,
+      1040
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tình trạng ổn định vào buổi chiều, có thể dễ dàng lên cầu thang",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1047,
+      1110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khoảng 5 giờ 30 phút, ông ấy có cùng các vấn đề như bữa trưa, bao gồm kéo lê chân trái và cánh tay buông thõng và khó khăn khi tự ăn tối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1136,
+      1272
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Yếu nửa người trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1309,
+      1327
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm thấy yếu sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1334,
+      1350
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi cài cúc áo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1357,
+      1380
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó kéo khóa quần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1387,
+      1404
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hơi vụng về",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1411,
+      1422
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiểu tiện ra sàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1429,
+      1445
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ra khỏi ghế tựa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1452,
+      1480
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kéo lê chân trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1487,
+      1503
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cánh tay trái lơ lửng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1510,
+      1531
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ước lượng vị trí ngồi xuống ghế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1538,
+      1582
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1589,
+      1604
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác bất thường ở bên phải đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1611,
+      1645
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nửa trái, bên phải đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1685,
+      1707
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khoảng 30 phút (đợt đầu tiên)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1772,
+      1801
+    ],
+    "assertions": []
+  },
+  {
+    "text": "2 đợt hôm nay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1818,
+      1831
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi cài cúc áo, kéo khóa quần, vụng về, đi tiểu trên sàn, khó khăn khi ra khỏi ghế tựa, kéo lê chân trái, cánh tay trái lơ lửng, khó khăn khi ước lượng vị trí ngồi, khó khăn khi ăn, cảm giác bất thường bên phải đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2016,
+      2239
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có chấn thương đầu gần đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2282,
+      2314
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngã khoảng 6 tuần trước nhưng không đập đầu; bình thường chụp ct não vào thời điểm đó",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2321,
+      2406
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu do phản ứng thần kinh mạch máu sau cơn ngất",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2436,
+      2488
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhập viện vì ngất xỉu, xuất viện, sau đó ổn định",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2495,
+      2543
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi cài cúc áo và kéo khóa quần, hơi vụng về và tiểu tiện ra sàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2569,
+      2642
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phát hiện xuất huyết dưới màng cứng tại bệnh viện bên ngoài",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2703,
+      2762
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

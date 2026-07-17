@@ -1,0 +1,385 @@
+[
+  {
+    "text": "tiền sử Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      23,
+      45
+    ],
+    "assertions": [],
+    "candidates": [
+      "E08.00",
+      "E08.01",
+      "E08.10"
+    ]
+  },
+  {
+    "text": "tiền sử Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      47,
+      69
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E08.00",
+      "E08.01",
+      "E08.10"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      73,
+      86
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      88,
+      101
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "xét nghiệm gắng sức bất thường",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      172,
+      202
+    ]
+  },
+  {
+    "text": "Thời điểm khởi phát triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      203,
+      234
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó chịu vùng ngực gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      322
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      337,
+      344
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      346,
+      353
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      357,
+      366
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vị trí",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      390,
+      396
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      427,
+      446
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thời gian",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      459,
+      468
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tần suất",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      481,
+      489
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chiếu r xạ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      503,
+      513
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hoạt động gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      552,
+      570
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nghỉ ngơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      598,
+      607
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      637,
+      646
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      648,
+      655
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      657,
+      666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xét nghiệm gắng sức bất thường",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      700,
+      730
+    ]
+  },
+  {
+    "text": "đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      796,
+      799
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      820,
+      831
+    ]
+  },
+  {
+    "text": "bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      832,
+      843
+    ]
+  },
+  {
+    "text": "Nhiệt độ 36.7°c",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      902,
+      917
+    ]
+  },
+  {
+    "text": "Huyết áp 139/68 mmhg",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      919,
+      939
+    ]
+  },
+  {
+    "text": "Mạch 67 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      941,
+      957
+    ]
+  },
+  {
+    "text": "Nhịp thở 16 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      959,
+      979
+    ]
+  },
+  {
+    "text": "SpO2 100% (không thở oxy)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      981,
+      1006
+    ]
+  },
+  {
+    "text": "nhiệt độ 36.7°c",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1008,
+      1023
+    ]
+  },
+  {
+    "text": "huyết áp 139/68 mmhg",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1025,
+      1045
+    ]
+  },
+  {
+    "text": "nhịp tim 67 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1047,
+      1067
+    ]
+  },
+  {
+    "text": "nhịp thở 16 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1069,
+      1089
+    ]
+  },
+  {
+    "text": "độ bão hòa oxy 100% trên khí trời",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1091,
+      1124
+    ]
+  },
+  {
+    "text": "ống nội khí quản",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1154,
+      1170
+    ]
+  },
+  {
+    "text": "nghiệm pháp gắng sức trên máy chạy bộ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1172,
+      1209
+    ]
+  },
+  {
+    "text": "Nghiệm pháp gắng sức dương tính với thiếu máu cơ tim cục bộ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1240,
+      1299
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ST chênh xuống",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1311,
+      1325
+    ]
+  },
+  {
+    "text": "chuyển đạo thành dưới",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1332,
+      1353
+    ]
+  },
+  {
+    "text": "Đoạn ST chênh xuống kiểu xuống dốc",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1369,
+      1403
+    ]
+  },
+  {
+    "text": "giai đoạn hồi phục",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1420,
+      1438
+    ]
+  },
+  {
+    "text": "kéo dài đến sau 5 phút hồi phục",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1466,
+      1497
+    ]
+  }
+]

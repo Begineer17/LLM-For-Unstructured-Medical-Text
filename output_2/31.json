@@ -1,0 +1,51 @@
+[
+  {
+    "text": "Thai 41 tuần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      45,
+      57
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khởi phát chuyển dạ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      72,
+      91
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thai máy tốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      130
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chưa  ra huyết âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      140,
+      161
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chưa vỡ ối/rỉ ối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      170,
+      186
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  }
+]

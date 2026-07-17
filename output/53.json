@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Các đợt Cảm giác thắt chặt ngực.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      443,
+      475
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác thắt chặt ngực dưới xương ức nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      622,
+      672
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      679,
+      686
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sau xương ức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      726,
+      738
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: Nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      745,
+      778
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phút",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      796,
+      800
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các đợt trong vài tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      817,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Xảy ra khi nghỉ ngơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      872,
+      892
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Yếu tố làm giảm: Tự khỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      899,
+      923
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng kèm theo: khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      930,
+      959
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chuyển đến vì lo ngại Cơn đau thắt ngực không ổn định cần can thiệp mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1026,
+      1103
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Lo ngại Cơn đau thắt ngực không ổn định cần can thiệp mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1166,
+      1229
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "text": "viêm tủy xương mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      18,
+      41
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bàng quang thần kinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      45,
+      65
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "biến chứng liệt hai chi dưới",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      70,
+      98
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "loét tì đè giai đoạn IV mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      102,
+      134
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đặt lưu sonde tiểu",
+    "type": "THUỐC",
+    "position": [
+      137,
+      155
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhiễm khuẩn đường tiết niệu tái phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      163,
+      199
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bactrim",
+    "type": "THUỐC",
+    "position": [
+      321,
+      328
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "151399"
+    ]
+  },
+  {
+    "text": "nhiễm trùng huyết",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      497,
+      514
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm tuỷ xương",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      575,
+      589
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "zosyn",
+    "type": "THUỐC",
+    "position": [
+      604,
+      609
+    ],
+    "assertions": [],
+    "candidates": [
+      "74170"
+    ]
+  },
+  {
+    "text": "Đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      970,
+      978
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hông từng cơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      980,
+      997
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      999,
+      1010
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mạch nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1011,
+      1021
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tim nhịp nhanh đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1023,
+      1041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Còn sonde tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1061,
+      1075
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nước tiểu có cặn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1077,
+      1093
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lactate",
+    "type": "THUỐC",
+    "position": [
+      1111,
+      1118
+    ],
+    "assertions": [],
+    "candidates": [
+      "114202"
+    ]
+  },
+  {
+    "text": "MRI",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1294,
+      1297
+    ]
+  },
+  {
+    "text": "viêm xương tủy",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1322,
+      1336
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Xquang ngực thẳng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1348,
+      1365
+    ]
+  },
+  {
+    "text": "nhiễm trùng huyết đường vào tiết niệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1472,
+      1509
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm tủy xương mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1511,
+      1534
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "NS 0.9 %",
+    "type": "THUỐC",
+    "position": [
+      1572,
+      1580
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Cefepim",
+    "type": "THUỐC",
+    "position": [
+      1594,
+      1601
+    ],
+    "assertions": [],
+    "candidates": [
+      "1160606",
+      "1665086"
+    ]
+  },
+  {
+    "text": "Vancomycin",
+    "type": "THUỐC",
+    "position": [
+      1605,
+      1615
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124"
+    ]
+  }
+]

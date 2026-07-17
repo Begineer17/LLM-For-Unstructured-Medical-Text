@@ -1,0 +1,255 @@
+[
+  {
+    "text": "albuterol nebs q4h tại nhà",
+    "type": "THUỐC",
+    "position": [
+      159,
+      185
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "z-pack",
+    "type": "THUỐC",
+    "position": [
+      192,
+      198
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "prednisone",
+    "type": "THUỐC",
+    "position": [
+      747,
+      757
+    ],
+    "assertions": [],
+    "candidates": [
+      "8640"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "type": "THUỐC",
+    "position": [
+      771,
+      782
+    ],
+    "assertions": [],
+    "candidates": [
+      "723"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "type": "THUỐC",
+    "position": [
+      820,
+      831
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "723"
+    ]
+  },
+  {
+    "text": "azithromycin",
+    "type": "THUỐC",
+    "position": [
+      884,
+      896
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "18631"
+    ]
+  },
+  {
+    "text": "prednisone 40 mg",
+    "type": "THUỐC",
+    "position": [
+      915,
+      931
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "prednisone",
+    "type": "THUỐC",
+    "position": [
+      1010,
+      1020
+    ],
+    "assertions": [],
+    "candidates": [
+      "8640"
+    ]
+  },
+  {
+    "text": "Khó thở.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1251,
+      1259
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khò khè.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1260,
+      1268
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiếng rít về đêm.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1269,
+      1286
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau vùng xoang.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1287,
+      1302
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ho nhẹ.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1303,
+      1310
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau đầu dữ dội.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1311,
+      1326
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau hạ vị.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1327,
+      1337
+    ],
+    "assertions": []
+  },
+  {
+    "text": "prednisone",
+    "type": "THUỐC",
+    "position": [
+      1444,
+      1454
+    ],
+    "assertions": [],
+    "candidates": [
+      "8640"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "type": "THUỐC",
+    "position": [
+      1468,
+      1479
+    ],
+    "assertions": [],
+    "candidates": [
+      "723"
+    ]
+  },
+  {
+    "text": "amoxicillin",
+    "type": "THUỐC",
+    "position": [
+      1487,
+      1498
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "723"
+    ]
+  },
+  {
+    "text": "azithromycin",
+    "type": "THUỐC",
+    "position": [
+      1539,
+      1551
+    ],
+    "assertions": [],
+    "candidates": [
+      "18631"
+    ]
+  },
+  {
+    "text": "prednisone 40 mg",
+    "type": "THUỐC",
+    "position": [
+      1561,
+      1577
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "combivent nebs x3 every 20 minutes",
+    "type": "THUỐC",
+    "position": [
+      1910,
+      1944
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "magnesium",
+    "type": "THUỐC",
+    "position": [
+      1954,
+      1963
+    ],
+    "assertions": [],
+    "candidates": [
+      "6574"
+    ]
+  },
+  {
+    "text": "lưu lượng đỉnh thở ra",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2029,
+      2050
+    ]
+  }
+]

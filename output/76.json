@@ -1,0 +1,200 @@
+[
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      118,
+      133
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "plavix",
+    "type": "THUỐC",
+    "position": [
+      355,
+      361
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "174742"
+    ]
+  },
+  {
+    "text": "nitrateskhi  đau ngực",
+    "type": "THUỐC",
+    "position": [
+      373,
+      394
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đột ngột xuất hiện đau ngực sau xương ức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      444,
+      484
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đột ngột xuất hiện đau ngữc dữ dội sau xương ức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      530,
+      577
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nitroglycerin",
+    "type": "THUỐC",
+    "position": [
+      631,
+      644
+    ],
+    "assertions": [],
+    "candidates": [
+      "4917"
+    ]
+  },
+  {
+    "text": "Đau ngực dữ dội sau xương ức, đau kiểu bóp nghẹt, lan lên hàm và cánh tay trái, VAS 7/10, đau trong 1.5h liên lục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      798,
+      911
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      918,
+      925
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vã mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      932,
+      941
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      948,
+      956
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      963,
+      966
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      973,
+      982
+    ],
+    "assertions": []
+  },
+  {
+    "text": "heparin",
+    "type": "THUỐC",
+    "position": [
+      1006,
+      1013
+    ],
+    "assertions": [],
+    "candidates": [
+      "5224"
+    ]
+  },
+  {
+    "text": "nitro và dilaudid 3mg",
+    "type": "THUỐC",
+    "position": [
+      1041,
+      1062
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "troponin là 0.03",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1095,
+      1111
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1118,
+      1128
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine là  2.0 -> 3.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1118,
+      1143
+    ]
+  },
+  {
+    "text": "k (kali) là 5.4",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1150,
+      1165
+    ]
+  },
+  {
+    "text": "phosphate là 5.6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1172,
+      1188
+    ]
+  },
+  {
+    "text": "điện tâm đồ (ekg) là bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1221,
+      1253
+    ]
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "text": "viêm tủy xương và bàng quang thần kinh có biến chứng liệt hai chi dưới",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      52,
+      122
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "biến đổi ý thức kèm theo hạ thân nhiệt và hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      166,
+      219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "biến đổi ý thức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      378,
+      393
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ thân nhiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      395,
+      408
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      410,
+      421
+    ],
+    "assertions": []
+  },
+  {
+    "text": "biến đổi ý thức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      484,
+      499
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ thân nhiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      506,
+      519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      537
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau toàn thân ít",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      544,
+      560
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực ít",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      567,
+      578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      586,
+      594
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      646,
+      657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ thân nhiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      664,
+      677
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lắc đầu có/không",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      684,
+      700
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali là 6.6 mmol/l",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      730,
+      748
+    ]
+  },
+  {
+    "text": "creatinin là 1.9 mmol/l",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      755,
+      778
+    ]
+  },
+  {
+    "text": "tiểu cầu là 81 G/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      785,
+      803
+    ]
+  },
+  {
+    "text": "bạch cầu là 10.9 G/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      810,
+      830
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu nhiễm trùng đường tiết niệu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      837,
+      889
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      947,
+      964
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1024,
+      1041
+    ]
+  },
+  {
+    "text": "Đặt sonde bàng quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1088,
+      1108
+    ]
+  },
+  {
+    "text": "Gửi xét nghiệm máu và cấy nước tiểu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1115,
+      1150
+    ]
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1179,
+      1190
+    ]
+  }
+]

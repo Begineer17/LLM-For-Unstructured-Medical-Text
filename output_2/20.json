@@ -1,0 +1,437 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      61
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      68,
+      97
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch với Nhồi máu cơ tim gần đây",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      104,
+      165
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "rung nhĩ kịch phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      172,
+      190
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I48.0"
+    ]
+  },
+  {
+    "text": "tăng sản tuyến tiền liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      197,
+      221
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "xạ hình tưới máu cơ tim mibi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      289,
+      317
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "position": [
+      354,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6918"
+    ]
+  },
+  {
+    "text": "desmopressin",
+    "type": "THUỐC",
+    "position": [
+      405,
+      417
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "3251"
+    ]
+  },
+  {
+    "text": "Cựu chiến binh Thế chiến II",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      457,
+      484
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Rối loạn dáng đi với nhiều lần ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      491,
+      525
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "thường xuyên luyện tập, đi bộ 20 phút mỗi ngày trên máy chạy bộ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      532,
+      595
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngã với gãy cổ xương đùi di lệch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      643,
+      675
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hôm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      713,
+      720
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngã hôm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      746,
+      757
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Có thể tự đi lại và lái xe sau ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      764,
+      798
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sáng nay không thể tự ra khỏi giường và tự đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      805,
+      854
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau ở hông phải khi cử động và thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      954,
+      1000
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hông phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1040,
+      1049
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cử động, thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1078,
+      1102
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngã do cơ học hôm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1145,
+      1166
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chấn thương tù ở Chi dưới phải (RLE)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1173,
+      1209
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vết thương hở phần khác của chi dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1216,
+      1252
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có tiền sử chấn thương đầu hoặc mất ý thức (mất ý thức)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1259,
+      1320
+    ],
+    "assertions": []
+  },
+  {
+    "text": "có thể chịu trọng lượng và lái xe sau ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1327,
+      1368
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Gọi xe cứu thương",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1375,
+      1392
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phát hiện có gãy cổ xương đùi di lệch; mất vận động vùng đỉnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1399,
+      1460
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp x-quang ngực Hình ảnh mức nước - hơi vùng ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1467,
+      1518
+    ]
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1526,
+      1560
+    ]
+  },
+  {
+    "text": "cho thấy tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, và xẹp phổi hai đáy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1561,
+      1690
+    ]
+  },
+  {
+    "text": "Tình trạng tiến triển nặng trước nhập viện, bệnh nhân nằm tại giường, không thể tự di chuyển và không chịu lực được khi đứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1695,
+      1819
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm thấy khỏe trên sàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1881,
+      1903
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Than phiền đau ở hông phải khi cử động và thay đổi tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1910,
+      1967
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp x-quang ngực: mức nước-khí",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2023,
+      2054
+    ]
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang: tim to, tràn dịch màng tim, tràn dịch màng phổi hai bên, thoát vị hoành nhỏ, thay đổi khí phế thủng, xẹp phổi hai đáy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2061,
+      2214
+    ]
+  },
+  {
+    "text": "xạ hình tưới máu cơ tim  mibi: khuyết tật toàn bộ, không hồi phục, kích thước vừa phải ở thành dưới gần mấu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2221,
+      2328
+    ]
+  },
+  {
+    "text": "siêu âm tim qua thành ngực (siêu âm tim qua thành ngực): EF30, mất vận động vùng đỉnh, hở van ba lá vừa-nặng (mod-severe TR) và hở van hai lá/van động mạch chủ nhẹ (mild ARMR)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2335,
+      2510
+    ]
+  },
+  {
+    "text": "Gãy xương hông phải: gãy cổ xương đùi phải, lún đầu dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2517,
+      2573
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các thủ thuật đã thực hiện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2578,
+      2604
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp ct ngực không thuốc cản quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2611,
+      2645
+    ]
+  },
+  {
+    "text": "siêu âm tim qua thành ngực (siêu âm tim qua thành ngực)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2652,
+      2707
+    ]
+  },
+  {
+    "text": "chụp xạ hình tim bằng mibi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2714,
+      2740
+    ]
+  },
+  {
+    "text": "Các phát hiện chẩn đoán khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2812,
+      2840
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhồi máu cơ tim vùng vách liên thất, mạn tính và đỉnh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2847,
+      2900
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9"
+    ]
+  },
+  {
+    "text": "rung nhĩ kịch phát liên tục kể từ Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2907,
+      2956
+    ],
+    "assertions": [],
+    "candidates": [
+      "I48.0"
+    ]
+  },
+  {
+    "text": "tiểu đêm nhiều  do  tăng sản tuyến tiền liệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2963,
+      3007
+    ],
+    "assertions": []
+  }
+]

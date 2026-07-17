@@ -1,0 +1,46 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      61
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "suy tim, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      68,
+      91
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      98,
+      127
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Sử dụng sử dụng thuốc lá nhiều năm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      331,
+      365
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

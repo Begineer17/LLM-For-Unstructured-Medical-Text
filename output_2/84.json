@@ -1,0 +1,230 @@
+[
+  {
+    "text": "hen suyễn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      54,
+      63
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      70,
+      84
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng huyết áp (tăng huyết áp)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      91,
+      120
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Táo bón mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      127,
+      143
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ngưng thở khi ngủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      151,
+      168
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      311,
+      318
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      320,
+      322
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy nước mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      326,
+      339
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      734,
+      741
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu 26.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      847,
+      860
+    ]
+  },
+  {
+    "text": "bnp 4227",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      867,
+      875
+    ]
+  },
+  {
+    "text": "kali 3.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      882,
+      890
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      897,
+      910
+    ]
+  },
+  {
+    "text": "lactate",
+    "type": "THUỐC",
+    "position": [
+      917,
+      924
+    ],
+    "assertions": [],
+    "candidates": [
+      "114202"
+    ]
+  },
+  {
+    "text": "lactate 1.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      917,
+      928
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu có kết quả dương tính  với 182bạch cầuvài vi khuẩn (vi khuẩn), nitrite",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      935,
+      1030
+    ]
+  },
+  {
+    "text": "chẩn đoán hình ảnh không cho thấy quá trình bệnh lý tim mạch hoặc hô hấp cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1068,
+      1149
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chụp x-quang ngực phù hợp với viêm phổi kẽ.",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1157,
+      1200
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Albuterol và Ipratropium",
+    "type": "THUỐC",
+    "position": [
+      1254,
+      1278
+    ],
+    "assertions": [],
+    "candidates": [
+      "214199",
+      "1154598"
+    ]
+  },
+  {
+    "text": "Ceftriaxone 1 g",
+    "type": "THUỐC",
+    "position": [
+      1291,
+      1306
+    ],
+    "assertions": [],
+    "candidates": [
+      "2193",
+      "203172"
+    ]
+  },
+  {
+    "text": "Tylenol 1 g",
+    "type": "THUỐC",
+    "position": [
+      1333,
+      1344
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cấy máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1372,
+      1379
+    ]
+  },
+  {
+    "text": "cấy nước tiểu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1389,
+      1402
+    ]
+  }
+]

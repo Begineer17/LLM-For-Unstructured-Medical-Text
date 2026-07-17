@@ -1,0 +1,76 @@
+[
+  {
+    "text": "Bệnh lý mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      30,
+      46
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chấn thương gãy xương sườn trái sau tai nạn trượt ván giao thông",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      134,
+      198
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chấn thương gãy xương sườn trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      304,
+      335
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) cột sống cổ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      359,
+      396
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) lồng ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      425,
+      460
+    ]
+  },
+  {
+    "text": "gãy 3 xương sườn 9, 10 và 11",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      470,
+      498
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xương sườn thứ 10 bị gãy vụn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      500,
+      528
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đụng dập một vùng nhu mô phổi nhỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      533,
+      566
+    ],
+    "assertions": []
+  }
+]

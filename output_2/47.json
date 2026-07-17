@@ -1,0 +1,97 @@
+[
+  {
+    "text": "ung thư biểu mô tế bào mật không thể cắt bỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      238,
+      281
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tắc nghẽn kéo dài gần chỗ nối mật tụy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      853,
+      890
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      892,
+      935
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ung thư biểu mô tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1169,
+      1190
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      1348,
+      1374
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ống dẫn mật ngoài-trong",
+    "type": "THUỐC",
+    "position": [
+      1383,
+      1406
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau khi sờ nắn xung quanh vị trí đặt ống dẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2566,
+      2610
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tắc nghẽn kéo dài gần chỗ nối mật tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2844,
+      2881
+    ]
+  },
+  {
+    "text": "ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2883,
+      2926
+    ]
+  },
+  {
+    "text": "stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      2958,
+      2984
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "text": "đau bụng dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      133
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      136,
+      147
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      150,
+      157
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất ăn ngon",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      160,
+      171
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thượng vị và góc phần tư trên bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      203,
+      241
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      244,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng kèm theo: chướng bụng, ớn lạnh, mất ăn ngon",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      280,
+      335
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      412,
+      415
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhịp tim nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      418,
+      432
+    ],
+    "assertions": []
+  },
+  {
+    "text": "công thức máu là 32",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      454,
+      473
+    ]
+  },
+  {
+    "text": "suy thận cấp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      476,
+      488
+    ]
+  },
+  {
+    "text": "bất thường điện giải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      491,
+      511
+    ]
+  },
+  {
+    "text": "Kết quả chẩn đoán hình ảnh: Kết quả chụp cắt lớp vi tính cho thấy viêm túi mật thủng cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      512,
+      605
+    ]
+  },
+  {
+    "text": "Thủ thuật thực hiện: Đặt ống dẫn lưu phúc mạc qua da cho túi mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      606,
+      670
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

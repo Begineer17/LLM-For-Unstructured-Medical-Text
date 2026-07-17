@@ -1,0 +1,150 @@
+[
+  {
+    "text": "ung thư vú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      47,
+      57
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư phổi gây ho khó thở kéo dài tại nhà",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      64,
+      107
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "suy nhược toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      197,
+      216
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      260,
+      267
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hồi hộp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      319,
+      326
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      328,
+      343
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy nhược toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      380,
+      399
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      406,
+      422
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      436,
+      439
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      446,
+      448
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hồi hộp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      462
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      464,
+      479
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chỉ số bão hòa oxy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      498,
+      516
+    ]
+  },
+  {
+    "text": "bão hòa oxy dưới 90 %",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      524,
+      545
+    ]
+  },
+  {
+    "text": "Siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      562,
+      573
+    ]
+  },
+  {
+    "text": "chèn ép tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      575,
+      586
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

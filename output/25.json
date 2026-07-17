@@ -1,0 +1,31 @@
+[
+  {
+    "text": "tách thành động mạch chủ  biến chứng bởi liệt hai chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      102
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "sờ thấy rung động tại vị trí lỗ rò",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      266,
+      300
+    ]
+  },
+  {
+    "text": "Rò động - tĩnh mạch đùi phải do thủ thuật can thiệp , hiện tăng kích thước so với các lần đánh giá trước.",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      335,
+      440
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "text": "Viêm loét đại tràng trong nhiều năm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      96
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh gan do rượu ở vị trí 35cm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      114,
+      144
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thời điểm khởi phát triệu chứng: 48 giờ qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      333,
+      376
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn uống kém do buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      408,
+      431
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng/khó chịu vùng bụng tăng dần, đặc biệt ở vùng hạ vị bên trái (LLQ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      438,
+      512
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      519,
+      527
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn x 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      534,
+      541
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chủ quan sốt và run rẩy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      548,
+      571
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất cảm giác ngon miệng/chán ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      578,
+      609
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy nhược",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      616,
+      625
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      633,
+      652
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm lượng nước tiểu từ 1800 ml xuống còn 300 ml trong vòng 24 giờ",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      659,
+      725
+    ]
+  },
+  {
+    "text": "tăng đáng kể lượng dịch từ ống thông hồi tràng từ 350 ml lên 1200 mltrong cùng khoảng thời gian",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      732,
+      827
+    ]
+  },
+  {
+    "text": "LLQ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      870
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: đau bụng/khó chịu vùng bụng tăng dần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      877,
+      934
+    ],
+    "assertions": []
+  },
+  {
+    "text": "48 giờ qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      952,
+      962
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn x 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      979,
+      986
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Triệu chứng liên quan: chủ quan sốt và run rẩy, mất cảm giác ngon miệng/chán ăn, suy nhược, toàn trạng suy kiệt  thiểu niệu, chảy dịch từ lỗ dò tăng đáng kể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      993,
+      1149
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn uống kém do buồn nôn, được cho là do tác dụng phụ của thuốc giảm đau opioid",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1188,
+      1266
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngừng thuốc giảm đau opioid vào hôm qua mà không có thay đổi các triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1273,
+      1349
+    ],
+    "assertions": []
+  }
+]

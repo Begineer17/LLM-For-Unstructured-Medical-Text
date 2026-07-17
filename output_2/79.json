@@ -1,0 +1,44 @@
+[
+  {
+    "text": "bàn chân vẹo bẩm sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      60
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bàn chân vẹo bẩm sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      153,
+      174
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chảy dịch liên tục từ mặt trong của bàn chân trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      218,
+      267
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy dịch liên tục từ mặt trong của bàn chân trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      343
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      248,
+      255
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó thở tăng khi vận động gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      258,
+      292
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đi lại khó khăn, cần dùng gậy hỗ trợ đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      338
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau hai bàn chân do bệnh lý thần kinh ngoại biên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      341,
+      389
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chụp động mạch vành can thiệp",
+    "type": "THUỐC",
+    "position": [
+      721,
+      750
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

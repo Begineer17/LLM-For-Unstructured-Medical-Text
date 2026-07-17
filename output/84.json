@@ -1,0 +1,253 @@
+[
+  {
+    "text": "hen suyễn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      54,
+      63
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      70,
+      84
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng huyết áp (tăng huyết áp)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      91,
+      120
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Táo bón mãn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      127,
+      143
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngưng thở khi ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      151,
+      168
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nhịp thở nhanh và thiếu oxy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      211,
+      238
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi, ho và chảy nước mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      311,
+      339
+    ],
+    "assertions": []
+  },
+  {
+    "text": "độ bão hòa oxy (SPO2) từ 88-92 % khi thở khí trời và nhịp thở nhanh",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      539,
+      606
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      734,
+      741
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      748,
+      750
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy nước mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      757,
+      770
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhịp thở nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      777,
+      791
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thiếu oxy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      798,
+      807
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      814,
+      817
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu 26.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      847,
+      860
+    ]
+  },
+  {
+    "text": "bnp 4227",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      867,
+      875
+    ]
+  },
+  {
+    "text": "kali 3.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      882,
+      890
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      897,
+      910
+    ]
+  },
+  {
+    "text": "lactate",
+    "type": "THUỐC",
+    "position": [
+      917,
+      924
+    ],
+    "assertions": [],
+    "candidates": [
+      "114202"
+    ]
+  },
+  {
+    "text": "lactate 1.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      917,
+      928
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu có kết quả dương tính  với 182bạch cầuvài vi khuẩn (vi khuẩn), nitrite",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      935,
+      1030
+    ]
+  },
+  {
+    "text": "chẩn đoán hình ảnh không cho thấy quá trình bệnh lý tim mạch hoặc hô hấp cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1068,
+      1149
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực phù hợp với viêm phổi kẽ.",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1157,
+      1200
+    ]
+  },
+  {
+    "text": "Khí dung phối hợp Albuterol và Ipratropium 1 lần",
+    "type": "THUỐC",
+    "position": [
+      1236,
+      1284
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ceftriaxone 1 gram dùng 1 liều",
+    "type": "THUỐC",
+    "position": [
+      1291,
+      1321
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tylenol 1 gram, 1 liều duy nhất.",
+    "type": "THUỐC",
+    "position": [
+      1333,
+      1365
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "cấy máu 2 mẫu và cấy nước tiểu đã được gửi.",
+    "type": "THUỐC",
+    "position": [
+      1372,
+      1415
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

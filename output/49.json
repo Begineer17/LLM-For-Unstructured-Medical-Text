@@ -1,0 +1,229 @@
+[
+  {
+    "text": "Khối sa âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      53,
+      67
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khối lồi trong âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      155,
+      176
+    ],
+    "assertions": []
+  },
+  {
+    "text": "căng tức vùng âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      286,
+      306
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khối sa tại âm hộ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      316,
+      333
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiểu buốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      373,
+      382
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      497,
+      504
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khô âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      506,
+      516
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ra huyết âm đạo lượng ít",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      553,
+      577
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác có khối sa lồi ra âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      601,
+      634
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cảm giác căng tức vùng âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      635,
+      664
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiểu dắt .Tiểu không tự chủ, xuất hiện từng đợt.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      666,
+      714
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      715,
+      722
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khô âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      723,
+      733
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau khi giao hợp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      735,
+      751
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ra huyết âm đạo lượng ít, từng đợt.",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      753,
+      788
+    ],
+    "assertions": []
+  },
+  {
+    "text": "niệu sản khoa",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      847,
+      860
+    ]
+  },
+  {
+    "text": "vòng pessary",
+    "type": "THUỐC",
+    "position": [
+      890,
+      902
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Vòng pessary",
+    "type": "THUỐC",
+    "position": [
+      934,
+      946
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "khối lồi âm đạo",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1015,
+      1030
+    ],
+    "assertions": []
+  },
+  {
+    "text": "băng vệ tinh",
+    "type": "THUỐC",
+    "position": [
+      1116,
+      1128
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau khi đi tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1138,
+      1153
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "tiểu máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1166,
+      1174
+    ]
+  },
+  {
+    "text": "nhiễm khuẩn đường tiết niệu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1184,
+      1211
+    ]
+  },
+  {
+    "text": "sỏi thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1244,
+      1252
+    ]
+  },
+  {
+    "text": "viêm bể thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1261,
+      1273
+    ]
+  }
+]

@@ -1,0 +1,148 @@
+[
+  {
+    "text": "Giai đoạn IV Ung thư phổi không tế bào nhỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      66,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Di căn não vùng trán phải dã phẫu thuật lấy u",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      115,
+      160
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tắc mạch huyết khối tĩnh mạch chủ dưới (IVC) và tĩnh mạch chủ trên (SVC) phải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      167,
+      244
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      251,
+      264
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Sa van hai lá",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      271,
+      284
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "lấy u di căn bán cầu não phải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      321,
+      350
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "vicodin (uống không thấy giảm đau)",
+    "type": "THUỐC",
+    "position": [
+      382,
+      416
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bẹn trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      708,
+      720
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bẹn trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      760,
+      768
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lan tỏa: đôi khi lan ra bên hông trái, xuống đầu gối trái khi đau dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      775,
+      847
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      876,
+      882
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Yếu tố làm giảm: vicodin (không thấy giảm đau)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      889,
+      935
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Uống vicodin không thấy giảm đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1076,
+      1108
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bầm máu vùng bẹn trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1160,
+      1181
+    ]
+  }
+]

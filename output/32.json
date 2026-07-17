@@ -1,0 +1,82 @@
+[
+  {
+    "text": "ho Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "THUỐC",
+    "position": [
+      43,
+      77
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ho Rung nhĩ kèm đáp ứng thất nhanh",
+    "type": "THUỐC",
+    "position": [
+      119,
+      153
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "khí dung albuterol 2 lần, dùng guaifenesin và furosemide 40 mg đường uống",
+    "type": "THUỐC",
+    "position": [
+      1456,
+      1529
+    ],
+    "assertions": [],
+    "candidates": [
+      "313988",
+      "315971"
+    ]
+  },
+  {
+    "text": "Ho.Khò khè",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1711,
+      1721
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phù ngoại vi tăng dần trong vài tuần gần đây.Tiền sử sốt 38,3°C khoảng 5 ngày trước nhập viện.Tình trạng ngay trước nhập viện:",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1722,
+      1848
+    ]
+  },
+  {
+    "text": "Nhiễm khuẩn huyết do tụ cầu vàng nhạy cảm methicillin, nghi liên quan catheter PICC",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2114,
+      2197
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Siêu âm mạch máu chi trên không ghi nhận huyết khối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2199,
+      2250
+    ]
+  },
+  {
+    "text": "Xạ hình thông khí – tưới máu phổi cho thấy xác suất thấp thuyên tắc phổi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2252,
+      2324
+    ]
+  }
+]

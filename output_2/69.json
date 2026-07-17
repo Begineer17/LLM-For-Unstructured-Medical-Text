@@ -1,0 +1,189 @@
+[
+  {
+    "text": "Cắt bỏ thận trái do ung thư biểu mô tế bào thận",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      67,
+      114
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C22.0"
+    ]
+  },
+  {
+    "text": "Cắt tuyến giáp với Dr. do ung thư biểu mô tuyến giật nhú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      121,
+      177
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      238,
+      245
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      247,
+      256
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân có guaiac dương tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      260,
+      285
+    ],
+    "assertions": []
+  },
+  {
+    "text": "guaiac",
+    "type": "THUỐC",
+    "position": [
+      268,
+      274
+    ],
+    "assertions": [],
+    "candidates": [
+      "1373150"
+    ]
+  },
+  {
+    "text": "guaiac",
+    "type": "THUỐC",
+    "position": [
+      360,
+      366
+    ],
+    "assertions": [],
+    "candidates": [
+      "1373150"
+    ]
+  },
+  {
+    "text": "Nội soi đại tràng sau xuất viện",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      421,
+      452
+    ]
+  },
+  {
+    "text": "khối ở chỗ uốn gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      466,
+      484
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sinh thiết dương tính với ung thư biểu mô tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      491,
+      538
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thiếu máu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      597,
+      606
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính ổ bụng năm ngoái",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      639,
+      676
+    ]
+  },
+  {
+    "text": "nội soi đại tràng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      749,
+      766
+    ]
+  },
+  {
+    "text": "sinh thiết",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      773,
+      783
+    ]
+  },
+  {
+    "text": "khối ở chỗ uốn gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      824,
+      842
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ung thư biểu mô tuyến trên sinh thiết",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      849,
+      886
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tiền sử khối u thận",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      893,
+      912
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ung thư biểu mô tế bào thận",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      919,
+      946
+    ],
+    "assertions": [],
+    "candidates": [
+      "C22.0"
+    ]
+  },
+  {
+    "text": "ung thư biểu mô tuyến giật nhú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      953,
+      983
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "text": "khó khăn với hạ huyết áp, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      200,
+      240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó kiểm soát huyết áp đáng kể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      247,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi khập khiễng cách quãng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      284,
+      309
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) được thực hiện cho thấy tắc hẹp 80% động mạch thận trái L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      343,
+      426
+    ]
+  },
+  {
+    "text": "chụp cắt lớp vi tính (ct) cho thấy tắc hẹp 80% động mạch thận trái L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      487,
+      555
+    ]
+  },
+  {
+    "text": "chụp mạch máu thận",
+    "type": "THUỐC",
+    "position": [
+      586,
+      604
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "stent",
+    "type": "THUỐC",
+    "position": [
+      611,
+      616
+    ],
+    "assertions": [],
+    "candidates": [
+      "1291307",
+      "1291310"
+    ]
+  }
+]

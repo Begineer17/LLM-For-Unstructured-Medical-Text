@@ -1,0 +1,99 @@
+[
+  {
+    "text": "lasix (tăng liều gần đây)",
+    "type": "THUỐC",
+    "position": [
+      272,
+      297
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Suy tim sung huyết cấp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      485,
+      507
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lasix",
+    "type": "THUỐC",
+    "position": [
+      544,
+      549
+    ],
+    "assertions": [],
+    "candidates": [
+      "202991"
+    ]
+  },
+  {
+    "text": "graft SVG bị tắc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      812,
+      828
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "graft lima ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      831,
+      849
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh động mạch vành phải nặng hơn với 60 RPL và 40 mid RCA",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      852,
+      910
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Động mạch vành trái bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      913,
+      944
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "áp lực nạp tăng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      947,
+      962
+    ]
+  },
+  {
+    "text": "áp lực tâm thu phổi ở",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      965,
+      986
+    ]
+  },
+  {
+    "text": "áp lực tĩnh mạch bít",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      989,
+      1009
+    ]
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "text": "Bệnh túi thừa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      53,
+      66
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ruột non và đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      72,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "colace",
+    "type": "THUỐC",
+    "position": [
+      175,
+      181
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "82000"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      230,
+      238
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hố chậu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      306
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      355,
+      362
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn quả mận khô",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      382,
+      396
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi đại tiện vài lần liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      429,
+      457
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân có vẻ thành khuôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      459,
+      481
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hố chậu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      535,
+      546
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      618,
+      625
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      655,
+      662
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      743,
+      751
+    ],
+    "assertions": []
+  },
+  {
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      758,
+      765
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      772,
+      780
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hố chậu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      820,
+      831
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cơn đau vẫn tiếp diễn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      859,
+      880
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      896,
+      903
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      933,
+      941
+    ],
+    "assertions": []
+  },
+  {
+    "text": "quả mận khô",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      992,
+      1003
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      1018,
+      1025
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "bác sĩ PCP",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1040,
+      1050
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      1080,
+      1087
+    ],
+    "assertions": [],
+    "candidates": [
+      "202433"
+    ]
+  },
+  {
+    "text": "đau vẫn tiếp diễn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1137,
+      1154
+    ],
+    "assertions": []
+  },
+  {
+    "text": "T97.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1253,
+      1258
+    ]
+  },
+  {
+    "text": "nhịp tim 84",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1260,
+      1271
+    ]
+  },
+  {
+    "text": "huyết áp 15670",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1273,
+      1287
+    ]
+  },
+  {
+    "text": "nhịp thở 20",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1289,
+      1300
+    ]
+  },
+  {
+    "text": "độ bão hòa oxy 99",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1302,
+      1319
+    ]
+  },
+  {
+    "text": "thiếu máu hồng cầu nhỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1366,
+      1388
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "27.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1392,
+      1396
+    ]
+  },
+  {
+    "text": "bun/creatinine",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1403,
+      1417
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1407,
+      1417
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "chụp ct bụng, chậu, không thuốc cản quang",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1450,
+      1491
+    ]
+  },
+  {
+    "text": "một lượng nhỏ dịch và mỡ bao quanh một quai ruột kết sigma",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1501,
+      1559
+    ]
+  },
+  {
+    "text": "viêm túi mật cấp tính không biến chứng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1567,
+      1605
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  },
+  {
+    "text": "viêm túi mật cấp tính không biến chứng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1638,
+      1676
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "text": "eliquis (cho rung nhĩ)",
+    "type": "THUỐC",
+    "position": [
+      358,
+      380
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1364430"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1066,
+      1069
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1076,
+      1084
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1091,
+      1107
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt nhẹ đến 38.3°C",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1114,
+      1132
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hạ sườn phải tái phát, ngày càng nặng hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1139,
+      1184
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau hạ sườn phải liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1191,
+      1216
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1256,
+      1273
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngày càng nặng hơn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1302,
+      1320
+    ],
+    "assertions": []
+  },
+  {
+    "text": "liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1338,
+      1346
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không thấy  buồn nôn, nôn, ớn lạnh, thay đổi chức năng ruột, đau ngực, khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1376,
+      1454
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tự ý rời bệnh viện (AMA)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1495,
+      1519
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm vùng gan mật",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1601,
+      1621
+    ]
+  },
+  {
+    "text": "viêm túi mật cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1694,
+      1710
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  },
+  {
+    "text": "lipase",
+    "type": "THUỐC",
+    "position": [
+      1768,
+      1774
+    ],
+    "assertions": [],
+    "candidates": [
+      "6406"
+    ]
+  },
+  {
+    "text": "tăng lên ở mức 623 (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1778,
+      1818
+    ]
+  },
+  {
+    "text": "tăng men gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1825,
+      1837
+    ]
+  },
+  {
+    "text": "nhẹ (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1838,
+      1863
+    ]
+  },
+  {
+    "text": "tbr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1870,
+      1873
+    ]
+  },
+  {
+    "text": "cao tới 1.0 sau đó cải thiện (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1877,
+      1927
+    ]
+  },
+  {
+    "text": "các xét nghiệm khác có xu hướng giảm (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1934,
+      1992
+    ]
+  },
+  {
+    "text": "dương tính cấy máu khi tái khám với GPRs",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1999,
+      2039
+    ]
+  },
+  {
+    "text": "cấy máu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2010,
+      2017
+    ]
+  },
+  {
+    "text": "siêu âm vùng gan mật",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2077,
+      2097
+    ]
+  },
+  {
+    "text": "sỏi mật nhưng không có viêm túi mật hoặc sỏi ống mật (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2107,
+      2181
+    ]
+  },
+  {
+    "text": "chụp ct bụng chậu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2188,
+      2205
+    ]
+  },
+  {
+    "text": "chưa phát hiện bất thường (lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2209,
+      2256
+    ]
+  },
+  {
+    "text": "siêu âm vùng gan mật",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2263,
+      2283
+    ]
+  },
+  {
+    "text": "túi mật căng to với dịch quanh túi mật gợi ý viêm túi mật cấp",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2302,
+      2363
+    ]
+  },
+  {
+    "text": "viêm túi mật cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2347,
+      2363
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  },
+  {
+    "text": "lo ngại viêm túi mật cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2398,
+      2422
+    ],
+    "assertions": [],
+    "candidates": [
+      "K81.0"
+    ]
+  }
+]

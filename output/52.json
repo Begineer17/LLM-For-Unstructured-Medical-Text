@@ -1,0 +1,77 @@
+[
+  {
+    "text": "nối ống gan - hỗng tràng",
+    "type": "THUỐC",
+    "position": [
+      146,
+      170
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "chụp đường mật, đặt 3 stent đường mật lưu dài hạn",
+    "type": "THUỐC",
+    "position": [
+      237,
+      286
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "run rẩy kèm sốt kèm theo sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      401,
+      429
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt và các ổ dịch trong ổ bụng được cho là áp xe",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      493,
+      541
+    ]
+  },
+  {
+    "text": "Augmentin đường uống trong 10 ngày",
+    "type": "THUỐC",
+    "position": [
+      630,
+      664
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mrcp (chụp cộng hưởng từ mật tụy)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      798,
+      831
+    ]
+  },
+  {
+    "text": "ba stent mật kim loại đã được đặt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      866,
+      899
+    ]
+  },
+  {
+    "text": "một ổ dịch sau phẫu thuật giảm kích thước so với lần chụp chẩn đoán hình ảnh  trước",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      906,
+      989
+    ]
+  }
+]

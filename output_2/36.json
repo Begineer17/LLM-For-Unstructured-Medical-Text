@@ -1,0 +1,534 @@
+[
+  {
+    "text": "Bệnh thận đa nang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      41,
+      58
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh thận đa nang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      68,
+      85
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "azathioprine",
+    "type": "THUỐC",
+    "position": [
+      208,
+      220
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1256"
+    ]
+  },
+  {
+    "text": "prograf",
+    "type": "THUỐC",
+    "position": [
+      233,
+      240
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "196463"
+    ]
+  },
+  {
+    "text": "dose decreased from",
+    "type": "THUỐC",
+    "position": [
+      242,
+      261
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bid to",
+    "type": "THUỐC",
+    "position": [
+      266,
+      272
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      294,
+      302
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      324,
+      332
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "Suy thận ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      386,
+      409
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Muộn (creatinine  tăng cao)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      451,
+      478
+    ],
+    "assertions": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      457,
+      467
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      514,
+      524
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      573,
+      583
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "Tình trạng tiêu chảy đáng kể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      615,
+      643
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      653,
+      661
+    ],
+    "assertions": [],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "Tăng creatinine",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      687,
+      702
+    ],
+    "assertions": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      692,
+      702
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "pcr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      794,
+      797
+    ]
+  },
+  {
+    "text": "virus bk",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      816,
+      824
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "prograf dose decreased from",
+    "type": "THUỐC",
+    "position": [
+      893,
+      920
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      953,
+      963
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "đào thải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1002,
+      1010
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "siêu âm thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1024,
+      1036
+    ]
+  },
+  {
+    "text": "sinh thiết ghép thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1088,
+      1108
+    ]
+  },
+  {
+    "text": "đào thải kháng thể hữu hình cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1129,
+      1165
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1179,
+      1189
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "k",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1218,
+      1219
+    ]
+  },
+  {
+    "text": "Suy thận ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1271,
+      1294
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tình trạng tiêu chảy đáng kể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1347,
+      1375
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cellcept",
+    "type": "THUỐC",
+    "position": [
+      1385,
+      1393
+    ],
+    "assertions": [],
+    "candidates": [
+      "152633"
+    ]
+  },
+  {
+    "text": "pcr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1419,
+      1422
+    ]
+  },
+  {
+    "text": "virus bk",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1438,
+      1446
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "prograf",
+    "type": "THUỐC",
+    "position": [
+      1469,
+      1476
+    ],
+    "assertions": [],
+    "candidates": [
+      "196463"
+    ]
+  },
+  {
+    "text": "siêu âm thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1529,
+      1541
+    ]
+  },
+  {
+    "text": "sinh thiết ghép thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1593,
+      1613
+    ]
+  },
+  {
+    "text": "đào thải kháng thể hữu hình cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1634,
+      1670
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1736,
+      1746
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "5.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1747,
+      1750
+    ]
+  },
+  {
+    "text": "k",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1752,
+      1753
+    ]
+  },
+  {
+    "text": "5.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1754,
+      1757
+    ]
+  },
+  {
+    "text": "creatinine",
+    "type": "THUỐC",
+    "position": [
+      1936,
+      1946
+    ],
+    "assertions": [],
+    "candidates": [
+      "2913"
+    ]
+  },
+  {
+    "text": "5.1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1947,
+      1950
+    ]
+  },
+  {
+    "text": "k",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1963,
+      1964
+    ]
+  },
+  {
+    "text": "5.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1965,
+      1968
+    ]
+  },
+  {
+    "text": "pcr",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1981,
+      1984
+    ]
+  },
+  {
+    "text": "virus bk",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2000,
+      2008
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "siêu âm thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2045,
+      2057
+    ]
+  },
+  {
+    "text": "Sinh thiết thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2139,
+      2154
+    ]
+  },
+  {
+    "text": "Sinh thiết thận",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2191,
+      2206
+    ]
+  },
+  {
+    "text": "Bệnh lý thận do BK",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2282,
+      2300
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đào thải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2324,
+      2332
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đào thải kháng thể hữu hình cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2365,
+      2401
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": []
+  }
+]
