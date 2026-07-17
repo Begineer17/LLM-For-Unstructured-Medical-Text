@@ -1,7 +1,7 @@
 ﻿# Project Index
 
-Generated at: 2026-07-15T07:38:59Z
-Git commit: b4bef03
+Generated at: 2026-07-17T01:49:47Z
+Git commit: c623d40
 
 ## Directory Tree
 ```text
@@ -124,30 +124,9 @@ C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\96.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\97.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\98.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input\99.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\2.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\20.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\21.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\22.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\23.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\24.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\25.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\26.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\27.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\28.txt
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\input_2x\29.txt
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\medical_clinical_nlp_pipeline_architecture_vi_revised.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\ontology_linking.py
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\2.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\20.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\21.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\22.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\23.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\24.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\25.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\26.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\27.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\28.json
-C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\output_2x\29.json
+C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\pipeline_advanced_description.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\pyproject.toml
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\README.md
 C:\Users\THIS PC\Desktop\LLM-For-Unstructured-Medical-Text\requirements.txt

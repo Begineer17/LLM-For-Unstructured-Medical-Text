@@ -522,6 +522,8 @@ class DerivedOntologyIndex:
         combo_products = [candidate for candidate in candidates if candidate.evidence.get("concept_kind") == "combo_product"]
         if combo_products:
             candidates = combo_products
+        if not candidates:
+            return []
         best_ingredient_score = max(candidate.evidence.get("ingredient_score", 0.0) for candidate in candidates)
         if best_ingredient_score >= 0.85:
             candidates = [
